@@ -1,0 +1,10 @@
+# Binaries
+bot-template-linux-nim
+*.exe
+*.o
+*.a
+nimcache/
+
+# Config secrets
+accounts.json
+config.json
