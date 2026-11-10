@@ -23,8 +23,8 @@ proc main() =
 
   var accounts = loadAccounts(configPath)
   if accounts.len == 0:
-    echo "⚠️ Nenhuma conta encontrada em '", configPath, "'. Usando conta padrão para demonstração."
-    accounts = @[defaultAccount("acc-demo", "Demo Character")]
+    echo "⚠️ Nenhuma conta encontrada em '", configPath, "'. Carregando os 18 bots da suíte Nim para demonstração."
+    accounts = defaultSuiteAccounts()
 
   let portStr = getEnv("PORT", "3099")
   let port = try: parseInt(portStr) except CatchableError: 3099

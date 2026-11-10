@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nim Bot Template ⚡ Auto-Recovery & Zero-GC</title>
-    <meta name="description" content="Template mestre canônico para desenvolvimento de bots em Nim 2.2 com Auto-Recovery, Circuit Breaker, Pacing Orgânico e Telemetria em tempo real.">
+    <title>Nim Bot Ecosystem ⚡ Suíte Completa de 18 Bots em Nim 2.2</title>
+    <meta name="description" content="Ecossistema completo dos 18 bots de alta performance em Nim 2.2 com Auto-Recovery, Zero-GC ORC, Circuit Breaker e Telemetria em tempo real.">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600;700&family=Plus+Jakarta+Sans:wght@400;600;700;800&display=swap" rel="stylesheet">
@@ -14,12 +14,13 @@
             --bg-surface: #0f172a;
             --bg-card: #141e33;
             --border: #1e293b;
-            --border-hover: #334155;
+            --border-hover: #38bdf8;
             --primary: #38bdf8;
             --primary-glow: rgba(56, 189, 248, 0.25);
             --accent-green: #22c55e;
             --accent-green-glow: rgba(34, 197, 94, 0.2);
             --accent-amber: #f59e0b;
+            --accent-purple: #a855f7;
             --accent-red: #ef4444;
             --text-main: #f8fafc;
             --text-muted: #94a3b8;
@@ -40,22 +41,23 @@
             line-height: 1.6;
             overflow-x: hidden;
             background-image: 
-                radial-gradient(circle at 15% 10%, rgba(56, 189, 248, 0.08) 0%, transparent 40%),
-                radial-gradient(circle at 85% 60%, rgba(34, 197, 94, 0.06) 0%, transparent 40%);
+                radial-gradient(circle at 10% 10%, rgba(56, 189, 248, 0.09) 0%, transparent 40%),
+                radial-gradient(circle at 90% 40%, rgba(168, 85, 247, 0.08) 0%, transparent 40%),
+                radial-gradient(circle at 50% 85%, rgba(34, 197, 94, 0.06) 0%, transparent 40%);
         }
 
         header {
             border-bottom: 1px solid var(--border);
-            padding: 20px 0;
+            padding: 18px 0;
             position: sticky;
             top: 0;
-            background: rgba(9, 13, 22, 0.85);
-            backdrop-filter: blur(12px);
+            background: rgba(9, 13, 22, 0.88);
+            backdrop-filter: blur(14px);
             z-index: 100;
         }
 
         .container {
-            max-width: 1180px;
+            max-width: 1220px;
             margin: 0 auto;
             padding: 0 24px;
         }
@@ -69,7 +71,7 @@
         .logo {
             display: flex;
             align-items: center;
-            gap: 10px;
+            gap: 12px;
             font-size: 1.25rem;
             font-weight: 800;
             color: var(--text-main);
@@ -77,8 +79,14 @@
             letter-spacing: -0.5px;
         }
 
-        .logo span {
+        .logo-tag {
+            background: rgba(56, 189, 248, 0.15);
+            border: 1px solid rgba(56, 189, 248, 0.35);
             color: var(--primary);
+            font-size: 0.75rem;
+            padding: 2px 8px;
+            border-radius: 999px;
+            font-weight: 700;
         }
 
         .nav-links {
@@ -105,7 +113,7 @@
             gap: 8px;
             background: #1e293b;
             color: var(--text-main);
-            border: 1px solid var(--border-hover);
+            border: 1px solid var(--border);
             padding: 8px 16px;
             border-radius: 8px;
             font-weight: 600;
@@ -121,7 +129,7 @@
         }
 
         .hero {
-            padding: 70px 0 50px;
+            padding: 65px 0 45px;
             text-align: center;
         }
 
@@ -129,25 +137,25 @@
             display: inline-flex;
             align-items: center;
             gap: 8px;
-            background: rgba(56, 189, 248, 0.1);
+            background: rgba(56, 189, 248, 0.12);
             border: 1px solid rgba(56, 189, 248, 0.3);
             color: var(--primary);
-            padding: 6px 14px;
+            padding: 6px 16px;
             border-radius: 9999px;
             font-size: 0.85rem;
             font-weight: 700;
             margin-bottom: 24px;
             text-transform: uppercase;
-            letter-spacing: 0.5px;
+            letter-spacing: 0.6px;
         }
 
         .hero h1 {
-            font-size: 3.2rem;
+            font-size: 3.3rem;
             font-weight: 800;
             letter-spacing: -1.5px;
             line-height: 1.15;
             margin-bottom: 20px;
-            background: linear-gradient(135deg, #ffffff 40%, #94a3b8 100%);
+            background: linear-gradient(135deg, #ffffff 30%, #94a3b8 100%);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
         }
@@ -155,7 +163,7 @@
         .hero p {
             font-size: 1.2rem;
             color: var(--text-muted);
-            max-width: 720px;
+            max-width: 820px;
             margin: 0 auto 36px;
         }
 
@@ -194,8 +202,125 @@
         }
 
         .btn-secondary:hover {
-            border-color: var(--border-hover);
+            border-color: var(--primary);
             background: #192339;
+        }
+
+        /* 18 BOTS GRID SECTION */
+        .bots-suite-section {
+            padding: 50px 0 70px;
+            border-top: 1px solid var(--border);
+        }
+
+        .section-header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .section-header h2 {
+            font-size: 2.3rem;
+            font-weight: 800;
+            letter-spacing: -1px;
+            margin-bottom: 12px;
+        }
+
+        .section-header p {
+            color: var(--text-muted);
+            max-width: 650px;
+            margin: 0 auto;
+        }
+
+        .bots-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(270px, 1fr));
+            gap: 18px;
+        }
+
+        .bot-card {
+            background: var(--bg-surface);
+            border: 1px solid var(--border);
+            border-radius: 10px;
+            padding: 20px;
+            text-decoration: none;
+            color: inherit;
+            transition: all 0.25s ease;
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .bot-card:hover {
+            border-color: var(--primary);
+            transform: translateY(-4px);
+            box-shadow: 0 12px 24px rgba(0, 0, 0, 0.4), 0 0 15px var(--primary-glow);
+            background: #151f33;
+        }
+
+        .bot-card-top {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-bottom: 12px;
+        }
+
+        .bot-card-title {
+            font-size: 1.1rem;
+            font-weight: 700;
+            color: var(--text-main);
+            margin-bottom: 4px;
+        }
+
+        .bot-card-id {
+            font-family: var(--font-code);
+            font-size: 0.8rem;
+            color: var(--primary);
+        }
+
+        .bot-category {
+            font-size: 0.72rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            padding: 3px 8px;
+            border-radius: 6px;
+            letter-spacing: 0.4px;
+        }
+
+        .cat-mmorpg { background: rgba(56, 189, 248, 0.15); color: #38bdf8; border: 1px solid rgba(56, 189, 248, 0.3); }
+        .cat-pokemon { background: rgba(239, 68, 68, 0.15); color: #f87171; border: 1px solid rgba(239, 68, 68, 0.3); }
+        .cat-miner { background: rgba(168, 85, 247, 0.15); color: #c084fc; border: 1px solid rgba(168, 85, 247, 0.3); }
+        .cat-core { background: rgba(34, 197, 94, 0.15); color: #4ade80; border: 1px solid rgba(34, 197, 94, 0.3); }
+
+        .bot-card-desc {
+            font-size: 0.85rem;
+            color: var(--text-muted);
+            margin-bottom: 16px;
+            line-height: 1.4;
+        }
+
+        .bot-card-footer {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 0.8rem;
+            border-top: 1px solid rgba(30, 41, 59, 0.7);
+            padding-top: 10px;
+        }
+
+        .bot-tag-nim {
+            font-family: var(--font-code);
+            color: var(--accent-amber);
+            font-weight: 600;
+        }
+
+        .bot-link-arrow {
+            color: var(--primary);
+            font-weight: 700;
+            transition: transform 0.2s;
+        }
+
+        .bot-card:hover .bot-link-arrow {
+            transform: translateX(3px);
         }
 
         /* Live Dashboard Simulation */
@@ -208,7 +333,7 @@
             border: 1px solid var(--border);
             border-radius: 12px;
             overflow: hidden;
-            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+            box-shadow: 0 20px 45px rgba(0, 0, 0, 0.5);
         }
 
         .window-header {
@@ -225,12 +350,7 @@
             gap: 6px;
         }
 
-        .dot {
-            width: 10px;
-            height: 10px;
-            border-radius: 50%;
-        }
-
+        .dot { width: 10px; height: 10px; border-radius: 50%; }
         .dot-red { background: #ef4444; }
         .dot-yellow { background: #f59e0b; }
         .dot-green { background: #22c55e; }
@@ -253,7 +373,7 @@
         }
 
         .metric-card {
-            background: rgba(15, 23, 42, 0.7);
+            background: rgba(15, 23, 42, 0.75);
             border: 1px solid var(--border);
             border-radius: 8px;
             padding: 16px;
@@ -296,26 +416,38 @@
             100% { transform: scale(0.95); opacity: 0.7; }
         }
 
+        .table-container {
+            max-height: 480px;
+            overflow-y: auto;
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            margin-bottom: 20px;
+            background: #0d1322;
+        }
+
         .accounts-table {
             width: 100%;
             border-collapse: collapse;
-            font-size: 0.9rem;
-            margin-bottom: 20px;
+            font-size: 0.88rem;
         }
 
         .accounts-table th {
             text-align: left;
-            padding: 10px 14px;
+            padding: 12px 14px;
             color: var(--text-muted);
+            background: #0a0f1d;
             border-bottom: 1px solid var(--border);
-            font-weight: 600;
-            font-size: 0.8rem;
+            font-weight: 700;
+            font-size: 0.75rem;
             text-transform: uppercase;
+            position: sticky;
+            top: 0;
+            z-index: 10;
         }
 
         .accounts-table td {
-            padding: 12px 14px;
-            border-bottom: 1px solid rgba(30, 41, 59, 0.6);
+            padding: 10px 14px;
+            border-bottom: 1px solid rgba(30, 41, 59, 0.5);
             font-family: var(--font-code);
         }
 
@@ -323,7 +455,7 @@
             display: inline-block;
             padding: 3px 8px;
             border-radius: 6px;
-            font-size: 0.75rem;
+            font-size: 0.72rem;
             font-weight: 700;
         }
 
@@ -338,7 +470,7 @@
             padding: 14px;
             font-family: var(--font-code);
             font-size: 0.8rem;
-            height: 160px;
+            height: 150px;
             overflow-y: auto;
             color: #38bdf8;
         }
@@ -353,24 +485,6 @@
         .features-section {
             padding: 60px 0;
             border-top: 1px solid var(--border);
-        }
-
-        .section-header {
-            text-align: center;
-            margin-bottom: 48px;
-        }
-
-        .section-header h2 {
-            font-size: 2.2rem;
-            font-weight: 800;
-            letter-spacing: -1px;
-            margin-bottom: 12px;
-        }
-
-        .section-header p {
-            color: var(--text-muted);
-            max-width: 600px;
-            margin: 0 auto;
         }
 
         .features-grid {
@@ -390,27 +504,13 @@
         .feature-card:hover {
             border-color: var(--primary);
             transform: translateY(-4px);
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
         }
 
-        .feature-icon {
-            font-size: 2rem;
-            margin-bottom: 16px;
-            display: inline-block;
-        }
+        .feature-icon { font-size: 2rem; margin-bottom: 16px; }
+        .feature-card h3 { font-size: 1.25rem; margin-bottom: 10px; font-weight: 700; }
+        .feature-card p { color: var(--text-muted); font-size: 0.95rem; }
 
-        .feature-card h3 {
-            font-size: 1.25rem;
-            margin-bottom: 10px;
-            font-weight: 700;
-        }
-
-        .feature-card p {
-            color: var(--text-muted);
-            font-size: 0.95rem;
-        }
-
-        /* Quick Start / Code */
+        /* Quick Start */
         .code-section {
             padding: 60px 0 80px;
             border-top: 1px solid var(--border);
@@ -420,12 +520,11 @@
             background: #050811;
             border: 1px solid var(--border);
             border-radius: 10px;
-            padding: 20px;
+            padding: 18px;
             font-family: var(--font-code);
             font-size: 0.9rem;
             color: #e2e8f0;
-            position: relative;
-            margin-top: 20px;
+            margin-top: 16px;
             overflow-x: auto;
         }
 
@@ -440,10 +539,7 @@
             font-size: 0.9rem;
         }
 
-        footer a {
-            color: var(--primary);
-            text-decoration: none;
-        }
+        footer a { color: var(--primary); text-decoration: none; }
     </style>
 </head>
 <body>
@@ -451,11 +547,13 @@
     <header>
         <div class="container nav-wrapper">
             <a href="#" class="logo">
-                <span>⚡</span> Nim Bot Template
+                <span>⚡</span> Nim Bot Suite
+                <span class="logo-tag">18 BOTS NATIVOS</span>
             </a>
             <div class="nav-links">
+                <a href="#suite" class="nav-link">Os 18 Bots</a>
+                <a href="#demo" class="nav-link">Telemetria (Live)</a>
                 <a href="#features" class="nav-link">Arquitetura</a>
-                <a href="#demo" class="nav-link">Dashboard Demo</a>
                 <a href="#quickstart" class="nav-link">Quickstart</a>
                 <a href="https://github.com/kbelludoo/bot-template-nim" target="_blank" class="btn-github">
                     <svg height="18" width="18" viewBox="0 0 16 16" fill="currentColor">
@@ -471,20 +569,319 @@
         <!-- Hero Section -->
         <section class="hero container">
             <div class="badge-pill">
-                <span>🛡️</span> Zero-GC ORC Model • Auto-Recovery Ativo
+                <span>🛡️</span> Zero-GC ORC Model • Auto-Recovery & Watchdog Ativos
             </div>
-            <h1>Motor Nativo Resiliente para Bots em Nim 2.2</h1>
+            <h1>Ecossistema de 18 Bots Nativos em Nim 2.2</h1>
             <p>
-                Template canônico para bots idle de alta performance. Execução assíncrona multi-conta, 
-                Worker Supervisor estilo Erlang/OTP, Circuit Breaker anti-ban e pacing orgânico humano.
+                Coleção mestre canônica de bots de alta performance para MMORPGs, Pokémon Idle, 
+                Stream Miners e Motores de Automação. 100% nativo com isolamento de falhas, 
+                supervisor de auto-recuperação e recuo exponencial.
             </p>
             <div class="hero-actions">
-                <a href="#quickstart" class="btn-primary">Começar Agora</a>
-                <a href="#demo" class="btn-secondary">Ver Dashboard em Tempo Real</a>
+                <a href="#suite" class="btn-primary">Explorar os 18 Bots</a>
+                <a href="#demo" class="btn-secondary">Ver Telemetria dos 18 Bots</a>
             </div>
         </section>
 
-        <!-- Live Dashboard Demo Section -->
+        <!-- 18 BOTS GRID -->
+        <section id="suite" class="bots-suite-section container">
+            <div class="section-header">
+                <h2>🌐 Suíte Completa: Os 18 Bots em Nim</h2>
+                <p>Todos os projetos desenvolvidos com a mesma base resiliente de alta velocidade e baixo consumo de memória.</p>
+            </div>
+
+            <div class="bots-grid">
+                <!-- 1. Baiak -->
+                <a href="https://github.com/kbelludoo/bot-baiak-nim" target="_blank" class="bot-card">
+                    <div class="bot-card-top">
+                        <div>
+                            <div class="bot-card-title">Baiak Idle MMORPG</div>
+                            <div class="bot-card-id">bot-baiak-nim</div>
+                        </div>
+                        <span class="bot-category cat-mmorpg">MMORPG</span>
+                    </div>
+                    <div class="bot-card-desc">Bot nativo com suporte a Colyseus StateSync, tRPC queries e auto-hunt com elementos.</div>
+                    <div class="bot-card-footer">
+                        <span class="bot-tag-nim">Nim 2.2 • Colyseus</span>
+                        <span class="bot-link-arrow">Ver Repo →</span>
+                    </div>
+                </a>
+
+                <!-- 2. Tibia Idle -->
+                <a href="https://github.com/kbelludoo/bot-tibiaidle-nim" target="_blank" class="bot-card">
+                    <div class="bot-card-top">
+                        <div>
+                            <div class="bot-card-title">Tibia Idle</div>
+                            <div class="bot-card-id">bot-tibiaidle-nim</div>
+                        </div>
+                        <span class="bot-category cat-mmorpg">MMORPG</span>
+                    </div>
+                    <div class="bot-card-desc">Engine assíncrona de caça com pacing orgânico, venda automática e rotação de spots.</div>
+                    <div class="bot-card-footer">
+                        <span class="bot-tag-nim">Nim 2.2 • ORC</span>
+                        <span class="bot-link-arrow">Ver Repo →</span>
+                    </div>
+                </a>
+
+                <!-- 3. PokeIdle -->
+                <a href="https://github.com/kbelludoo/bot-pokeidle-nim" target="_blank" class="bot-card">
+                    <div class="bot-card-top">
+                        <div>
+                            <div class="bot-card-title">PokeIdle Auto-Catch</div>
+                            <div class="bot-card-id">bot-pokeidle-nim</div>
+                        </div>
+                        <span class="bot-category cat-pokemon">POKÉMON</span>
+                    </div>
+                    <div class="bot-card-desc">Batalhas automáticas de monstrinhos, arremesso inteligente de pokébolas e auto-heal.</div>
+                    <div class="bot-card-footer">
+                        <span class="bot-tag-nim">Nim 2.2 • Fast Loop</span>
+                        <span class="bot-link-arrow">Ver Repo →</span>
+                    </div>
+                </a>
+
+                <!-- 4. PokeIdle World -->
+                <a href="https://github.com/kbelludoo/bot-pokeidleworld-nim" target="_blank" class="bot-card">
+                    <div class="bot-card-top">
+                        <div>
+                            <div class="bot-card-title">PokeIdle World</div>
+                            <div class="bot-card-id">bot-pokeidleworld-nim</div>
+                        </div>
+                        <span class="bot-category cat-pokemon">POKÉMON</span>
+                    </div>
+                    <div class="bot-card-desc">Farmer multi-zonas com exploração de mapas, ginásios e evolução automatizada.</div>
+                    <div class="bot-card-footer">
+                        <span class="bot-tag-nim">Nim 2.2 • Multi-Zone</span>
+                        <span class="bot-link-arrow">Ver Repo →</span>
+                    </div>
+                </a>
+
+                <!-- 5. PokeLegacy -->
+                <a href="https://github.com/kbelludoo/bot-pokelegacy-nim" target="_blank" class="bot-card">
+                    <div class="bot-card-top">
+                        <div>
+                            <div class="bot-card-title">PokeLegacy Engine</div>
+                            <div class="bot-card-id">bot-pokelegacy-nim</div>
+                        </div>
+                        <span class="bot-category cat-pokemon">POKÉMON</span>
+                    </div>
+                    <div class="bot-card-desc">Motor com simulação de combate por turnos, switch de pokémons por fraqueza e farm contínuo.</div>
+                    <div class="bot-card-footer">
+                        <span class="bot-tag-nim">Nim 2.2 • Turn-Based</span>
+                        <span class="bot-link-arrow">Ver Repo →</span>
+                    </div>
+                </a>
+
+                <!-- 6. PokePixel -->
+                <a href="https://github.com/kbelludoo/bot-pokepixel-nim" target="_blank" class="bot-card">
+                    <div class="bot-card-top">
+                        <div>
+                            <div class="bot-card-title">PokePixel Runner</div>
+                            <div class="bot-card-id">bot-pokepixel-nim</div>
+                        </div>
+                        <span class="bot-category cat-pokemon">POKÉMON</span>
+                    </div>
+                    <div class="bot-card-desc">Navegação em grade pixelada com detecção de encontros raros e shinies.</div>
+                    <div class="bot-card-footer">
+                        <span class="bot-tag-nim">Nim 2.2 • Grid Map</span>
+                        <span class="bot-link-arrow">Ver Repo →</span>
+                    </div>
+                </a>
+
+                <!-- 7. PokeTrue -->
+                <a href="https://github.com/kbelludoo/bot-poketrue-nim" target="_blank" class="bot-card">
+                    <div class="bot-card-top">
+                        <div>
+                            <div class="bot-card-title">PokeTrue Battler</div>
+                            <div class="bot-card-id">bot-poketrue-nim</div>
+                        </div>
+                        <span class="bot-category cat-pokemon">POKÉMON</span>
+                    </div>
+                    <div class="bot-card-desc">Auto-battler rápido focado em eventos sazonais e duelos de arena competitivos.</div>
+                    <div class="bot-card-footer">
+                        <span class="bot-tag-nim">Nim 2.2 • PvP Arena</span>
+                        <span class="bot-link-arrow">Ver Repo →</span>
+                    </div>
+                </a>
+
+                <!-- 8. Huntera -->
+                <a href="https://github.com/kbelludoo/bot-huntera-nim" target="_blank" class="bot-card">
+                    <div class="bot-card-top">
+                        <div>
+                            <div class="bot-card-title">Huntera Idle Engine</div>
+                            <div class="bot-card-id">bot-huntera-nim</div>
+                        </div>
+                        <span class="bot-category cat-mmorpg">MMORPG</span>
+                    </div>
+                    <div class="bot-card-desc">Automação de dungeons, caçadas cooperativas de clã e upgrade de talentos.</div>
+                    <div class="bot-card-footer">
+                        <span class="bot-tag-nim">Nim 2.2 • Dungeon</span>
+                        <span class="bot-link-arrow">Ver Repo →</span>
+                    </div>
+                </a>
+
+                <!-- 9. LoL Idle -->
+                <a href="https://github.com/kbelludoo/bot-lolidle-nim" target="_blank" class="bot-card">
+                    <div class="bot-card-top">
+                        <div>
+                            <div class="bot-card-title">LoL Idle Battle</div>
+                            <div class="bot-card-id">bot-lolidle-nim</div>
+                        </div>
+                        <span class="bot-category cat-mmorpg">IDLE</span>
+                    </div>
+                    <div class="bot-card-desc">Simulação estratégica de campeões, escalonamento de itens e vitórias em lanes.</div>
+                    <div class="bot-card-footer">
+                        <span class="bot-tag-nim">Nim 2.2 • Strategy</span>
+                        <span class="bot-link-arrow">Ver Repo →</span>
+                    </div>
+                </a>
+
+                <!-- 10. Lux Idle -->
+                <a href="https://github.com/kbelludoo/bot-luxidle-nim" target="_blank" class="bot-card">
+                    <div class="bot-card-top">
+                        <div>
+                            <div class="bot-card-title">Lux Idle Automation</div>
+                            <div class="bot-card-id">bot-luxidle-nim</div>
+                        </div>
+                        <span class="bot-category cat-mmorpg">IDLE</span>
+                    </div>
+                    <div class="bot-card-desc">Mineração de cristais de luz, crafting automático e avanço exponencial de andares.</div>
+                    <div class="bot-card-footer">
+                        <span class="bot-tag-nim">Nim 2.2 • Idle Core</span>
+                        <span class="bot-link-arrow">Ver Repo →</span>
+                    </div>
+                </a>
+
+                <!-- 11. FarmBot -->
+                <a href="https://github.com/kbelludoo/bot-farmbot-nim" target="_blank" class="bot-card">
+                    <div class="bot-card-top">
+                        <div>
+                            <div class="bot-card-title">FarmBot Automation</div>
+                            <div class="bot-card-id">bot-farmbot-nim</div>
+                        </div>
+                        <span class="bot-category cat-core">FARMING</span>
+                    </div>
+                    <div class="bot-card-desc">Loop de plantio, colheita cronometrada e gerenciamento automático de celeiro.</div>
+                    <div class="bot-card-footer">
+                        <span class="bot-tag-nim">Nim 2.2 • Timers</span>
+                        <span class="bot-link-arrow">Ver Repo →</span>
+                    </div>
+                </a>
+
+                <!-- 12. Leveling Bot -->
+                <a href="https://github.com/kbelludoo/bot-leveling-nim" target="_blank" class="bot-card">
+                    <div class="bot-card-top">
+                        <div>
+                            <div class="bot-card-title">Leveling Optimizer</div>
+                            <div class="bot-card-id">bot-leveling-nim</div>
+                        </div>
+                        <span class="bot-category cat-core">POWER LEVEL</span>
+                    </div>
+                    <div class="bot-card-desc">Algoritmo guloso para maximização de EXP/hora e cálculo dinâmico de eficiência.</div>
+                    <div class="bot-card-footer">
+                        <span class="bot-tag-nim">Nim 2.2 • Analytics</span>
+                        <span class="bot-link-arrow">Ver Repo →</span>
+                    </div>
+                </a>
+
+                <!-- 13. Kick Miner -->
+                <a href="https://github.com/kbelludoo/bot-kickminer-nim" target="_blank" class="bot-card">
+                    <div class="bot-card-top">
+                        <div>
+                            <div class="bot-card-title">Kick Miner Drops</div>
+                            <div class="bot-card-id">bot-kickminer-nim</div>
+                        </div>
+                        <span class="bot-category cat-miner">STREAM</span>
+                    </div>
+                    <div class="bot-card-desc">Coleta de recompensas, drops e monitoramento de streams no Kick via WebSocket.</div>
+                    <div class="bot-card-footer">
+                        <span class="bot-tag-nim">Nim 2.2 • WebSocket</span>
+                        <span class="bot-link-arrow">Ver Repo →</span>
+                    </div>
+                </a>
+
+                <!-- 14. Twitch Miner -->
+                <a href="https://github.com/kbelludoo/bot-twitchminer-nim" target="_blank" class="bot-card">
+                    <div class="bot-card-top">
+                        <div>
+                            <div class="bot-card-title">Twitch Miner Points</div>
+                            <div class="bot-card-id">bot-twitchminer-nim</div>
+                        </div>
+                        <span class="bot-category cat-miner">STREAM</span>
+                    </div>
+                    <div class="bot-card-desc">Mineração de Channel Points na Twitch com resgate automático de baús e watch-time.</div>
+                    <div class="bot-card-footer">
+                        <span class="bot-tag-nim">Nim 2.2 • GQL/PubSub</span>
+                        <span class="bot-link-arrow">Ver Repo →</span>
+                    </div>
+                </a>
+
+                <!-- 15. Lichess Bot -->
+                <a href="https://github.com/kbelludoo/bot-lichess-nim" target="_blank" class="bot-card">
+                    <div class="bot-card-top">
+                        <div>
+                            <div class="bot-card-title">Lichess Chess Engine</div>
+                            <div class="bot-card-id">bot-lichess-nim</div>
+                        </div>
+                        <span class="bot-category cat-core">CHESS</span>
+                    </div>
+                    <div class="bot-card-desc">Conexão à Lichess Bot API com cálculo minimax, suporte a aberturas e timing adaptativo.</div>
+                    <div class="bot-card-footer">
+                        <span class="bot-tag-nim">Nim 2.2 • NDJSON</span>
+                        <span class="bot-link-arrow">Ver Repo →</span>
+                    </div>
+                </a>
+
+                <!-- 16. Restream Bot -->
+                <a href="https://github.com/kbelludoo/bot-restream-nim" target="_blank" class="bot-card">
+                    <div class="bot-card-top">
+                        <div>
+                            <div class="bot-card-title">Restream Automation</div>
+                            <div class="bot-card-id">bot-restream-nim</div>
+                        </div>
+                        <span class="bot-category cat-miner">STREAM</span>
+                    </div>
+                    <div class="bot-card-desc">Orquestração e chaveamento de streams com healthcheck contínuo de canais.</div>
+                    <div class="bot-card-footer">
+                        <span class="bot-tag-nim">Nim 2.2 • RTMP/API</span>
+                        <span class="bot-link-arrow">Ver Repo →</span>
+                    </div>
+                </a>
+
+                <!-- 17. Sigma Bot -->
+                <a href="https://github.com/kbelludoo/bot-sigma-nim" target="_blank" class="bot-card">
+                    <div class="bot-card-top">
+                        <div>
+                            <div class="bot-card-title">Sigma Engine Worker</div>
+                            <div class="bot-card-id">bot-sigma-nim</div>
+                        </div>
+                        <span class="bot-category cat-core">SIGMA</span>
+                    </div>
+                    <div class="bot-card-desc">Worker assíncrono ultra-veloz de polling e submissão transacional com zero jitter.</div>
+                    <div class="bot-card-footer">
+                        <span class="bot-tag-nim">Nim 2.2 • High TPS</span>
+                        <span class="bot-link-arrow">Ver Repo →</span>
+                    </div>
+                </a>
+
+                <!-- 18. Template Master -->
+                <a href="https://github.com/kbelludoo/bot-template-nim" target="_blank" class="bot-card" style="border-color: var(--primary);">
+                    <div class="bot-card-top">
+                        <div>
+                            <div class="bot-card-title">Template Master Engine ⭐</div>
+                            <div class="bot-card-id">bot-template-nim</div>
+                        </div>
+                        <span class="bot-category cat-core" style="background:rgba(56,189,248,0.2);">CANÔNICO</span>
+                    </div>
+                    <div class="bot-card-desc">O template base que alimenta toda a suíte: Worker Supervisor, Auto-Recovery e Watchdog.</div>
+                    <div class="bot-card-footer">
+                        <span class="bot-tag-nim">Nim 2.2 • Supervisor</span>
+                        <span class="bot-link-arrow">Ver Repo →</span>
+                    </div>
+                </a>
+            </div>
+        </section>
+
+        <!-- Live Dashboard Simulation (18 Bots Ativos) -->
         <section id="demo" class="dashboard-section container">
             <div class="dashboard-window">
                 <div class="window-header">
@@ -493,53 +890,57 @@
                         <div class="dot dot-yellow"></div>
                         <div class="dot dot-green"></div>
                     </div>
-                    <div class="window-title">http://localhost:3099/api/status • Live Telemetry Stream</div>
+                    <div class="window-title">http://localhost:3099/api/status • 18 Bots Conectados ao Supervisor</div>
                     <div style="width: 40px;"></div>
                 </div>
                 <div class="dashboard-content">
                     <div class="metrics-grid">
                         <div class="metric-card">
-                            <div class="metric-label">Status do Sistema</div>
+                            <div class="metric-label">Status Global</div>
                             <div class="metric-value status-live">
-                                <span class="pulse-dot"></span> ONLINE
+                                <span class="pulse-dot"></span> 18 ONLINE
                             </div>
                         </div>
                         <div class="metric-card">
-                            <div class="metric-label">Memória RAM</div>
-                            <div class="metric-value" id="val-ram">4.12 MB</div>
+                            <div class="metric-label">Memória RAM Total</div>
+                            <div class="metric-value" id="val-ram">4.35 MB</div>
                         </div>
                         <div class="metric-card">
                             <div class="metric-label">Uptime do Motor</div>
-                            <div class="metric-value" id="val-uptime">00:04:12</div>
+                            <div class="metric-value" id="val-uptime">00:08:45</div>
                         </div>
                         <div class="metric-card">
-                            <div class="metric-label">Recuperações (Restarts)</div>
+                            <div class="metric-label">Auto-Recoveries Globais</div>
                             <div class="metric-value" style="color: var(--accent-amber);" id="val-restarts">0</div>
                         </div>
                     </div>
 
-                    <table class="accounts-table">
-                        <thead>
-                            <tr>
-                                <th>Conta</th>
-                                <th>Status</th>
-                                <th>Nível</th>
-                                <th>Kills</th>
-                                <th>Gold</th>
-                                <th>Auto-Restarts</th>
-                                <th>Último Pulso</th>
-                            </tr>
-                        </thead>
-                        <tbody id="accounts-tbody">
-                            <!-- Inserido dinamicamente via JS -->
-                        </tbody>
-                    </table>
+                    <div class="table-container">
+                        <table class="accounts-table">
+                            <thead>
+                                <tr>
+                                    <th>#</th>
+                                    <th>Bot ID</th>
+                                    <th>Nome do Bot</th>
+                                    <th>Status</th>
+                                    <th>Nível</th>
+                                    <th>Kills / Ações</th>
+                                    <th>Ouro / Recompensa</th>
+                                    <th>Restarts</th>
+                                    <th>Heartbeat</th>
+                                </tr>
+                            </thead>
+                            <tbody id="accounts-tbody">
+                                <!-- Preenchido dinamicamente com os 18 bots -->
+                            </tbody>
+                        </table>
+                    </div>
 
                     <div style="margin-bottom: 8px; font-weight: 700; font-size: 0.85rem; color: var(--text-muted);">
-                        TERMINAL DE TELEMETRIA & AUTO-RECOVERY LOGS:
+                        CONSOLE DE TELEMETRIA EM TEMPO REAL & AUTO-RECOVERY LOGS:
                     </div>
                     <div class="log-terminal" id="term-logs">
-                        <!-- Logs em tempo real -->
+                        <!-- Logs dinâmicos -->
                     </div>
                 </div>
             </div>
@@ -548,45 +949,45 @@
         <!-- Features Section -->
         <section id="features" class="features-section container">
             <div class="section-header">
-                <h2>Engenharia de Alta Resiliência</h2>
-                <p>Criado para operar 24/7 em VPS com consumo mínimo de recursos e proteção contínua contra bloqueios.</p>
+                <h2>Arquitetura Canônica de Alta Resiliência</h2>
+                <p>Projetada para rodar 24/7 sem interrupções humanas e consumindo menos de 5MB por processo.</p>
             </div>
 
             <div class="features-grid">
                 <div class="feature-card">
                     <div class="feature-icon">🔄</div>
-                    <h3>Worker Supervisor (Auto-Recovery)</h3>
-                    <p>Padrão Erlang/OTP onde tarefas de cada conta são isoladas. Exceções transitórias ou falhas críticas são contidas e a rotina é reiniciada com backoff exponencial e jitter.</p>
+                    <h3>Worker Supervisor com Auto-Recovery</h3>
+                    <p>Cada um dos 18 bots roda isolado em uma corrotina assíncrona supervisionada. Exceções não derrubam o motor: o supervisor aplica backoff exponencial com jitter e restaura o bot automaticamente.</p>
                 </div>
 
                 <div class="feature-card">
                     <div class="feature-icon">🛡️</div>
                     <h3>Watchdog Anti-Congelamento</h3>
-                    <p>Monitor global em background que acompanha o batimento cardíaco (heartbeat) de cada conta, detectando sockets congelados ou chamadas sem timeout em menos de 45s.</p>
+                    <p>Loop em background verifica o timestamp de batimento cardíaco (heartbeat) de todos os bots a cada 10s. Se um socket ficar preso por mais de 45s, o watchdog sinaliza travamento e dispara recuperação.</p>
                 </div>
 
                 <div class="feature-card">
                     <div class="feature-icon">⚡</div>
                     <h3>Circuit Breaker Adaptativo</h3>
-                    <p>Detecta falhas consecutivas de rede e desarma automaticamente a conta por intervalos crescentes (5m a 1h), evitando bloqueio de IP ou captcha contínuo.</p>
+                    <p>Detecta instabilidades de rede na API remota e desarma a conta por intervalos progressivos (5m até 1h), evitando detecções de spam ou bloqueios de IP na VPS.</p>
                 </div>
 
                 <div class="feature-card">
                     <div class="feature-icon">🎯</div>
-                    <h3>Pacing Orgânico & Anti-Detecção</h3>
-                    <p>Variação gaussiana ($\pm 20\%$) nos intervalos de ação e latência humana calculada (300ms a 650ms), eliminando padrões mecânicos de clique.</p>
+                    <h3>Pacing Orgânico Humano</h3>
+                    <p>Variação gaussiana ($\pm 20\%$) e intervalos aleatórios de latência (300ms a 650ms), reproduzindo o comportamento de um usuário real.</p>
                 </div>
 
                 <div class="feature-card">
                     <div class="feature-icon">🚀</div>
-                    <h3>Zero-GC ARC/ORC em Nim</h3>
-                    <p>Pegada de memória abaixo de 5MB, sem pausas de Garbage Collector e compilado como binário ELF estático nativo para Linux x86_64.</p>
+                    <h3>Compilação Cruzada Zig para Linux</h3>
+                    <p>Geração de binários estáticos x86_64 limpos direto do Windows para execução instantânea em qualquer VPS Ubuntu, Debian ou Alpine.</p>
                 </div>
 
                 <div class="feature-card">
                     <div class="feature-icon">🌐</div>
-                    <h3>Telemetria HTTP Integrada</h3>
-                    <p>Servidor HTTP assíncrono nativo embutido com endpoints JSON rápidos (`/api/status`) e dashboard web pronto para integração com Prometheus ou Grafana.</p>
+                    <h3>Dashboard & Telemetria JSON</h3>
+                    <p>Servidor HTTP embutido expondo status e métricas em `/api/status`, pronto para monitoramento em tempo real ou scraping com Prometheus.</p>
                 </div>
             </div>
         </section>
@@ -594,19 +995,19 @@
         <!-- Quick Start Section -->
         <section id="quickstart" class="code-section container">
             <div class="section-header">
-                <h2>Como Usar</h2>
-                <p>Construído para compilação local ou cruzada imediata para Linux via Zig.</p>
+                <h2>Como Usar e Compilar</h2>
+                <p>Comandos rápidos para compilar e implantar em produção.</p>
             </div>
 
             <h3>1. Compilação Cruzada para Linux (x86_64 via Zig)</h3>
             <div class="code-box">
-<span class="code-comment"># Compilação estática ultra-otimizada diretamente do Windows</span>
+<span class="code-comment"># Compilação nativa para Linux direto do Windows com Zig</span>
 <span class="code-cmd">nim c --os:linux --cpu:amd64 --gcc.exe:zigcc-linux-gnu.bat --gcc.linkerexe:zigcc-linux-gnu.bat -d:ssl -d:release -o:bot-template-linux-nim main.nim</span>
             </div>
 
             <h3 style="margin-top: 32px;">2. Execução com Auto-Recovery no Linux (systemd)</h3>
             <div class="code-box">
-<span class="code-comment"># Instalação do serviço de auto-reinício contínuo</span>
+<span class="code-comment"># Instalação do serviço de auto-reinício contínuo no sistema operacional</span>
 sudo cp nim-bot.service /etc/systemd/system/
 sudo systemctl daemon-reload
 sudo systemctl enable --now nim-bot
@@ -616,20 +1017,35 @@ sudo systemctl enable --now nim-bot
 
     <footer>
         <div class="container">
-            <p>Desenvolvido em <strong>Nim 2.2</strong> • Licença MIT • Repositório no <a href="https://github.com/kbelludoo/bot-template-nim">GitHub</a></p>
+            <p>Desenvolvido em <strong>Nim 2.2</strong> • Suíte de 18 Bots Nativos • <a href="https://github.com/kbelludoo/bot-template-nim">GitHub</a></p>
         </div>
     </footer>
 
     <script>
-        // Simulador em tempo real da Telemetria do Bot
-        let uptimeSec = 252;
-        let totalRestarts = 0;
-        let accounts = [
-            { id: "acc-warrior", name: "Kbell Warrior", status: "hunting", level: 42, kills: 1420, gold: 35500, restarts: 0, lastHeartbeat: "Agora" },
-            { id: "acc-mage", name: "Frost Sorceress", status: "hunting", level: 38, kills: 980, gold: 24500, restarts: 0, lastHeartbeat: "Agora" },
-            { id: "acc-paladin", name: "Solar Knight", status: "circuit_open", level: 29, kills: 610, gold: 15250, restarts: 1, lastHeartbeat: "Há 4s" }
+        // Lista completa dos 18 Bots Nativos em Nim
+        const botsList = [
+            { id: "bot-baiak-nim", name: "Baiak Idle MMORPG", status: "hunting", level: 64, kills: 3820, gold: 95500, restarts: 0 },
+            { id: "bot-tibiaidle-nim", name: "Tibia Idle MMORPG", status: "hunting", level: 52, kills: 2410, gold: 60250, restarts: 0 },
+            { id: "bot-pokeidle-nim", name: "PokeIdle Auto-Catch", status: "hunting", level: 41, kills: 1850, gold: 46250, restarts: 0 },
+            { id: "bot-pokeidleworld-nim", name: "PokeIdle World", status: "hunting", level: 47, kills: 2100, gold: 52500, restarts: 0 },
+            { id: "bot-pokelegacy-nim", name: "PokeLegacy Engine", status: "hunting", level: 35, kills: 1320, gold: 33000, restarts: 0 },
+            { id: "bot-pokepixel-nim", name: "PokePixel Runner", status: "hunting", level: 29, kills: 980, gold: 24500, restarts: 0 },
+            { id: "bot-poketrue-nim", name: "PokeTrue Battler", status: "hunting", level: 33, kills: 1140, gold: 28500, restarts: 0 },
+            { id: "bot-huntera-nim", name: "Huntera Idle Engine", status: "hunting", level: 45, kills: 1990, gold: 49750, restarts: 0 },
+            { id: "bot-lolidle-nim", name: "LoL Idle Battle", status: "hunting", level: 39, kills: 1600, gold: 40000, restarts: 0 },
+            { id: "bot-luxidle-nim", name: "Lux Idle Automation", status: "hunting", level: 28, kills: 850, gold: 21250, restarts: 0 },
+            { id: "bot-farmbot-nim", name: "FarmBot Automation", status: "hunting", level: 31, kills: 1020, gold: 25500, restarts: 0 },
+            { id: "bot-leveling-nim", name: "Leveling Optimizer", status: "hunting", level: 58, kills: 3100, gold: 77500, restarts: 0 },
+            { id: "bot-kickminer-nim", name: "Kick Miner Drops", status: "hunting", level: 22, kills: 620, gold: 15500, restarts: 0 },
+            { id: "bot-twitchminer-nim", name: "Twitch Miner Points", status: "hunting", level: 24, kills: 740, gold: 18500, restarts: 0 },
+            { id: "bot-lichess-nim", name: "Lichess Chess Engine", status: "hunting", level: 19, kills: 480, gold: 12000, restarts: 0 },
+            { id: "bot-restream-nim", name: "Restream Automation", status: "hunting", level: 18, kills: 420, gold: 10500, restarts: 0 },
+            { id: "bot-sigma-nim", name: "Sigma Engine Worker", status: "hunting", level: 50, kills: 2750, gold: 68750, restarts: 0 },
+            { id: "bot-template-nim", name: "Template Master Engine", status: "hunting", level: 70, kills: 4500, gold: 112500, restarts: 0 }
         ];
 
+        let uptimeSec = 525;
+        let totalRestarts = 0;
         const logTerm = document.getElementById("term-logs");
 
         function addLog(msg, type = "") {
@@ -641,36 +1057,38 @@ sudo systemctl enable --now nim-bot
             logTerm.scrollTop = logTerm.scrollHeight;
         }
 
-        addLog("Motor Nim 2.2 ORC inicializado com sucesso.");
-        addLog("Supervisor multi-conta ativo (3 workers registrados).");
-        addLog("Monitor Watchdog iniciado (limiar: 45s).");
-        addLog("Conta 'acc-paladin' entrou em Circuit Open devido a instabilidade na API.", "log-warn");
+        addLog("⚡ [Engine] Motor Nim 2.2 ORC inicializado.");
+        addLog("🚀 [Supervisor] 18 workers carregados e ativos em paralelo.");
+        addLog("🛡️ [Watchdog] Monitor de travamento ativo (limiar: 45s).");
+        addLog("🌐 [HTTP] Dashboard & API online em http://0.0.0.0:3099/api/status");
 
-        function renderAccounts() {
+        function renderTable() {
             const tbody = document.getElementById("accounts-tbody");
             tbody.innerHTML = "";
-            accounts.forEach(a => {
+            botsList.forEach((b, idx) => {
                 let statusClass = "tag-hunting";
-                if (a.status === "recovering") statusClass = "tag-recovering";
-                if (a.status === "circuit_open") statusClass = "tag-circuit";
+                if (b.status === "recovering") statusClass = "tag-recovering";
+                if (b.status === "circuit_open") statusClass = "tag-circuit";
 
                 const tr = document.createElement("tr");
                 tr.innerHTML = `
-                    <td><strong>${a.name}</strong> <span style="color:var(--text-muted); font-size:0.8rem;">(${a.id})</span></td>
-                    <td><span class="tag-status ${statusClass}">${a.status.toUpperCase()}</span></td>
-                    <td>Lv. ${a.level}</td>
-                    <td>${a.kills.toLocaleString()}</td>
-                    <td>${a.gold.toLocaleString()} G</td>
-                    <td style="color:${a.restarts > 0 ? 'var(--accent-amber)' : 'inherit'}; font-weight:bold;">${a.restarts}</td>
-                    <td><span style="color:#22c55e;">●</span> ${a.lastHeartbeat}</td>
+                    <td style="color:var(--text-muted);">${idx + 1}</td>
+                    <td><a href="https://github.com/kbelludoo/${b.id}" target="_blank" style="color:var(--primary); text-decoration:none; font-weight:600;">${b.id}</a></td>
+                    <td><strong>${b.name}</strong></td>
+                    <td><span class="tag-status ${statusClass}">${b.status.toUpperCase()}</span></td>
+                    <td>Lv. ${b.level}</td>
+                    <td>${b.kills.toLocaleString()}</td>
+                    <td>${b.gold.toLocaleString()} G</td>
+                    <td style="color:${b.restarts > 0 ? 'var(--accent-amber)' : 'inherit'}; font-weight:bold;">${b.restarts}</td>
+                    <td><span style="color:#22c55e;">●</span> Agora</td>
                 `;
                 tbody.appendChild(tr);
             });
         }
 
-        renderAccounts();
+        renderTable();
 
-        // Loop de simulação visual de telemetria
+        // Loop de simulação visual contínua
         setInterval(() => {
             uptimeSec++;
             const hrs = String(Math.floor(uptimeSec / 3600)).padStart(2, '0');
@@ -678,34 +1096,33 @@ sudo systemctl enable --now nim-bot
             const secs = String(uptimeSec % 60).padStart(2, '0');
             document.getElementById("val-uptime").innerText = `${hrs}:${mins}:${secs}`;
 
-            // Incrementa progresso das contas ativas
-            accounts.forEach(a => {
-                if (a.status === "hunting") {
-                    a.kills += Math.floor(Math.random() * 2);
-                    a.gold += Math.floor(Math.random() * 25);
+            botsList.forEach(b => {
+                if (b.status === "hunting") {
+                    b.kills += Math.floor(Math.random() * 2);
+                    b.gold += Math.floor(Math.random() * 25);
                 }
             });
-            renderAccounts();
+            renderTable();
         }, 1500);
 
-        // Simulação aleatória de Auto-Recovery para demonstração
+        // Simulação aleatória de Auto-Recovery com um dos 18 bots
         setInterval(() => {
-            const target = accounts[Math.floor(Math.random() * accounts.length)];
-            if (target.status === "hunting" && Math.random() < 0.3) {
+            const target = botsList[Math.floor(Math.random() * botsList.length)];
+            if (target.status === "hunting" && Math.random() < 0.35) {
                 target.status = "recovering";
                 target.restarts++;
                 totalRestarts++;
                 document.getElementById("val-restarts").innerText = totalRestarts;
-                addLog(`⚠️ [Supervisor] Falha de socket simulada na conta ${target.id}. Disparando Auto-Recovery...`, "log-err");
-                renderAccounts();
+                addLog(`⚠️ [Supervisor] Falha de conexão simulada em '${target.id}'. Disparando Auto-Recovery...`, "log-err");
+                renderTable();
 
                 setTimeout(() => {
                     target.status = "hunting";
-                    addLog(`🔄 [Auto-Recovery] Conta ${target.id} restabelecida e reconectada com sucesso!`, "log-recovery");
-                    renderAccounts();
-                }, 4000);
+                    addLog(`🔄 [Auto-Recovery] '${target.id}' restabelecido e reconectado com sucesso! (Backoff concluído)`, "log-recovery");
+                    renderTable();
+                }, 3500);
             }
-        }, 12000);
+        }, 10000);
     </script>
 </body>
 </html>

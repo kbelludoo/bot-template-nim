@@ -1,28 +1,110 @@
 [
   {
-    "id": "acc-1",
-    "name": "Personagem Exemplo",
+    "id": "bot-baiak-nim",
+    "name": "Baiak Idle MMORPG",
     "enabled": true,
-    "bindIP": "",
-    "proxy": "",
-    "credentials": {
-      "email": "user@example.com",
-      "password": "secret_password",
-      "token": "bearer_jwt_token_here",
-      "sessionCookie": "session_cookie_here",
-      "origin": "https://example-game.com"
-    },
-    "settings": {
-      "huntTarget": "forest-1",
-      "autoHunt": true,
-      "autoSell": true,
-      "autoHeal": true,
-      "autoUpgrade": true,
-      "autoDaily": true,
-      "autoChests": true,
-      "autoParty": true,
-      "partyLeader": "LeaderName",
-      "killRate": 1.0
-    }
+    "settings": { "huntTarget": "demon-oak", "autoHunt": true, "autoSell": true, "autoHeal": true, "autoUpgrade": true, "killRate": 1.0 }
+  },
+  {
+    "id": "bot-farmbot-nim",
+    "name": "Farm Bot Automation",
+    "enabled": true,
+    "settings": { "huntTarget": "crop-fields", "autoHunt": true, "autoSell": true, "autoHeal": true, "autoUpgrade": true, "killRate": 1.0 }
+  },
+  {
+    "id": "bot-huntera-nim",
+    "name": "Huntera Idle Engine",
+    "enabled": true,
+    "settings": { "huntTarget": "cavern-zone", "autoHunt": true, "autoSell": true, "autoHeal": true, "autoUpgrade": true, "killRate": 1.0 }
+  },
+  {
+    "id": "bot-kickminer-nim",
+    "name": "Kick Miner Drops",
+    "enabled": true,
+    "settings": { "huntTarget": "channels", "autoHunt": true, "autoSell": false, "autoHeal": true, "autoUpgrade": true, "killRate": 1.0 }
+  },
+  {
+    "id": "bot-leveling-nim",
+    "name": "Leveling Optimizer",
+    "enabled": true,
+    "settings": { "huntTarget": "dungeon-exp", "autoHunt": true, "autoSell": true, "autoHeal": true, "autoUpgrade": true, "killRate": 1.0 }
+  },
+  {
+    "id": "bot-lichess-nim",
+    "name": "Lichess Chess Engine",
+    "enabled": true,
+    "settings": { "huntTarget": "blitz-arena", "autoHunt": true, "autoSell": false, "autoHeal": false, "autoUpgrade": false, "killRate": 1.0 }
+  },
+  {
+    "id": "bot-lolidle-nim",
+    "name": "LoL Idle Battle",
+    "enabled": true,
+    "settings": { "huntTarget": "summoners-rift", "autoHunt": true, "autoSell": true, "autoHeal": true, "autoUpgrade": true, "killRate": 1.0 }
+  },
+  {
+    "id": "bot-luxidle-nim",
+    "name": "Lux Idle Automation",
+    "enabled": true,
+    "settings": { "huntTarget": "crystal-mine", "autoHunt": true, "autoSell": true, "autoHeal": true, "autoUpgrade": true, "killRate": 1.0 }
+  },
+  {
+    "id": "bot-pokeidle-nim",
+    "name": "PokeIdle Auto-Catch",
+    "enabled": true,
+    "settings": { "huntTarget": "safari-route-1", "autoHunt": true, "autoSell": true, "autoHeal": true, "autoUpgrade": true, "killRate": 1.0 }
+  },
+  {
+    "id": "bot-pokeidleworld-nim",
+    "name": "PokeIdle World",
+    "enabled": true,
+    "settings": { "huntTarget": "indigo-plateau", "autoHunt": true, "autoSell": true, "autoHeal": true, "autoUpgrade": true, "killRate": 1.0 }
+  },
+  {
+    "id": "bot-pokelegacy-nim",
+    "name": "PokeLegacy Engine",
+    "enabled": true,
+    "settings": { "huntTarget": "victory-road", "autoHunt": true, "autoSell": true, "autoHeal": true, "autoUpgrade": true, "killRate": 1.0 }
+  },
+  {
+    "id": "bot-pokepixel-nim",
+    "name": "PokePixel Runner",
+    "enabled": true,
+    "settings": { "huntTarget": "pixel-forest", "autoHunt": true, "autoSell": true, "autoHeal": true, "autoUpgrade": true, "killRate": 1.0 }
+  },
+  {
+    "id": "bot-poketrue-nim",
+    "name": "PokeTrue Battler",
+    "enabled": true,
+    "settings": { "huntTarget": "battle-frontier", "autoHunt": true, "autoSell": true, "autoHeal": true, "autoUpgrade": true, "killRate": 1.0 }
+  },
+  {
+    "id": "bot-restream-nim",
+    "name": "Restream Multi-Stream",
+    "enabled": true,
+    "settings": { "huntTarget": "live-encoder", "autoHunt": true, "autoSell": false, "autoHeal": true, "autoUpgrade": true, "killRate": 1.0 }
+  },
+  {
+    "id": "bot-sigma-nim",
+    "name": "Sigma Engine Worker",
+    "enabled": true,
+    "settings": { "huntTarget": "sigma-grid", "autoHunt": true, "autoSell": true, "autoHeal": true, "autoUpgrade": true, "killRate": 1.0 }
+  },
+  {
+    "id": "bot-template-nim",
+    "name": "Template Master Engine",
+    "enabled": true,
+    "settings": { "huntTarget": "core-loop", "autoHunt": true, "autoSell": true, "autoHeal": true, "autoUpgrade": true, "killRate": 1.0 }
+  },
+  {
+    "id": "bot-tibiaidle-nim",
+    "name": "Tibia Idle MMORPG",
+    "enabled": true,
+    "settings": { "huntTarget": "dragon-lair", "autoHunt": true, "autoSell": true, "autoHeal": true, "autoUpgrade": true, "killRate": 1.0 }
+  },
+  {
+    "id": "bot-twitchminer-nim",
+    "name": "Twitch Channel Miner",
+    "enabled": true,
+    "settings": { "huntTarget": "channel-points", "autoHunt": true, "autoSell": false, "autoHeal": true, "autoUpgrade": true, "killRate": 1.0 }
   }
 ]

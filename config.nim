@@ -42,6 +42,31 @@ proc defaultAccount*(id, name: string): AccountConfig =
   result.settings.autoParty = true
   result.settings.killRate = 1.0
 
+proc defaultSuiteAccounts*(): seq[AccountConfig] =
+  const suite = [
+    ("bot-baiak-nim", "Baiak Idle MMORPG"),
+    ("bot-farmbot-nim", "Farm Bot Automation"),
+    ("bot-huntera-nim", "Huntera Idle Engine"),
+    ("bot-kickminer-nim", "Kick Miner Drops"),
+    ("bot-leveling-nim", "Leveling Optimizer"),
+    ("bot-lichess-nim", "Lichess Chess Engine"),
+    ("bot-lolidle-nim", "LoL Idle Battle"),
+    ("bot-luxidle-nim", "Lux Idle Automation"),
+    ("bot-pokeidle-nim", "PokeIdle Auto-Catch"),
+    ("bot-pokeidleworld-nim", "PokeIdle World"),
+    ("bot-pokelegacy-nim", "PokeLegacy Engine"),
+    ("bot-pokepixel-nim", "PokePixel Runner"),
+    ("bot-poketrue-nim", "PokeTrue Battler"),
+    ("bot-restream-nim", "Restream Multi-Stream"),
+    ("bot-sigma-nim", "Sigma Engine Worker"),
+    ("bot-template-nim", "Template Master Engine"),
+    ("bot-tibiaidle-nim", "Tibia Idle MMORPG"),
+    ("bot-twitchminer-nim", "Twitch Channel Miner")
+  ]
+  result = @[]
+  for item in suite:
+    result.add(defaultAccount(item[0], item[1]))
+
 proc loadAccounts*(path: string): seq[AccountConfig] =
   result = @[]
   if fileExists(path):
