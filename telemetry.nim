@@ -1,4 +1,6 @@
-import std/[times, json, strutils, os]
+import std/[times, json]
+when defined(posix):
+  import std/[strutils, os]
 
 type
   AccountTelemetry* = ref object
@@ -15,6 +17,8 @@ type
     exp*: int64
     status*: string
     currentArea*: string
+    lastHeartbeat*: float
+    restarts*: int
     logs*: seq[string]
 
   TelemetryState* = ref object
@@ -38,6 +42,8 @@ proc newAccountTelemetry*(id, name: string): AccountTelemetry =
     exp: 0,
     status: "idle",
     currentArea: "Spawn",
+    lastHeartbeat: epochTime(),
+    restarts: 0,
     logs: @[]
   )
 
@@ -87,6 +93,8 @@ proc toJson*(s: TelemetryState): JsonNode =
       "exp": a.exp,
       "status": a.status,
       "currentArea": a.currentArea,
+      "last_heartbeat": a.lastHeartbeat,
+      "restarts": a.restarts,
       "logs": a.logs
     })
 

@@ -1,0 +1,18 @@
+[Unit]
+Description=Nim Bot Template Service (Auto-Recovery & Zero-GC)
+After=network.target
+
+[Service]
+Type=simple
+User=root
+WorkingDirectory=/opt/bot-template-nim
+ExecStart=/opt/bot-template-nim/bot-template-linux-nim -config accounts.json
+Restart=always
+RestartSec=5s
+KillMode=process
+
+# Limites de recursos para evitar travamento da VPS
+LimitNOFILE=65535
+
+[Install]
+WantedBy=multi-user.target

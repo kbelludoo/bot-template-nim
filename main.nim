@@ -1,11 +1,15 @@
-import std/[os, asyncdispatch, strutils]
+import std/[os, asyncdispatch, strutils, exitprocs]
 import config, telemetry, supervisor, server
 
 proc main() =
   echo "================================================================================"
   echo "       ⚡ NIM BOT TEMPLATE (NATIVE ZERO-GC & ALTA PERFORMANCE) ⚡              "
-  echo "         Multi-Conta Assíncrono • Pacing Orgânico • Circuit Breaker             "
+  echo "   Multi-Conta Assíncrono • Pacing Orgânico • Circuit Breaker • Auto-Recovery    "
   echo "================================================================================"
+
+  addExitProc(proc() =
+    echo "\n🛑 [Shutdown] Finalizando processos do bot com segurança."
+  )
 
   var configPath = "accounts.json"
   var i = 1

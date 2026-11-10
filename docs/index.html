@@ -1,0 +1,711 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nim Bot Template ⚡ Auto-Recovery & Zero-GC</title>
+    <meta name="description" content="Template mestre canônico para desenvolvimento de bots em Nim 2.2 com Auto-Recovery, Circuit Breaker, Pacing Orgânico e Telemetria em tempo real.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600;700&family=Plus+Jakarta+Sans:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg-base: #090d16;
+            --bg-surface: #0f172a;
+            --bg-card: #141e33;
+            --border: #1e293b;
+            --border-hover: #334155;
+            --primary: #38bdf8;
+            --primary-glow: rgba(56, 189, 248, 0.25);
+            --accent-green: #22c55e;
+            --accent-green-glow: rgba(34, 197, 94, 0.2);
+            --accent-amber: #f59e0b;
+            --accent-red: #ef4444;
+            --text-main: #f8fafc;
+            --text-muted: #94a3b8;
+            --font-main: 'Plus Jakarta Sans', -apple-system, sans-serif;
+            --font-code: 'JetBrains Mono', monospace;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: var(--bg-base);
+            color: var(--text-main);
+            font-family: var(--font-main);
+            line-height: 1.6;
+            overflow-x: hidden;
+            background-image: 
+                radial-gradient(circle at 15% 10%, rgba(56, 189, 248, 0.08) 0%, transparent 40%),
+                radial-gradient(circle at 85% 60%, rgba(34, 197, 94, 0.06) 0%, transparent 40%);
+        }
+
+        header {
+            border-bottom: 1px solid var(--border);
+            padding: 20px 0;
+            position: sticky;
+            top: 0;
+            background: rgba(9, 13, 22, 0.85);
+            backdrop-filter: blur(12px);
+            z-index: 100;
+        }
+
+        .container {
+            max-width: 1180px;
+            margin: 0 auto;
+            padding: 0 24px;
+        }
+
+        .nav-wrapper {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            font-size: 1.25rem;
+            font-weight: 800;
+            color: var(--text-main);
+            text-decoration: none;
+            letter-spacing: -0.5px;
+        }
+
+        .logo span {
+            color: var(--primary);
+        }
+
+        .nav-links {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+
+        .nav-link {
+            color: var(--text-muted);
+            text-decoration: none;
+            font-size: 0.95rem;
+            font-weight: 600;
+            transition: color 0.2s;
+        }
+
+        .nav-link:hover {
+            color: var(--text-main);
+        }
+
+        .btn-github {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            background: #1e293b;
+            color: var(--text-main);
+            border: 1px solid var(--border-hover);
+            padding: 8px 16px;
+            border-radius: 8px;
+            font-weight: 600;
+            font-size: 0.9rem;
+            text-decoration: none;
+            transition: all 0.2s;
+        }
+
+        .btn-github:hover {
+            background: #273549;
+            border-color: var(--primary);
+            box-shadow: 0 0 15px var(--primary-glow);
+        }
+
+        .hero {
+            padding: 70px 0 50px;
+            text-align: center;
+        }
+
+        .badge-pill {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            background: rgba(56, 189, 248, 0.1);
+            border: 1px solid rgba(56, 189, 248, 0.3);
+            color: var(--primary);
+            padding: 6px 14px;
+            border-radius: 9999px;
+            font-size: 0.85rem;
+            font-weight: 700;
+            margin-bottom: 24px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .hero h1 {
+            font-size: 3.2rem;
+            font-weight: 800;
+            letter-spacing: -1.5px;
+            line-height: 1.15;
+            margin-bottom: 20px;
+            background: linear-gradient(135deg, #ffffff 40%, #94a3b8 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            color: var(--text-muted);
+            max-width: 720px;
+            margin: 0 auto 36px;
+        }
+
+        .hero-actions {
+            display: flex;
+            justify-content: center;
+            gap: 16px;
+            flex-wrap: wrap;
+        }
+
+        .btn-primary {
+            background: var(--primary);
+            color: #030712;
+            padding: 12px 26px;
+            border-radius: 8px;
+            font-weight: 700;
+            text-decoration: none;
+            transition: all 0.2s;
+            box-shadow: 0 4px 20px var(--primary-glow);
+        }
+
+        .btn-primary:hover {
+            transform: translateY(-2px);
+            background: #7dd3fc;
+        }
+
+        .btn-secondary {
+            background: var(--bg-surface);
+            color: var(--text-main);
+            border: 1px solid var(--border);
+            padding: 12px 24px;
+            border-radius: 8px;
+            font-weight: 600;
+            text-decoration: none;
+            transition: all 0.2s;
+        }
+
+        .btn-secondary:hover {
+            border-color: var(--border-hover);
+            background: #192339;
+        }
+
+        /* Live Dashboard Simulation */
+        .dashboard-section {
+            padding: 40px 0 70px;
+        }
+
+        .dashboard-window {
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+        }
+
+        .window-header {
+            background: #0d1322;
+            border-bottom: 1px solid var(--border);
+            padding: 12px 18px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .window-dots {
+            display: flex;
+            gap: 6px;
+        }
+
+        .dot {
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+        }
+
+        .dot-red { background: #ef4444; }
+        .dot-yellow { background: #f59e0b; }
+        .dot-green { background: #22c55e; }
+
+        .window-title {
+            font-family: var(--font-code);
+            font-size: 0.85rem;
+            color: var(--text-muted);
+        }
+
+        .dashboard-content {
+            padding: 24px;
+        }
+
+        .metrics-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+            gap: 16px;
+            margin-bottom: 24px;
+        }
+
+        .metric-card {
+            background: rgba(15, 23, 42, 0.7);
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            padding: 16px;
+        }
+
+        .metric-label {
+            font-size: 0.8rem;
+            color: var(--text-muted);
+            text-transform: uppercase;
+            font-weight: 700;
+            margin-bottom: 4px;
+        }
+
+        .metric-value {
+            font-size: 1.6rem;
+            font-weight: 800;
+            font-family: var(--font-code);
+            color: var(--text-main);
+        }
+
+        .metric-value.status-live {
+            color: var(--accent-green);
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .pulse-dot {
+            width: 8px;
+            height: 8px;
+            background: var(--accent-green);
+            border-radius: 50%;
+            box-shadow: 0 0 10px var(--accent-green);
+            animation: pulse 1.5s infinite;
+        }
+
+        @keyframes pulse {
+            0% { transform: scale(0.95); opacity: 0.7; }
+            50% { transform: scale(1.2); opacity: 1; }
+            100% { transform: scale(0.95); opacity: 0.7; }
+        }
+
+        .accounts-table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 0.9rem;
+            margin-bottom: 20px;
+        }
+
+        .accounts-table th {
+            text-align: left;
+            padding: 10px 14px;
+            color: var(--text-muted);
+            border-bottom: 1px solid var(--border);
+            font-weight: 600;
+            font-size: 0.8rem;
+            text-transform: uppercase;
+        }
+
+        .accounts-table td {
+            padding: 12px 14px;
+            border-bottom: 1px solid rgba(30, 41, 59, 0.6);
+            font-family: var(--font-code);
+        }
+
+        .tag-status {
+            display: inline-block;
+            padding: 3px 8px;
+            border-radius: 6px;
+            font-size: 0.75rem;
+            font-weight: 700;
+        }
+
+        .tag-hunting { background: rgba(34, 197, 94, 0.15); color: #4ade80; border: 1px solid rgba(74, 222, 128, 0.3); }
+        .tag-recovering { background: rgba(245, 158, 11, 0.15); color: #fbbf24; border: 1px solid rgba(251, 191, 36, 0.3); }
+        .tag-circuit { background: rgba(239, 68, 68, 0.15); color: #f87171; border: 1px solid rgba(248, 113, 113, 0.3); }
+
+        .log-terminal {
+            background: #050811;
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            padding: 14px;
+            font-family: var(--font-code);
+            font-size: 0.8rem;
+            height: 160px;
+            overflow-y: auto;
+            color: #38bdf8;
+        }
+
+        .log-entry { margin-bottom: 4px; }
+        .log-time { color: var(--text-muted); margin-right: 8px; }
+        .log-warn { color: #f59e0b; }
+        .log-recovery { color: #38bdf8; font-weight: 700; }
+        .log-err { color: #ef4444; }
+
+        /* Features Section */
+        .features-section {
+            padding: 60px 0;
+            border-top: 1px solid var(--border);
+        }
+
+        .section-header {
+            text-align: center;
+            margin-bottom: 48px;
+        }
+
+        .section-header h2 {
+            font-size: 2.2rem;
+            font-weight: 800;
+            letter-spacing: -1px;
+            margin-bottom: 12px;
+        }
+
+        .section-header p {
+            color: var(--text-muted);
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 24px;
+        }
+
+        .feature-card {
+            background: var(--bg-surface);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            padding: 28px;
+            transition: all 0.2s;
+        }
+
+        .feature-card:hover {
+            border-color: var(--primary);
+            transform: translateY(-4px);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+        }
+
+        .feature-icon {
+            font-size: 2rem;
+            margin-bottom: 16px;
+            display: inline-block;
+        }
+
+        .feature-card h3 {
+            font-size: 1.25rem;
+            margin-bottom: 10px;
+            font-weight: 700;
+        }
+
+        .feature-card p {
+            color: var(--text-muted);
+            font-size: 0.95rem;
+        }
+
+        /* Quick Start / Code */
+        .code-section {
+            padding: 60px 0 80px;
+            border-top: 1px solid var(--border);
+        }
+
+        .code-box {
+            background: #050811;
+            border: 1px solid var(--border);
+            border-radius: 10px;
+            padding: 20px;
+            font-family: var(--font-code);
+            font-size: 0.9rem;
+            color: #e2e8f0;
+            position: relative;
+            margin-top: 20px;
+            overflow-x: auto;
+        }
+
+        .code-comment { color: #64748b; }
+        .code-cmd { color: #38bdf8; }
+
+        footer {
+            border-top: 1px solid var(--border);
+            padding: 40px 0;
+            text-align: center;
+            color: var(--text-muted);
+            font-size: 0.9rem;
+        }
+
+        footer a {
+            color: var(--primary);
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="container nav-wrapper">
+            <a href="#" class="logo">
+                <span>⚡</span> Nim Bot Template
+            </a>
+            <div class="nav-links">
+                <a href="#features" class="nav-link">Arquitetura</a>
+                <a href="#demo" class="nav-link">Dashboard Demo</a>
+                <a href="#quickstart" class="nav-link">Quickstart</a>
+                <a href="https://github.com/kbelludoo/bot-template-nim" target="_blank" class="btn-github">
+                    <svg height="18" width="18" viewBox="0 0 16 16" fill="currentColor">
+                        <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/>
+                    </svg>
+                    GitHub
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero container">
+            <div class="badge-pill">
+                <span>🛡️</span> Zero-GC ORC Model • Auto-Recovery Ativo
+            </div>
+            <h1>Motor Nativo Resiliente para Bots em Nim 2.2</h1>
+            <p>
+                Template canônico para bots idle de alta performance. Execução assíncrona multi-conta, 
+                Worker Supervisor estilo Erlang/OTP, Circuit Breaker anti-ban e pacing orgânico humano.
+            </p>
+            <div class="hero-actions">
+                <a href="#quickstart" class="btn-primary">Começar Agora</a>
+                <a href="#demo" class="btn-secondary">Ver Dashboard em Tempo Real</a>
+            </div>
+        </section>
+
+        <!-- Live Dashboard Demo Section -->
+        <section id="demo" class="dashboard-section container">
+            <div class="dashboard-window">
+                <div class="window-header">
+                    <div class="window-dots">
+                        <div class="dot dot-red"></div>
+                        <div class="dot dot-yellow"></div>
+                        <div class="dot dot-green"></div>
+                    </div>
+                    <div class="window-title">http://localhost:3099/api/status • Live Telemetry Stream</div>
+                    <div style="width: 40px;"></div>
+                </div>
+                <div class="dashboard-content">
+                    <div class="metrics-grid">
+                        <div class="metric-card">
+                            <div class="metric-label">Status do Sistema</div>
+                            <div class="metric-value status-live">
+                                <span class="pulse-dot"></span> ONLINE
+                            </div>
+                        </div>
+                        <div class="metric-card">
+                            <div class="metric-label">Memória RAM</div>
+                            <div class="metric-value" id="val-ram">4.12 MB</div>
+                        </div>
+                        <div class="metric-card">
+                            <div class="metric-label">Uptime do Motor</div>
+                            <div class="metric-value" id="val-uptime">00:04:12</div>
+                        </div>
+                        <div class="metric-card">
+                            <div class="metric-label">Recuperações (Restarts)</div>
+                            <div class="metric-value" style="color: var(--accent-amber);" id="val-restarts">0</div>
+                        </div>
+                    </div>
+
+                    <table class="accounts-table">
+                        <thead>
+                            <tr>
+                                <th>Conta</th>
+                                <th>Status</th>
+                                <th>Nível</th>
+                                <th>Kills</th>
+                                <th>Gold</th>
+                                <th>Auto-Restarts</th>
+                                <th>Último Pulso</th>
+                            </tr>
+                        </thead>
+                        <tbody id="accounts-tbody">
+                            <!-- Inserido dinamicamente via JS -->
+                        </tbody>
+                    </table>
+
+                    <div style="margin-bottom: 8px; font-weight: 700; font-size: 0.85rem; color: var(--text-muted);">
+                        TERMINAL DE TELEMETRIA & AUTO-RECOVERY LOGS:
+                    </div>
+                    <div class="log-terminal" id="term-logs">
+                        <!-- Logs em tempo real -->
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Features Section -->
+        <section id="features" class="features-section container">
+            <div class="section-header">
+                <h2>Engenharia de Alta Resiliência</h2>
+                <p>Criado para operar 24/7 em VPS com consumo mínimo de recursos e proteção contínua contra bloqueios.</p>
+            </div>
+
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">🔄</div>
+                    <h3>Worker Supervisor (Auto-Recovery)</h3>
+                    <p>Padrão Erlang/OTP onde tarefas de cada conta são isoladas. Exceções transitórias ou falhas críticas são contidas e a rotina é reiniciada com backoff exponencial e jitter.</p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">🛡️</div>
+                    <h3>Watchdog Anti-Congelamento</h3>
+                    <p>Monitor global em background que acompanha o batimento cardíaco (heartbeat) de cada conta, detectando sockets congelados ou chamadas sem timeout em menos de 45s.</p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">⚡</div>
+                    <h3>Circuit Breaker Adaptativo</h3>
+                    <p>Detecta falhas consecutivas de rede e desarma automaticamente a conta por intervalos crescentes (5m a 1h), evitando bloqueio de IP ou captcha contínuo.</p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">🎯</div>
+                    <h3>Pacing Orgânico & Anti-Detecção</h3>
+                    <p>Variação gaussiana ($\pm 20\%$) nos intervalos de ação e latência humana calculada (300ms a 650ms), eliminando padrões mecânicos de clique.</p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">🚀</div>
+                    <h3>Zero-GC ARC/ORC em Nim</h3>
+                    <p>Pegada de memória abaixo de 5MB, sem pausas de Garbage Collector e compilado como binário ELF estático nativo para Linux x86_64.</p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">🌐</div>
+                    <h3>Telemetria HTTP Integrada</h3>
+                    <p>Servidor HTTP assíncrono nativo embutido com endpoints JSON rápidos (`/api/status`) e dashboard web pronto para integração com Prometheus ou Grafana.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Quick Start Section -->
+        <section id="quickstart" class="code-section container">
+            <div class="section-header">
+                <h2>Como Usar</h2>
+                <p>Construído para compilação local ou cruzada imediata para Linux via Zig.</p>
+            </div>
+
+            <h3>1. Compilação Cruzada para Linux (x86_64 via Zig)</h3>
+            <div class="code-box">
+<span class="code-comment"># Compilação estática ultra-otimizada diretamente do Windows</span>
+<span class="code-cmd">nim c --os:linux --cpu:amd64 --gcc.exe:zigcc-linux-gnu.bat --gcc.linkerexe:zigcc-linux-gnu.bat -d:ssl -d:release -o:bot-template-linux-nim main.nim</span>
+            </div>
+
+            <h3 style="margin-top: 32px;">2. Execução com Auto-Recovery no Linux (systemd)</h3>
+            <div class="code-box">
+<span class="code-comment"># Instalação do serviço de auto-reinício contínuo</span>
+sudo cp nim-bot.service /etc/systemd/system/
+sudo systemctl daemon-reload
+sudo systemctl enable --now nim-bot
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>Desenvolvido em <strong>Nim 2.2</strong> • Licença MIT • Repositório no <a href="https://github.com/kbelludoo/bot-template-nim">GitHub</a></p>
+        </div>
+    </footer>
+
+    <script>
+        // Simulador em tempo real da Telemetria do Bot
+        let uptimeSec = 252;
+        let totalRestarts = 0;
+        let accounts = [
+            { id: "acc-warrior", name: "Kbell Warrior", status: "hunting", level: 42, kills: 1420, gold: 35500, restarts: 0, lastHeartbeat: "Agora" },
+            { id: "acc-mage", name: "Frost Sorceress", status: "hunting", level: 38, kills: 980, gold: 24500, restarts: 0, lastHeartbeat: "Agora" },
+            { id: "acc-paladin", name: "Solar Knight", status: "circuit_open", level: 29, kills: 610, gold: 15250, restarts: 1, lastHeartbeat: "Há 4s" }
+        ];
+
+        const logTerm = document.getElementById("term-logs");
+
+        function addLog(msg, type = "") {
+            const now = new Date().toTimeString().split(' ')[0];
+            const div = document.createElement("div");
+            div.className = `log-entry ${type}`;
+            div.innerHTML = `<span class="log-time">[${now}]</span> ${msg}`;
+            logTerm.appendChild(div);
+            logTerm.scrollTop = logTerm.scrollHeight;
+        }
+
+        addLog("Motor Nim 2.2 ORC inicializado com sucesso.");
+        addLog("Supervisor multi-conta ativo (3 workers registrados).");
+        addLog("Monitor Watchdog iniciado (limiar: 45s).");
+        addLog("Conta 'acc-paladin' entrou em Circuit Open devido a instabilidade na API.", "log-warn");
+
+        function renderAccounts() {
+            const tbody = document.getElementById("accounts-tbody");
+            tbody.innerHTML = "";
+            accounts.forEach(a => {
+                let statusClass = "tag-hunting";
+                if (a.status === "recovering") statusClass = "tag-recovering";
+                if (a.status === "circuit_open") statusClass = "tag-circuit";
+
+                const tr = document.createElement("tr");
+                tr.innerHTML = `
+                    <td><strong>${a.name}</strong> <span style="color:var(--text-muted); font-size:0.8rem;">(${a.id})</span></td>
+                    <td><span class="tag-status ${statusClass}">${a.status.toUpperCase()}</span></td>
+                    <td>Lv. ${a.level}</td>
+                    <td>${a.kills.toLocaleString()}</td>
+                    <td>${a.gold.toLocaleString()} G</td>
+                    <td style="color:${a.restarts > 0 ? 'var(--accent-amber)' : 'inherit'}; font-weight:bold;">${a.restarts}</td>
+                    <td><span style="color:#22c55e;">●</span> ${a.lastHeartbeat}</td>
+                `;
+                tbody.appendChild(tr);
+            });
+        }
+
+        renderAccounts();
+
+        // Loop de simulação visual de telemetria
+        setInterval(() => {
+            uptimeSec++;
+            const hrs = String(Math.floor(uptimeSec / 3600)).padStart(2, '0');
+            const mins = String(Math.floor((uptimeSec % 3600) / 60)).padStart(2, '0');
+            const secs = String(uptimeSec % 60).padStart(2, '0');
+            document.getElementById("val-uptime").innerText = `${hrs}:${mins}:${secs}`;
+
+            // Incrementa progresso das contas ativas
+            accounts.forEach(a => {
+                if (a.status === "hunting") {
+                    a.kills += Math.floor(Math.random() * 2);
+                    a.gold += Math.floor(Math.random() * 25);
+                }
+            });
+            renderAccounts();
+        }, 1500);
+
+        // Simulação aleatória de Auto-Recovery para demonstração
+        setInterval(() => {
+            const target = accounts[Math.floor(Math.random() * accounts.length)];
+            if (target.status === "hunting" && Math.random() < 0.3) {
+                target.status = "recovering";
+                target.restarts++;
+                totalRestarts++;
+                document.getElementById("val-restarts").innerText = totalRestarts;
+                addLog(`⚠️ [Supervisor] Falha de socket simulada na conta ${target.id}. Disparando Auto-Recovery...`, "log-err");
+                renderAccounts();
+
+                setTimeout(() => {
+                    target.status = "hunting";
+                    addLog(`🔄 [Auto-Recovery] Conta ${target.id} restabelecida e reconectada com sucesso!`, "log-recovery");
+                    renderAccounts();
+                }, 4000);
+            }
+        }, 12000);
+    </script>
+</body>
+</html>
