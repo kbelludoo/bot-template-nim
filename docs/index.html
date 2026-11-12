@@ -329,10 +329,30 @@
 
     <div class="vps-metrics-grid">
       <div class="vps-card">
-        <div class="vps-label">Serviços em Operação</div>
-        <div class="vps-val" id="botsCountVal" style="color: var(--accent);">14 / 18</div>
-        <div class="vps-sub">Bots & Miners nativos em Nim na VPS</div>
+        <div class="vps-label">Estado da Frota (18 Bots)</div>
+        <div class="vps-val" id="botsCountVal" style="color: var(--accent); font-size: 1.25rem;">
+          <span style="color: #10b981;">12 Ativos</span> • <span style="color: #ef4444;">2 Banidos</span> • <span style="color: #94a3b8;">4 Off</span>
+        </div>
+        <div class="vps-sub">14 processos rodando no Linux • 4 idle</div>
       </div>
+      <div class="vps-card">
+        <div class="vps-label">Memória RAM VPS (Host)</div>
+        <div class="vps-val" id="ramVal" style="color: var(--green);">705 / 951 MB</div>
+        <div class="progress-bar"><div class="progress-fill fill-ram" id="ramProgress" style="width: 74.1%;"></div></div>
+        <div class="vps-sub" id="ramSub">Livre: 246 MB (74.1% em uso) • Swap: 1024 MB</div>
+      </div>
+      <div class="vps-card">
+        <div class="vps-label">Consumo Nim (ARC/ORC)</div>
+        <div class="vps-val" style="color: #38bdf8;">~4.35 MB / bot</div>
+        <div class="progress-bar"><div class="progress-fill" style="width: 18%; background: linear-gradient(90deg, #38bdf8, #818cf8);"></div></div>
+        <div class="vps-sub">Footprint ultra-baixo • Zero Garbage Collector</div>
+      </div>
+      <div class="vps-card">
+        <div class="vps-label">Uptime & Conexão</div>
+        <div class="vps-val" style="color: var(--gold); font-size: 1.15rem;">13d 18h (OCI SP)</div>
+        <div class="vps-sub" id="lastUpdatedSub">IP: 129.153.157.17 • Conexão Estável</div>
+      </div>
+    </div>
       <div class="vps-card">
         <div class="vps-label">Memória RAM VPS (Host)</div>
         <div class="vps-val" id="ramVal" style="color: var(--green);">705 / 951 MB</div>
@@ -683,7 +703,7 @@
       </div>
       
       
-      <div class="bot-card" id="card-sigma" style="--theme: #facc15; --theme-bg: rgba(250, 204, 21, 0.12); --theme-border: rgba(250, 204, 21, 0.45); --theme-glow: rgba(250, 204, 21, 0.25);">
+      <div class="bot-card" id="card-sigma" style="--theme: #ef4444; --theme-bg: rgba(239, 68, 68, 0.15); --theme-border: rgba(239, 68, 68, 0.6); --theme-glow: rgba(239, 68, 68, 0.35);">
         <div>
           <div class="bot-header">
             <div class="bot-name-group">
@@ -697,10 +717,7 @@
               <button class="face-toggle-btn" onclick="toggleCardFace('sigma')" title="Clique para alternar visão Gameplay / Rendimento">
                 🔄 <span id="facetext-sigma">VISÃO</span>
               </button>
-              <span class="badge-status" id="badge-sigma">
-                
-                3/3 ATIVAS
-              </span>
+              <span class="badge-status" id="badge-sigma">🚫 3/3 CONTAS BANIDAS (403)</span>
             </div>
           </div>
 
@@ -864,7 +881,7 @@
       </div>
       
       
-      <div class="bot-card" id="card-leveling" style="--theme: #10b981; --theme-bg: rgba(16, 185, 129, 0.12); --theme-border: rgba(16, 185, 129, 0.45); --theme-glow: rgba(16, 185, 129, 0.25);">
+      <div class="bot-card" id="card-leveling" style="--theme: #ef4444; --theme-bg: rgba(239, 68, 68, 0.15); --theme-border: rgba(239, 68, 68, 0.6); --theme-glow: rgba(239, 68, 68, 0.35);">
         <div>
           <div class="bot-header">
             <div class="bot-name-group">
@@ -878,10 +895,7 @@
               <button class="face-toggle-btn" onclick="toggleCardFace('leveling')" title="Clique para alternar visão Gameplay / Rendimento">
                 🔄 <span id="facetext-leveling">VISÃO</span>
               </button>
-              <span class="badge-status" id="badge-leveling">
-                
-                4/4 ATIVAS
-              </span>
+              <span class="badge-status" id="badge-leveling">🚫 4/4 CONTAS BANIDAS</span>
             </div>
           </div>
 
@@ -1507,10 +1521,7 @@
               <button class="face-toggle-btn" onclick="toggleCardFace('pokeidleworld')" title="Clique para alternar visão Gameplay / Rendimento">
                 🔄 <span id="facetext-pokeidleworld">VISÃO</span>
               </button>
-              <span class="badge-status" id="badge-pokeidleworld">
-                
-                HUNTING
-              </span>
+              <span class="badge-status" id="badge-pokeidleworld">⚪ DESCONECTADO (WS RECONNECT)</span>
             </div>
           </div>
 
@@ -1600,10 +1611,7 @@
               <button class="face-toggle-btn" onclick="toggleCardFace('pokepixel')" title="Clique para alternar visão Gameplay / Rendimento">
                 🔄 <span id="facetext-pokepixel">VISÃO</span>
               </button>
-              <span class="badge-status" id="badge-pokepixel">
-                
-                RECONECTANDO...
-              </span>
+              <span class="badge-status" id="badge-pokepixel">⚪ DESCONECTADO (LOGIN FAIL)</span>
             </div>
           </div>
 
