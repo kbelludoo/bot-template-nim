@@ -331,10 +331,28 @@
       <div class="vps-card">
         <div class="vps-label">Estado da Frota (18 Bots)</div>
         <div class="vps-val" id="botsCountVal" style="color: var(--accent); font-size: 1.25rem;">
-          <span style="color: #10b981;">11 Ativos</span> • <span style="color: #ef4444;">3 Banidos</span> • <span style="color: #94a3b8;">4 Off</span>
+          <span style="color: #10b981;">12 Ativos</span> • <span style="color: #ef4444;">3 Banidos</span> • <span style="color: #94a3b8;">3 Off</span>
         </div>
-        <div class="vps-sub">Banidos: Sigma, Leveling e LoL Idle</div>
+        <div class="vps-sub">12 Serviços Ativos (incluindo Oracle Sniper SP)</div>
       </div>
+      <div class="vps-card">
+        <div class="vps-label">Memória RAM VPS (Host)</div>
+        <div class="vps-val" id="ramVal" style="color: var(--green);">705 / 951 MB</div>
+        <div class="progress-bar"><div class="progress-fill fill-ram" id="ramProgress" style="width: 74.1%;"></div></div>
+        <div class="vps-sub" id="ramSub">Livre: 246 MB (74.1% em uso) • Swap: 1024 MB</div>
+      </div>
+      <div class="vps-card">
+        <div class="vps-label">Consumo Nim / Rust (Zero-GC)</div>
+        <div class="vps-val" style="color: #38bdf8;">~4.35 MB / bot</div>
+        <div class="progress-bar"><div class="progress-fill" style="width: 18%; background: linear-gradient(90deg, #38bdf8, #818cf8);"></div></div>
+        <div class="vps-sub">Sniper: 2.47 MB • Footprint Mínimo</div>
+      </div>
+      <div class="vps-card">
+        <div class="vps-label">Uptime & Conexão</div>
+        <div class="vps-val" style="color: var(--gold); font-size: 1.15rem;">13d 18h (OCI SP)</div>
+        <div class="vps-sub" id="lastUpdatedSub">IP: 129.153.157.17 • Sniper Ativo 24/7</div>
+      </div>
+    </div>
       <div class="vps-card">
         <div class="vps-label">Memória RAM VPS (Host)</div>
         <div class="vps-val" id="ramVal" style="color: var(--green);">705 / 951 MB</div>
@@ -2810,37 +2828,89 @@
       </div>
       
       
-      <div class="bot-card" id="card-kaggle" style="--theme: #06b6d4; --theme-bg: rgba(6, 182, 212, 0.12); --theme-border: rgba(6, 182, 212, 0.45); --theme-glow: rgba(6, 182, 212, 0.25);">
+      <div class="bot-card" id="card-sniper" style="--theme: #10b981; --theme-bg: rgba(16, 185, 129, 0.12); --theme-border: rgba(16, 185, 129, 0.5); --theme-glow: rgba(16, 185, 129, 0.25);">
         <div>
           <div class="bot-header">
             <div class="bot-name-group">
-              <h3>🧠 Oracle ARM Sniper SP</h3>
+              <h3>🎯 Oracle ARM Sniper (SP & Ashburn)</h3>
               <span class="bot-port">
-                
-                BACKGROUND AGENT
+                OCI NATIVE • 
+                PID 1250493
               </span>
             </div>
             <div class="face-header-controls">
-              <button class="face-toggle-btn" onclick="toggleCardFace('kaggle')" title="Clique para alternar visão Gameplay / Rendimento">
-                🔄 <span id="facetext-kaggle">VISÃO</span>
+              <button class="face-toggle-btn" onclick="toggleCardFace('sniper')" title="Clique para alternar visão Gameplay / Rendimento">
+                🔄 <span id="facetext-sniper">VISÃO</span>
               </button>
-              <span class="badge-status" id="badge-kaggle">
-                
-                OFFLINE
+              <span class="badge-status" id="badge-sniper" style="background: rgba(16, 185, 129, 0.18); color: #10b981; border: 1px solid rgba(16, 185, 129, 0.5);">
+                🟢 ATIVO (SNIPING)
               </span>
             </div>
           </div>
 
-          <div class="acc-list" id="acclist-kaggle">
-            
-              <div style="color: var(--text-dim); font-size: 0.8rem;">Carregando telemetria...</div>
-            
+          <div class="acc-list" id="acclist-sniper">
+            <div class="card-face face-gameplay">
+              <div class="acc-item" style="border-left: 3px solid #10b981; background: rgba(16, 185, 129, 0.08);">
+                <div class="acc-item-header">
+                  <span>🇧🇷 São Paulo (sa-saopaulo-1)</span>
+                  <span style="color: #10b981; font-weight: bold; font-size: 0.75rem;">SNIPING ATIVO</span>
+                </div>
+                <div class="stat-row">
+                  <span style="color: #38bdf8; font-weight: 700;">Alvo: VM.Standard.A1.Flex</span>
+                  <span style="color: #facc15; font-weight: 800;">4 OCPU • 24 GB RAM</span>
+                </div>
+                <div class="stat-row">
+                  <span style="color: var(--text-muted); font-size: 0.78rem;">Datacenter: SA-SAOPAULO-1-AD-1</span>
+                  <span style="color: #4ade80;">Jitter Inteligente Ativo</span>
+                </div>
+              </div>
+
+              <div class="acc-item" style="border-left: 3px solid #38bdf8; background: rgba(56, 189, 248, 0.08);">
+                <div class="acc-item-header">
+                  <span>🇺🇸 Ashburn (us-ashburn-1)</span>
+                  <span style="color: #38bdf8; font-weight: bold; font-size: 0.75rem;">SNIPING ATIVO</span>
+                </div>
+                <div class="stat-row">
+                  <span style="color: #38bdf8; font-weight: 700;">Alvo: VM.Standard.A1.Flex</span>
+                  <span style="color: #facc15; font-weight: 800;">200 GB Boot Volume</span>
+                </div>
+                <div class="stat-row">
+                  <span style="color: var(--text-muted); font-size: 0.78rem;">Monitorando AD-1, AD-2 e AD-3</span>
+                  <span style="color: #4ade80;">24/7 Polling</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="card-face face-performance">
+              <div class="acc-item">
+                <div class="acc-item-header">
+                  <span>⚡ Telemetria do Sniper</span>
+                  <span class="perf-tag" style="background: rgba(16, 185, 129, 0.2); color: #10b981;">SERVIÇO SYSTEMD</span>
+                </div>
+                <div class="stat-row">
+                  <span>⚙️ Serviço</span>
+                  <span style="color: #10b981; font-weight: 700;">oracle-sniper-sp.service</span>
+                </div>
+                <div class="stat-row">
+                  <span>🧠 RAM Consumida</span>
+                  <span style="color: #38bdf8; font-weight: 700;">2.47 MB (Zero-GC)</span>
+                </div>
+                <div class="stat-row">
+                  <span>🛡️ Autenticação OCI</span>
+                  <span style="color: #facc15;">Chave RSA SHA-256 (.pem)</span>
+                </div>
+                <div class="stat-row">
+                  <span>⏱️ Uptime</span>
+                  <span style="color: #10b981;">Ativo e Disparando 24/7</span>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
 
         <div class="bot-footer">
-          <span style="font-size: 0.72rem; color: var(--text-dim);" id="summary-kaggle">⚙️ Serviço Ativo 24/7</span>
-          <a href="https://github.com/kbelludoo/vps-agent-nim" target="_blank" class="btn-link">Abrir Dashboard ↗</a>
+          <span style="font-size: 0.72rem; color: #10b981;" id="summary-sniper">🟢 Disparando Requisições OCI 24/7</span>
+          <a href="https://github.com/kbelludoo/oracle-arm-sniper-nim" target="_blank" class="btn-link">Abrir Sniper ↗</a>
         </div>
       </div>
       

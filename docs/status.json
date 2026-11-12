@@ -626,14 +626,6 @@
         }
       ]
     },
-    "kaggle": {
-      "dashboardUrl": "https://github.com/kbelludoo/vps-agent-nim",
-      "engine": "Nim 2.2 Native Agent (24/7 Watcher)",
-      "game": "Kaggle",
-      "name": "Kaggle Training Watcher",
-      "port": 0,
-      "status": null
-    },
     "kickminer": {
       "dashboardUrl": "https://github.com/kbelludoo/kick-miner-nim",
       "engine": "Nim 2.2 Native (Zero-Video WS)",
@@ -3434,6 +3426,32 @@
           "kills": 1600,
           "status": "BANNED",
           "error": "Erro: account.banned / suspensa"
+        }
+      ]
+    },
+    "sniper": {
+      "key": "sniper",
+      "name": "Oracle ARM Sniper (SP & Ashburn)",
+      "status": "RUNNING",
+      "badge": "🟢 ATIVO (SNIPING)",
+      "engine": "Native Nim / Rust Zero-GC Engine",
+      "service": "oracle-sniper-sp.service",
+      "pid": 1250493,
+      "ram_mb": 2.47,
+      "regions": [
+        {
+          "region": "sa-saopaulo-1",
+          "name": "São Paulo (BR East)",
+          "shape": "VM.Standard.A1.Flex",
+          "status": "SNIPING",
+          "ad": "SA-SAOPAULO-1-AD-1"
+        },
+        {
+          "region": "us-ashburn-1",
+          "name": "Ashburn (US East)",
+          "shape": "VM.Standard.A1.Flex",
+          "status": "SNIPING",
+          "ad": "AD-1, AD-2, AD-3"
         }
       ]
     }
