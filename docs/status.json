@@ -197,7 +197,7 @@
     },
     "farmricochet": {
       "dashboardUrl": "https://kbelludoo.github.io/farmricochet-bot/",
-      "engine": "Go Native Engine (Circuit Breaker)",
+      "engine": "Nim 2.2 Native Engine (Circuit Breaker)",
       "game": "Farm Ricochet",
       "name": "Farm Ricochet Bot",
       "port": 3013,
@@ -627,16 +627,16 @@
       ]
     },
     "kaggle": {
-      "dashboardUrl": "https://kbelludoo.github.io/agent-go/",
-      "engine": "Go Native Agent (24/7 Watcher)",
+      "dashboardUrl": "https://github.com/kbelludoo/vps-agent-nim",
+      "engine": "Nim 2.2 Native Agent (24/7 Watcher)",
       "game": "Kaggle",
       "name": "Kaggle Training Watcher",
       "port": 0,
       "status": null
     },
     "kickminer": {
-      "dashboardUrl": "https://kbelludoo.github.io/kick-miner-go/",
-      "engine": "Go Native (Zero-Video WS)",
+      "dashboardUrl": "https://github.com/kbelludoo/kick-miner-nim",
+      "engine": "Nim 2.2 Native (Zero-Video WS)",
       "game": "Kick.com",
       "name": "Kick Channel Points Miner",
       "port": 3009,
@@ -1128,7 +1128,7 @@
     },
     "leveling": {
       "dashboardUrl": "https://kbelludoo.github.io/leveling-bot/",
-      "engine": "Go Native Engine (Protobuf 3)",
+      "engine": "Nim 2.2 Native Engine (Protobuf 3)",
       "game": "Leveling Idle 2D",
       "name": "Leveling Idle 2D Bot",
       "port": 3003,
@@ -1137,7 +1137,7 @@
     },
     "lichess": {
       "dashboardUrl": "https://lichess.org/@/kbelludoo",
-      "engine": "Go 1.27 + Stockfish 17.1 NNUE",
+      "engine": "Nim 2.2 + Stockfish 17.1 NNUE",
       "game": "Lichess.org",
       "name": "Lichess Bot (Berserk)",
       "port": 3016,
@@ -1146,7 +1146,7 @@
         "bot_user": "anonimo",
         "dashboard": "https://lichess.org/@/kbelludoo",
         "db_symbols": 29819,
-        "game": "Lichess.org • Go + Stockfish NNUE",
+        "game": "Lichess.org • Nim + Stockfish NNUE",
         "games_played": 142,
         "idle_learner": {
           "current_source": "Lichess TV / Top GMs",
@@ -1433,10 +1433,10 @@
       ]
     },
     "pocketweb": {
-      "dashboardUrl": "https://kbelludoo.github.io/ai-go-browser/",
-      "engine": "Go Native Browser Engine (<75 MB RAM)",
-      "game": "AI-Go-Browser",
-      "name": "AI-Go-Browser (Navegador)",
+      "dashboardUrl": "https://github.com/kbelludoo/restream-nim",
+      "engine": "Nim 2.2 Native Browser Engine (<25 MB RAM)",
+      "game": "Restream & Browser Agent (Nim)",
+      "name": "Restream & Browser Agent (Nim) (Navegador)",
       "port": 8888,
       "status": {
         "accounts": [
@@ -1444,9 +1444,9 @@
             "currentArea": "Navegação Semântica & CDP (<75 MB RAM)",
             "gold": 0,
             "kills": 0,
-            "name": "AI-Go-Browser Core",
+            "name": "Restream & Browser Agent (Nim) Core",
             "status": "Online",
-            "vocation": "Navegador de IA (Go Puro)"
+            "vocation": "Engine Nativa Nim 2.2 ARC/ORC"
           }
         ],
         "ramSysMB": 8.5,
@@ -1454,7 +1454,7 @@
       }
     },
     "pokeidle": {
-      "dashboardUrl": "https://kbelludoo.github.io/pokeidle-go/",
+      "dashboardUrl": "https://kbelludoo.github.io/bot-pokeidle-nim/",
       "engine": "Nim 2.2 ORC Native",
       "game": "PokeIdle.io",
       "name": "PokeIdle.io Bot",
@@ -1507,7 +1507,7 @@
     },
     "pokeidleworld": {
       "dashboardUrl": "https://kbelludoo.github.io/pokeidleworld-bot/",
-      "engine": "Go Native Engine (Auto-Catch)",
+      "engine": "Nim 2.2 Native Engine (Auto-Catch)",
       "game": "Poke Idle World",
       "name": "Poke Idle World Bot",
       "port": 3007,
@@ -1733,7 +1733,7 @@
     },
     "pokepixel": {
       "dashboardUrl": "https://kbelludoo.github.io/pokepixel-bot/",
-      "engine": "Go Native Engine (Auto-Catch)",
+      "engine": "Nim 2.2 Native Engine (Auto-Catch)",
       "game": "PokePixel Online",
       "name": "PokePixel Multi-Bot",
       "port": 3015,
@@ -1741,7 +1741,7 @@
       "badge": "⚪ DESCONECTADO"
     },
     "poketrue": {
-      "dashboardUrl": "https://kbelludoo.github.io/bot-template-go/?v=force1",
+      "dashboardUrl": "https://kbelludoo.github.io/bot-template-nim/?v=force1",
       "engine": "Nim 2.2 ORC Native",
       "game": "PokeTrue",
       "name": "PokeTrue Multi-Bot",
@@ -1883,7 +1883,7 @@
     },
     "sigma": {
       "dashboardUrl": "https://kbelludoo.github.io/sigma-bot/",
-      "engine": "Go Native Engine",
+      "engine": "Nim 2.2 Native Engine",
       "game": "Pokemon Sigma",
       "name": "Pokemon Sigma Multi-Bot",
       "port": 3002,
@@ -1891,8 +1891,8 @@
       "badge": "🚫 BANIDO (403)"
     },
     "telegram": {
-      "dashboardUrl": "https://kbelludoo.github.io/agent-go/",
-      "engine": "Go Native Agent (Bot Command)",
+      "dashboardUrl": "https://github.com/kbelludoo/vps-agent-nim",
+      "engine": "Nim 2.2 Native Agent (Bot Command)",
       "game": "Telegram",
       "name": "Telegram Relay Agent",
       "port": 0,
@@ -3266,14 +3266,14 @@
       ]
     },
     "twitchminer": {
-      "dashboardUrl": "https://kbelludoo.github.io/twitch-miner-go/",
-      "engine": "Go Native (Zero-Video WS)",
+      "dashboardUrl": "https://github.com/kbelludoo/twitch-miner-nim",
+      "engine": "Nim 2.2 Native (Zero-Video WS)",
       "game": "Twitch.tv",
       "name": "Twitch Channel Points Miner",
       "port": 3010,
       "status": {
         "logs": [
-          "[03:32:20] Iniciando Twitch Miner Go para 1 conta(s)...",
+          "[03:32:20] Iniciando Twitch Miner Nim para 1 conta(s)...",
           "[03:32:20] [Minerador #1] ✅ Autenticado com sucesso na Twitch! (ID: 21107325, Login: Minerador #1)",
           "[03:32:21] [Minerador #1] ⭐ Assistindo live de 'Gaules'! Pontos: 0",
           "[03:32:21] [Minerador #1] ⭐ Assistindo live de 'Baiano'! Pontos: 1090",
