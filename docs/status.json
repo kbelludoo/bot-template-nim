@@ -1,0 +1,3878 @@
+{
+  "bots": {
+    "baiak": {
+      "dashboardUrl": "https://kbelludoo.github.io/baiak-idle-bot/",
+      "engine": "Nim 2.2 ORC Native",
+      "game": "Baiak Idle",
+      "name": "Baiak Idle Multi-Account",
+      "port": 8090,
+      "status": {
+        "bots": {
+          "acc-1": {
+            "label": "Conta 1",
+            "name": "",
+            "online": true,
+            "reachable": true,
+            "status": {
+              "currentArea": "Vexclaw",
+              "gold": 432826048,
+              "hunt": {
+                "id": "Vexclaw",
+                "name": "Vexclaw"
+              },
+              "kills": 24979,
+              "level": 404,
+              "online": true,
+              "rates": {
+                "goldPerHour": 2778969.5763466554,
+                "xpPerHour": 4346852.807436482
+              },
+              "state": {
+                "inTreino": false
+              },
+              "status": "hunting",
+              "telemetry": {
+                "gold": 432826048,
+                "kills": 24979,
+                "level": 404,
+                "stamina": "23h 04m (55%)"
+              },
+              "treino": false,
+              "uptimeSec": 157759,
+              "vocation": "paladin"
+            }
+          },
+          "acc-2": {
+            "label": "Conta 2",
+            "name": "",
+            "online": true,
+            "reachable": true,
+            "status": {
+              "currentArea": "Stone Refiner",
+              "gold": 241694190,
+              "hunt": {
+                "id": "Stone Refiner",
+                "name": "Stone Refiner"
+              },
+              "kills": 105890,
+              "level": 278,
+              "online": true,
+              "rates": {
+                "goldPerHour": 201043.32814927615,
+                "xpPerHour": 1500111.2918356992
+              },
+              "state": {
+                "inTreino": false
+              },
+              "status": "hunting",
+              "telemetry": {
+                "gold": 241694190,
+                "kills": 105890,
+                "level": 278,
+                "stamina": "24h 57m (59%)"
+              },
+              "treino": false,
+              "uptimeSec": 157588,
+              "vocation": "monk"
+            }
+          },
+          "acc-3": {
+            "label": "Conta 3",
+            "name": "",
+            "online": true,
+            "reachable": true,
+            "status": {
+              "currentArea": "Vexclaw",
+              "gold": 531828,
+              "hunt": {
+                "id": "Vexclaw",
+                "name": "Vexclaw"
+              },
+              "kills": 25392,
+              "level": 505,
+              "online": true,
+              "rates": {
+                "goldPerHour": 2779456.3536253255,
+                "xpPerHour": 4347614.400304381
+              },
+              "state": {
+                "inTreino": false
+              },
+              "status": "hunting",
+              "telemetry": {
+                "gold": 531828,
+                "kills": 25392,
+                "level": 505,
+                "stamina": "38h 54m (93%)"
+              },
+              "treino": false,
+              "uptimeSec": 157824,
+              "vocation": "knight"
+            }
+          },
+          "acc-4": {
+            "label": "Conta 4",
+            "name": "",
+            "online": true,
+            "reachable": true,
+            "status": {
+              "currentArea": "Vexclaw",
+              "gold": 151840905,
+              "hunt": {
+                "id": "Vexclaw",
+                "name": "Vexclaw"
+              },
+              "kills": 29336,
+              "level": 510,
+              "online": true,
+              "rates": {
+                "goldPerHour": 2776269.7962301797,
+                "xpPerHour": 4342630.69065398
+              },
+              "state": {
+                "inTreino": false
+              },
+              "status": "hunting",
+              "telemetry": {
+                "gold": 151840905,
+                "kills": 29336,
+                "level": 510,
+                "stamina": "23h 16m (55%)"
+              },
+              "treino": false,
+              "uptimeSec": 157693,
+              "vocation": "druid"
+            }
+          }
+        },
+        "fleet": {
+          "botsOnline": 4,
+          "botsTotal": 4,
+          "totalGold": 826892971,
+          "totalLootPerHour": 8535739.054351438,
+          "totalXpPerHour": 14537209.19023054
+        },
+        "summary": {
+          "botsOnline": 4,
+          "botsTotal": 4,
+          "totalGold": 826892971,
+          "totalLootPerHour": 8535739.054351438,
+          "totalXpPerHour": 14537209.19023054
+        }
+      },
+      "accounts": [
+        {
+          "alias": "Conta 1 - mister k",
+          "level": 285,
+          "gold": 232098000,
+          "kills": 154732,
+          "exp": 386830000,
+          "status": "HUNTING"
+        },
+        {
+          "alias": "Conta 2 - mister k",
+          "level": 285,
+          "gold": 232005000,
+          "kills": 154670,
+          "exp": 386675000,
+          "status": "HUNTING"
+        },
+        {
+          "alias": "Conta 3 - mister k",
+          "level": 285,
+          "gold": 232014000,
+          "kills": 154676,
+          "exp": 386690000,
+          "status": "HUNTING"
+        },
+        {
+          "alias": "Conta 4 - CHEREMOZOVU",
+          "level": 285,
+          "gold": 388587327,
+          "kills": 154626,
+          "exp": 386565000,
+          "status": "HUNTING"
+        }
+      ]
+    },
+    "farmricochet": {
+      "dashboardUrl": "https://kbelludoo.github.io/farmricochet-bot/",
+      "engine": "Go Native Engine (Circuit Breaker)",
+      "game": "Farm Ricochet",
+      "name": "Farm Ricochet Bot",
+      "port": 3013,
+      "status": {
+        "accounts": [
+          {
+            "currentArea": "Fase 45: Ato 2 — Resistência · Pântano 4/5",
+            "durationSec": 946,
+            "expPerHour": 4566.036080589942,
+            "extra": {
+              "essence": 285,
+              "forgeFragments": 0,
+              "gems": 26,
+              "onlinePlayers": 505,
+              "stone": 143162,
+              "wheat": 82943,
+              "wood": 62385
+            },
+            "gold": 17829,
+            "hp": 568,
+            "id": "farm-1",
+            "kills": 10,
+            "level": 45,
+            "logs": [
+              "[12:34:03] 🎖️ 22 níveis do Passe de Batalha resgatados!",
+              "[12:34:47] 🎟️ 1 missões do Passe de Batalha resgatadas!",
+              "[12:34:48] 🎖️ 22 níveis do Passe de Batalha resgatados!",
+              "[12:35:32] 🎟️ 1 missões do Passe de Batalha resgatadas!",
+              "[12:35:33] 🎖️ 22 níveis do Passe de Batalha resgatados!",
+              "[12:36:17] 🎟️ 1 missões do Passe de Batalha resgatadas!",
+              "[12:36:18] 🎖️ 22 níveis do Passe de Batalha resgatados!",
+              "[12:37:02] 🎟️ 1 missões do Passe de Batalha resgatadas!",
+              "[12:37:03] 🎖️ 22 níveis do Passe de Batalha resgatados!",
+              "[12:37:47] 🎟️ 1 missões do Passe de Batalha resgatadas!",
+              "[12:37:48] 🎖️ 22 níveis do Passe de Batalha resgatados!",
+              "[12:38:32] 🎟️ 1 missões do Passe de Batalha resgatadas!",
+              "[12:38:33] 🎖️ 22 níveis do Passe de Batalha resgatados!",
+              "[12:39:19] 🎟️ 1 missões do Passe de Batalha resgatadas!",
+              "[12:39:21] 🎖️ 22 níveis do Passe de Batalha resgatados!"
+            ],
+            "mana": 100,
+            "maxHp": 568,
+            "maxMana": 100,
+            "name": "anonimo",
+            "status": "Jogando Fase 45",
+            "updatedAt": 1793030093157,
+            "vocation": "knight"
+          }
+        ],
+        "goroutines": 10,
+        "ramAllocMB": 1.74267578125,
+        "ramSysMB": 13.349861145019531,
+        "uptime": "45h0m59s"
+      }
+    },
+    "huntera": {
+      "dashboardUrl": "https://kbelludoo.github.io/huntera-bot/",
+      "engine": "Nim 2.2 ORC Native",
+      "game": "Huntera",
+      "name": "Huntera Idle Bot",
+      "port": 3000,
+      "status": {
+        "accounts": [
+          {
+            "analyzer": {
+              "experience": 2007290,
+              "kills": 6939,
+              "lootValue": 0,
+              "waste": 0
+            },
+            "bestiary": {
+              "bonusPercent": 19,
+              "byMonster": {
+                "acolyteOfTheCult": 17395,
+                "adeptOfTheCult": 49,
+                "amazon": 11638,
+                "bogRaider": 2500,
+                "bonelord": 70,
+                "corymCharlatan": 18,
+                "cyclops": 32,
+                "dragon": 9,
+                "elderBonelord": 22,
+                "enlightenedOfTheCult": 45,
+                "frostTroll": 2508,
+                "giantSpider": 606,
+                "hero": 22,
+                "minotaur": 684,
+                "mummy": 8,
+                "mutatedBat": 10874,
+                "mutatedHuman": 1829,
+                "mutatedTiger": 10869,
+                "noviceOfTheCult": 17658,
+                "orc": 2506,
+                "rat": 12898,
+                "rotworm": 39,
+                "scarab": 78,
+                "spider": 2510,
+                "swampTroll": 1085,
+                "tarantula": 2873,
+                "troll": 2507,
+                "valkyrie": 7342,
+                "winterWolf": 2505
+              },
+              "completedMonsters": 14,
+              "currentMonster": "Adept of the Cult",
+              "kills": 49,
+              "monsterId": "adeptOfTheCult",
+              "required": 2500,
+              "stage": 0,
+              "stages": {
+                "acolyteOfTheCult": 1,
+                "amazon": 1,
+                "mutatedBat": 1,
+                "noviceOfTheCult": 1,
+                "rat": 1
+              },
+              "targetStage": 1,
+              "totalKills": 111179,
+              "totalMonsters": 195
+            },
+            "charName": "Personagem #1",
+            "coins": 0,
+            "deaths": 0,
+            "experience": 342355,
+            "experienceNeeded": 851600,
+            "gold": 315341,
+            "hp": 2045,
+            "id": "acc1",
+            "inGame": true,
+            "level": 132,
+            "lootsTaken": 0,
+            "mana": 710,
+            "maxHp": 2045,
+            "maxMana": 710,
+            "sessionRemainingMs": 14399999,
+            "staminaMs": 8378580,
+            "staminaRefillCost": 418176,
+            "staminaRefillsLeft": 6,
+            "updatedAt": 1793022954193,
+            "vipActive": false,
+            "vipDays": 0
+          },
+          {
+            "analyzer": {
+              "experience": 2065854,
+              "kills": 5707,
+              "lootValue": 0,
+              "waste": 0
+            },
+            "bestiary": {
+              "bonusPercent": 16,
+              "byMonster": {
+                "acolyteOfTheCult": 17332,
+                "adeptOfTheCult": 48,
+                "amazon": 5347,
+                "assassin": 2500,
+                "bandit": 2635,
+                "bonelord": 70,
+                "corymCharlatan": 18,
+                "cyclops": 32,
+                "darkMonk": 2575,
+                "dragon": 9,
+                "elderBonelord": 22,
+                "enlightenedOfTheCult": 45,
+                "frostTroll": 5048,
+                "ghostWolf": 2,
+                "ghoul": 6,
+                "gloomWolf": 2,
+                "hero": 22,
+                "minotaur": 640,
+                "mummy": 6,
+                "noviceOfTheCult": 17619,
+                "orc": 2500,
+                "rat": 290,
+                "rotworm": 54,
+                "scarab": 66,
+                "skeleton": 2091,
+                "smuggler": 3341,
+                "spider": 2502,
+                "swampTroll": 2510,
+                "tarantula": 2556,
+                "troll": 2502,
+                "valkyrie": 5205,
+                "wildWarrior": 3410,
+                "winterWolf": 5048
+              },
+              "completedMonsters": 16,
+              "currentMonster": "Adept of the Cult",
+              "kills": 48,
+              "monsterId": "adeptOfTheCult",
+              "required": 2500,
+              "stage": 0,
+              "stages": {
+                "acolyteOfTheCult": 1,
+                "noviceOfTheCult": 1
+              },
+              "targetStage": 1,
+              "totalKills": 86053,
+              "totalMonsters": 195
+            },
+            "charName": "Personagem #2",
+            "coins": 0,
+            "deaths": 0,
+            "experience": 334339,
+            "experienceNeeded": 515200,
+            "gold": 117,
+            "hp": 1135,
+            "id": "acc2",
+            "inGame": true,
+            "level": 103,
+            "lootsTaken": 0,
+            "mana": 1515,
+            "maxHp": 1135,
+            "maxMana": 1515,
+            "sessionRemainingMs": 14400000,
+            "staminaMs": 24943906,
+            "staminaRefillCost": 254616,
+            "staminaRefillsLeft": 6,
+            "updatedAt": 1793022954193,
+            "vipActive": false,
+            "vipDays": 0
+          },
+          {
+            "analyzer": {
+              "experience": 2362218,
+              "kills": 6434,
+              "lootValue": 0,
+              "waste": 0
+            },
+            "bestiary": {
+              "bonusPercent": 25,
+              "byMonster": {
+                "acolyteOfTheCult": 26676,
+                "adeptOfTheCult": 50,
+                "amazon": 18956,
+                "assassin": 4091,
+                "bandit": 4101,
+                "bonelord": 70,
+                "corymCharlatan": 18,
+                "cyclops": 32,
+                "darkMonk": 4148,
+                "dragon": 9,
+                "elderBonelord": 22,
+                "enlightenedOfTheCult": 45,
+                "frostTroll": 2500,
+                "hero": 22,
+                "minotaur": 598,
+                "mummy": 8,
+                "mutatedBat": 6216,
+                "mutatedTiger": 6360,
+                "noviceOfTheCult": 27237,
+                "orc": 2502,
+                "rat": 10427,
+                "rotworm": 31,
+                "scarab": 78,
+                "skeleton": 800,
+                "smuggler": 5191,
+                "spider": 2505,
+                "swampTroll": 2500,
+                "tarantula": 2856,
+                "troll": 2505,
+                "valkyrie": 11838,
+                "vampire": 33,
+                "wildWarrior": 5199,
+                "winterWolf": 2501
+              },
+              "completedMonsters": 19,
+              "currentMonster": "Adept of the Cult",
+              "kills": 50,
+              "monsterId": "adeptOfTheCult",
+              "required": 2500,
+              "stage": 0,
+              "stages": {
+                "acolyteOfTheCult": 1,
+                "amazon": 2,
+                "noviceOfTheCult": 1,
+                "rat": 1,
+                "valkyrie": 1
+              },
+              "targetStage": 1,
+              "totalKills": 150125,
+              "totalMonsters": 195
+            },
+            "charName": "Personagem #3",
+            "coins": 0,
+            "deaths": 0,
+            "experience": 285616,
+            "experienceNeeded": 567200,
+            "gold": 300985,
+            "hp": 685,
+            "id": "acc3",
+            "inGame": true,
+            "level": 108,
+            "lootsTaken": 0,
+            "mana": 3090,
+            "maxHp": 685,
+            "maxMana": 3090,
+            "sessionRemainingMs": 0,
+            "staminaMs": 298058,
+            "staminaRefillCost": 279936,
+            "staminaRefillsLeft": 6,
+            "updatedAt": 1793022954193,
+            "vipActive": false,
+            "vipDays": 0
+          },
+          {
+            "analyzer": {
+              "experience": 412544,
+              "kills": 1139,
+              "lootValue": 0,
+              "waste": 0
+            },
+            "bestiary": {
+              "bonusPercent": 15,
+              "byMonster": {
+                "acolyteOfTheCult": 1791,
+                "adeptOfTheCult": 50,
+                "amazon": 20934,
+                "bogRaider": 380,
+                "bonelord": 70,
+                "corymCharlatan": 18,
+                "cyclops": 32,
+                "dragon": 9,
+                "elderBonelord": 22,
+                "enlightenedOfTheCult": 45,
+                "frostTroll": 300,
+                "giantSpider": 6,
+                "hero": 22,
+                "minotaur": 371,
+                "mummy": 8,
+                "mutatedBat": 10881,
+                "mutatedTiger": 11090,
+                "noviceOfTheCult": 1907,
+                "orc": 2503,
+                "rat": 10358,
+                "rotworm": 29,
+                "scarab": 81,
+                "skeleton": 168,
+                "spider": 2515,
+                "swampTroll": 1153,
+                "tarantula": 2844,
+                "troll": 2508,
+                "valkyrie": 13006,
+                "winterWolf": 300
+              },
+              "completedMonsters": 9,
+              "currentMonster": "Novice of the Cult",
+              "kills": 1907,
+              "monsterId": "noviceOfTheCult",
+              "required": 2500,
+              "stage": 0,
+              "stages": {
+                "acolyteOfTheCult": 0,
+                "amazon": 2,
+                "mutatedBat": 1,
+                "mutatedTiger": 1,
+                "noviceOfTheCult": 0,
+                "rat": 1,
+                "valkyrie": 1
+              },
+              "targetStage": 1,
+              "totalKills": 83401,
+              "totalMonsters": 195
+            },
+            "charName": "Personagem #4",
+            "coins": 0,
+            "deaths": 0,
+            "experience": 135663,
+            "experienceNeeded": 535700,
+            "gold": 52543,
+            "hp": 561,
+            "id": "acc4",
+            "inGame": true,
+            "level": 105,
+            "lootsTaken": 0,
+            "mana": 3000,
+            "maxHp": 670,
+            "maxMana": 3000,
+            "sessionRemainingMs": 0,
+            "staminaMs": 33804361,
+            "staminaRefillCost": 172645,
+            "staminaRefillsLeft": 6,
+            "updatedAt": 1793022954193,
+            "vipActive": false,
+            "vipDays": 0
+          }
+        ],
+        "serverTime": 1793191202881
+      },
+      "accounts": [
+        {
+          "alias": "Kbelludoo",
+          "level": 92,
+          "hp": 590,
+          "maxHp": 590,
+          "gold": 1970551,
+          "kills": 56333,
+          "status": "HUNTING"
+        },
+        {
+          "alias": "Kbelludoom",
+          "level": 91,
+          "hp": 585,
+          "maxHp": 585,
+          "gold": 1729461,
+          "kills": 55511,
+          "status": "HUNTING"
+        },
+        {
+          "alias": "Kbelludoos",
+          "level": 89,
+          "hp": 575,
+          "maxHp": 575,
+          "gold": 1053351,
+          "kills": 55882,
+          "status": "HUNTING"
+        },
+        {
+          "alias": "Kbelludook",
+          "level": 85,
+          "hp": 1325,
+          "maxHp": 1325,
+          "gold": 687995,
+          "kills": 57536,
+          "status": "HUNTING"
+        }
+      ]
+    },
+    "kaggle": {
+      "dashboardUrl": "https://kbelludoo.github.io/agent-go/",
+      "engine": "Go Native Agent (24/7 Watcher)",
+      "game": "Kaggle",
+      "name": "Kaggle Training Watcher",
+      "port": 0,
+      "status": null
+    },
+    "kickminer": {
+      "dashboardUrl": "https://kbelludoo.github.io/kick-miner-go/",
+      "engine": "Go Native (Zero-Video WS)",
+      "game": "Kick.com",
+      "name": "Kick Channel Points Miner",
+      "port": 3009,
+      "status": {
+        "accounts": {
+          "miner_1": {
+            "activeStreams": 12,
+            "streamers": {
+              "adinross": {
+                "autoFill": false,
+                "isLive": false,
+                "points": 2190,
+                "streamer": "adinross",
+                "watchTime": "",
+                "watching": false
+              },
+              "amouranth": {
+                "autoFill": false,
+                "isLive": false,
+                "points": 0,
+                "streamer": "amouranth",
+                "watchTime": "",
+                "watching": false
+              },
+              "anonimo": {
+                "autoFill": false,
+                "isLive": true,
+                "points": 0,
+                "streamer": "anonimo",
+                "watchTime": "19h15m47s",
+                "watching": true
+              },
+              "asteek": {
+                "autoFill": true,
+                "isLive": true,
+                "points": 0,
+                "streamer": "asteek",
+                "watchTime": "2h11m1s",
+                "watching": true
+              },
+              "axtlol": {
+                "autoFill": false,
+                "isLive": false,
+                "points": 0,
+                "streamer": "axtlol",
+                "watchTime": "",
+                "watching": false
+              },
+              "baianotv": {
+                "autoFill": false,
+                "isLive": false,
+                "points": 0,
+                "streamer": "baianotv",
+                "watchTime": "",
+                "watching": false
+              },
+              "brkk": {
+                "autoFill": true,
+                "isLive": true,
+                "points": 0,
+                "streamer": "brkk",
+                "watchTime": "12h26m52s",
+                "watching": true
+              },
+              "brtt": {
+                "autoFill": false,
+                "isLive": false,
+                "points": 1310,
+                "streamer": "brtt",
+                "watchTime": "",
+                "watching": false
+              },
+              "budega": {
+                "autoFill": false,
+                "isLive": false,
+                "points": 0,
+                "streamer": "budega",
+                "watchTime": "",
+                "watching": false
+              },
+              "cerol": {
+                "autoFill": false,
+                "isLive": false,
+                "points": 0,
+                "streamer": "cerol",
+                "watchTime": "",
+                "watching": false
+              },
+              "classybeef": {
+                "autoFill": false,
+                "isLive": true,
+                "points": 2810,
+                "streamer": "classybeef",
+                "watchTime": "5h14m8s",
+                "watching": true
+              },
+              "cogu": {
+                "autoFill": false,
+                "isLive": false,
+                "points": 1280,
+                "streamer": "cogu",
+                "watchTime": "",
+                "watching": false
+              },
+              "deuces": {
+                "autoFill": false,
+                "isLive": false,
+                "points": 0,
+                "streamer": "deuces",
+                "watchTime": "",
+                "watching": false
+              },
+              "dirrty": {
+                "autoFill": false,
+                "isLive": false,
+                "points": 0,
+                "streamer": "dirrty",
+                "watchTime": "",
+                "watching": false
+              },
+              "faasii": {
+                "autoFill": false,
+                "isLive": false,
+                "points": 0,
+                "streamer": "faasii",
+                "watchTime": "",
+                "watching": false
+              },
+              "faturetosl": {
+                "autoFill": true,
+                "isLive": true,
+                "points": 750,
+                "streamer": "faturetosl",
+                "watchTime": "10h5m5s",
+                "watching": true
+              },
+              "felps": {
+                "autoFill": false,
+                "isLive": false,
+                "points": 0,
+                "streamer": "felps",
+                "watchTime": "",
+                "watching": false
+              },
+              "gaules": {
+                "autoFill": false,
+                "isLive": true,
+                "points": 13660,
+                "streamer": "gaules",
+                "watchTime": "1h47m55s",
+                "watching": true
+              },
+              "hasanabi": {
+                "autoFill": false,
+                "isLive": false,
+                "points": 0,
+                "streamer": "hasanabi",
+                "watchTime": "",
+                "watching": false
+              },
+              "jynxzi": {
+                "autoFill": false,
+                "isLive": false,
+                "points": 0,
+                "streamer": "jynxzi",
+                "watchTime": "",
+                "watching": false
+              },
+              "k1ng": {
+                "autoFill": false,
+                "isLive": false,
+                "points": 0,
+                "streamer": "k1ng",
+                "watchTime": "",
+                "watching": false
+              },
+              "kaicenat": {
+                "autoFill": false,
+                "isLive": false,
+                "points": 0,
+                "streamer": "kaicenat",
+                "watchTime": "",
+                "watching": false
+              },
+              "king": {
+                "autoFill": false,
+                "isLive": false,
+                "points": 0,
+                "streamer": "king",
+                "watchTime": "",
+                "watching": false
+              },
+              "lacy": {
+                "autoFill": false,
+                "isLive": false,
+                "points": 0,
+                "streamer": "lacy",
+                "watchTime": "",
+                "watching": false
+              },
+              "loud_coringa": {
+                "autoFill": false,
+                "isLive": false,
+                "points": 0,
+                "streamer": "loud_coringa",
+                "watchTime": "",
+                "watching": false
+              },
+              "matta": {
+                "autoFill": false,
+                "isLive": false,
+                "points": 10780,
+                "streamer": "matta",
+                "watchTime": "",
+                "watching": false
+              },
+              "mizkif": {
+                "autoFill": false,
+                "isLive": false,
+                "points": 5200,
+                "streamer": "mizkif",
+                "watchTime": "",
+                "watching": false
+              },
+              "nickmercs": {
+                "autoFill": false,
+                "isLive": false,
+                "points": 0,
+                "streamer": "nickmercs",
+                "watchTime": "",
+                "watching": false
+              },
+              "nmplol": {
+                "autoFill": false,
+                "isLive": false,
+                "points": 0,
+                "streamer": "nmplol",
+                "watchTime": "",
+                "watching": false
+              },
+              "nobru": {
+                "autoFill": false,
+                "isLive": false,
+                "points": 0,
+                "streamer": "nobru",
+                "watchTime": "",
+                "watching": false
+              },
+              "razo97": {
+                "autoFill": true,
+                "isLive": true,
+                "points": 410,
+                "streamer": "razo97",
+                "watchTime": "1h53m44s",
+                "watching": true
+              },
+              "reverso": {
+                "autoFill": false,
+                "isLive": false,
+                "points": 0,
+                "streamer": "reverso",
+                "watchTime": "",
+                "watching": false
+              },
+              "rodil": {
+                "autoFill": true,
+                "isLive": true,
+                "points": 2010,
+                "streamer": "rodil",
+                "watchTime": "5h5m3s",
+                "watching": true
+              },
+              "roshtein": {
+                "autoFill": false,
+                "isLive": false,
+                "points": 0,
+                "streamer": "roshtein",
+                "watchTime": "",
+                "watching": false
+              },
+              "sheviii2k": {
+                "autoFill": false,
+                "isLive": true,
+                "points": 1950,
+                "streamer": "sheviii2k",
+                "watchTime": "11m57s",
+                "watching": true
+              },
+              "sketch": {
+                "autoFill": false,
+                "isLive": false,
+                "points": 0,
+                "streamer": "sketch",
+                "watchTime": "",
+                "watching": false
+              },
+              "sodapoppin": {
+                "autoFill": false,
+                "isLive": false,
+                "points": 0,
+                "streamer": "sodapoppin",
+                "watchTime": "",
+                "watching": false
+              },
+              "sxb": {
+                "autoFill": false,
+                "isLive": false,
+                "points": 120,
+                "streamer": "sxb",
+                "watchTime": "",
+                "watching": false
+              },
+              "tarik": {
+                "autoFill": false,
+                "isLive": false,
+                "points": 0,
+                "streamer": "tarik",
+                "watchTime": "",
+                "watching": false
+              },
+              "tealz": {
+                "autoFill": true,
+                "isLive": true,
+                "points": 20,
+                "streamer": "tealz",
+                "watchTime": "3h14m48s",
+                "watching": true
+              },
+              "tftoddy": {
+                "autoFill": false,
+                "isLive": false,
+                "points": 1390,
+                "streamer": "tftoddy",
+                "watchTime": "",
+                "watching": false
+              },
+              "trainwreckstv": {
+                "autoFill": false,
+                "isLive": false,
+                "points": 0,
+                "streamer": "trainwreckstv",
+                "watchTime": "",
+                "watching": false
+              },
+              "westcol": {
+                "autoFill": false,
+                "isLive": false,
+                "points": 0,
+                "streamer": "westcol",
+                "watchTime": "",
+                "watching": false
+              },
+              "xdaren_": {
+                "autoFill": false,
+                "isLive": false,
+                "points": 0,
+                "streamer": "xdaren_",
+                "watchTime": "",
+                "watching": false
+              },
+              "xqc": {
+                "autoFill": false,
+                "isLive": true,
+                "points": 1960,
+                "streamer": "xqc",
+                "watchTime": "15h36m41s",
+                "watching": true
+              },
+              "zurtado18": {
+                "autoFill": true,
+                "isLive": true,
+                "points": 0,
+                "streamer": "zurtado18",
+                "watchTime": "2h2m47s",
+                "watching": true
+              }
+            },
+            "totalPoints": 45840,
+            "username": "Minerador #1"
+          }
+        },
+        "goroutines": 52,
+        "logs": [
+          "[12:02:03] [anonimo] ⚠ WebSocket de 'zurtado18' caiu: read tcp 10.0.0.191:54008->162.159.235.122:443: read: connection reset by peer. Reconectando em 20s...",
+          "[12:02:10] [anonimo] 💰 Live de 'gaules': saldo atualizado para 13640 pontos (+10 creditados)!",
+          "[12:02:23] [anonimo] ⭐ Conectado à live de 'zurtado18'! Saldo atual: 0 pontos (+10 a cada 5m).",
+          "[12:02:35] [anonimo] 💰 Live de 'rodil': saldo atualizado para 1970 pontos (+10 creditados)!",
+          "[12:02:42] [anonimo] 💰 Live de 'brkk': saldo atualizado para 0 pontos (+10 creditados)!",
+          "[12:03:07] [anonimo] ⚠ WebSocket de 'rodil' caiu: read tcp 10.0.0.191:57560->162.159.235.122:443: i/o timeout. Reconectando em 40s...",
+          "[12:03:19] [anonimo] 💰 Live de 'xqc': saldo atualizado para 1950 pontos (+10 creditados)!",
+          "[12:03:32] [anonimo] 💰 Live de 'anonimo': saldo atualizado para 0 pontos (+10 creditados)!",
+          "[12:03:49] [anonimo] ⭐ Conectado à live de 'rodil'! Saldo atual: 1980 pontos (+10 a cada 5m).",
+          "[12:04:09] [anonimo] 💰 Live de 'king': saldo atualizado para 0 pontos (+10 creditados)!",
+          "[12:04:18] [anonimo] 💰 Live de 'asteek': saldo atualizado para 0 pontos (+10 creditados)!",
+          "[12:05:16] [anonimo] 💰 Live de 'tealz': saldo atualizado para 20 pontos (+10 creditados)!",
+          "[12:06:20] [anonimo] 💰 Live de 'razo97': saldo atualizado para 350 pontos (+10 creditados)!",
+          "[12:07:01] [anonimo] 💰 Live de 'faturetosl': saldo atualizado para 740 pontos (+10 creditados)!",
+          "[12:07:10] [anonimo] 💰 Live de 'gaules': saldo atualizado para 13650 pontos (+10 creditados)!",
+          "[12:07:24] [anonimo] 💰 Live de 'zurtado18': saldo atualizado para 0 pontos (+10 creditados)!",
+          "[12:07:42] [anonimo] 💰 Live de 'brkk': saldo atualizado para 0 pontos (+10 creditados)!",
+          "[12:08:19] [anonimo] 💰 Live de 'xqc': saldo atualizado para 1950 pontos (+10 creditados)!",
+          "[12:08:32] [anonimo] 💰 Live de 'anonimo': saldo atualizado para 0 pontos (+10 creditados)!",
+          "[12:08:50] [anonimo] 💰 Live de 'rodil': saldo atualizado para 1980 pontos (+10 creditados)!",
+          "[12:09:09] [anonimo] 💰 Live de 'king': saldo atualizado para 0 pontos (+10 creditados)!",
+          "[12:09:18] [anonimo] 💰 Live de 'asteek': saldo atualizado para 0 pontos (+10 creditados)!",
+          "[12:10:16] [anonimo] 💰 Live de 'tealz': saldo atualizado para 20 pontos (+10 creditados)!",
+          "[12:10:47] [anonimo] 💰 Live de 'classybeef': saldo atualizado para 2810 pontos (+10 creditados)!",
+          "[12:11:20] [anonimo] 💰 Live de 'razo97': saldo atualizado para 360 pontos (+10 creditados)!",
+          "[12:12:01] [anonimo] 💰 Live de 'faturetosl': saldo atualizado para 750 pontos (+10 creditados)!",
+          "[12:12:10] [anonimo] 💰 Live de 'gaules': saldo atualizado para 13650 pontos (+10 creditados)!",
+          "[12:12:24] [anonimo] 💰 Live de 'zurtado18': saldo atualizado para 0 pontos (+10 creditados)!",
+          "[12:12:42] [anonimo] 💰 Live de 'brkk': saldo atualizado para 0 pontos (+10 creditados)!",
+          "[12:13:19] [anonimo] 💰 Live de 'xqc': saldo atualizado para 1950 pontos (+10 creditados)!",
+          "[12:13:32] [anonimo] 💰 Live de 'anonimo': saldo atualizado para 0 pontos (+10 creditados)!",
+          "[12:13:50] [anonimo] 💰 Live de 'rodil': saldo atualizado para 1990 pontos (+10 creditados)!",
+          "[12:14:09] [anonimo] 💰 Live de 'king': saldo atualizado para 0 pontos (+10 creditados)!",
+          "[12:14:18] [anonimo] 💰 Live de 'asteek': saldo atualizado para 0 pontos (+10 creditados)!",
+          "[12:15:16] [anonimo] 💰 Live de 'tealz': saldo atualizado para 20 pontos (+10 creditados)!",
+          "[12:15:47] [anonimo] 💰 Live de 'classybeef': saldo atualizado para 2810 pontos (+10 creditados)!",
+          "[12:16:20] [anonimo] 💰 Live de 'razo97': saldo atualizado para 370 pontos (+10 creditados)!",
+          "[12:17:01] [anonimo] 💰 Live de 'faturetosl': saldo atualizado para 750 pontos (+10 creditados)!",
+          "[12:17:10] [anonimo] 💰 Live de 'gaules': saldo atualizado para 13650 pontos (+10 creditados)!",
+          "[12:17:24] [anonimo] 💰 Live de 'zurtado18': saldo atualizado para 0 pontos (+10 creditados)!",
+          "[12:17:29] [anonimo] Sessão de visualização na live de 'king' finalizada.",
+          "[12:17:29] [anonimo] 📴 Live de 'king' terminou; slot liberado.",
+          "[12:17:42] [anonimo] 💰 Live de 'brkk': saldo atualizado para 0 pontos (+10 creditados)!",
+          "[12:17:44] [anonimo] ⚡ [Auto-Fill] Conectando live de 'frostezor' para manter 12 ativos!",
+          "[12:17:48] [anonimo] ⭐ Conectado à live de 'frostezor'! Saldo atual: 0 pontos (+10 a cada 5m).",
+          "[12:18:19] [anonimo] 💰 Live de 'xqc': saldo atualizado para 1960 pontos (+10 creditados)!",
+          "[12:18:32] [anonimo] 💰 Live de 'anonimo': saldo atualizado para 0 pontos (+10 creditados)!",
+          "[12:18:50] [anonimo] 💰 Live de 'rodil': saldo atualizado para 1990 pontos (+10 creditados)!",
+          "[12:19:18] [anonimo] 💰 Live de 'asteek': saldo atualizado para 0 pontos (+10 creditados)!",
+          "[12:20:16] [anonimo] 💰 Live de 'tealz': saldo atualizado para 20 pontos (+10 creditados)!",
+          "[12:20:47] [anonimo] 💰 Live de 'classybeef': saldo atualizado para 2810 pontos (+10 creditados)!",
+          "[12:21:20] [anonimo] 💰 Live de 'razo97': saldo atualizado para 380 pontos (+10 creditados)!",
+          "[12:22:01] [anonimo] 💰 Live de 'faturetosl': saldo atualizado para 750 pontos (+10 creditados)!",
+          "[12:22:10] [anonimo] 💰 Live de 'gaules': saldo atualizado para 13650 pontos (+10 creditados)!",
+          "[12:22:24] [anonimo] 💰 Live de 'zurtado18': saldo atualizado para 0 pontos (+10 creditados)!",
+          "[12:22:42] [anonimo] 💰 Live de 'brkk': saldo atualizado para 0 pontos (+10 creditados)!",
+          "[12:22:48] [anonimo] 💰 Live de 'frostezor': saldo atualizado para 0 pontos (+10 creditados)!",
+          "[12:23:19] [anonimo] 💰 Live de 'xqc': saldo atualizado para 1960 pontos (+10 creditados)!",
+          "[12:23:32] [anonimo] 💰 Live de 'anonimo': saldo atualizado para 0 pontos (+10 creditados)!",
+          "[12:23:50] [anonimo] 💰 Live de 'rodil': saldo atualizado para 1990 pontos (+10 creditados)!",
+          "[12:24:18] [anonimo] 💰 Live de 'asteek': saldo atualizado para 0 pontos (+10 creditados)!",
+          "[12:25:16] [anonimo] 💰 Live de 'tealz': saldo atualizado para 20 pontos (+10 creditados)!",
+          "[12:25:47] [anonimo] 💰 Live de 'classybeef': saldo atualizado para 2810 pontos (+10 creditados)!",
+          "[12:26:20] [anonimo] 💰 Live de 'razo97': saldo atualizado para 390 pontos (+10 creditados)!",
+          "[12:27:01] [anonimo] 💰 Live de 'faturetosl': saldo atualizado para 750 pontos (+10 creditados)!",
+          "[12:27:10] [anonimo] 💰 Live de 'gaules': saldo atualizado para 13660 pontos (+10 creditados)!",
+          "[12:27:24] [anonimo] 💰 Live de 'zurtado18': saldo atualizado para 0 pontos (+10 creditados)!",
+          "[12:27:42] [anonimo] 💰 Live de 'brkk': saldo atualizado para 0 pontos (+10 creditados)!",
+          "[12:27:48] [anonimo] 💰 Live de 'frostezor': saldo atualizado para 0 pontos (+10 creditados)!",
+          "[12:28:06] [anonimo] 🔁 Favorito 'sheviii2k' entrou ao vivo: substituindo auto-fill 'frostezor'.",
+          "[12:28:06] [anonimo] Sessão de visualização na live de 'frostezor' finalizada.",
+          "[12:28:09] [anonimo] ⭐ Conectado à live de 'sheviii2k'! Saldo atual: 1940 pontos (+10 a cada 5m).",
+          "[12:28:19] [anonimo] 💰 Live de 'xqc': saldo atualizado para 1960 pontos (+10 creditados)!",
+          "[12:28:32] [anonimo] 💰 Live de 'anonimo': saldo atualizado para 0 pontos (+10 creditados)!",
+          "[12:28:50] [anonimo] 💰 Live de 'rodil': saldo atualizado para 2000 pontos (+10 creditados)!",
+          "[12:29:18] [anonimo] 💰 Live de 'asteek': saldo atualizado para 0 pontos (+10 creditados)!",
+          "[12:30:16] [anonimo] 💰 Live de 'tealz': saldo atualizado para 20 pontos (+10 creditados)!",
+          "[12:30:47] [anonimo] 💰 Live de 'classybeef': saldo atualizado para 2810 pontos (+10 creditados)!",
+          "[12:31:20] [anonimo] 💰 Live de 'razo97': saldo atualizado para 400 pontos (+10 creditados)!",
+          "[12:32:01] [anonimo] 💰 Live de 'faturetosl': saldo atualizado para 750 pontos (+10 creditados)!",
+          "[12:32:10] [anonimo] 💰 Live de 'gaules': saldo atualizado para 13660 pontos (+10 creditados)!",
+          "[12:32:24] [anonimo] 💰 Live de 'zurtado18': saldo atualizado para 0 pontos (+10 creditados)!",
+          "[12:32:42] [anonimo] 💰 Live de 'brkk': saldo atualizado para 0 pontos (+10 creditados)!",
+          "[12:33:09] [anonimo] 💰 Live de 'sheviii2k': saldo atualizado para 1940 pontos (+10 creditados)!",
+          "[12:33:19] [anonimo] 💰 Live de 'xqc': saldo atualizado para 1960 pontos (+10 creditados)!",
+          "[12:33:32] [anonimo] 💰 Live de 'anonimo': saldo atualizado para 0 pontos (+10 creditados)!",
+          "[12:33:50] [anonimo] 💰 Live de 'rodil': saldo atualizado para 2010 pontos (+10 creditados)!",
+          "[12:34:18] [anonimo] 💰 Live de 'asteek': saldo atualizado para 0 pontos (+10 creditados)!",
+          "[12:35:16] [anonimo] 💰 Live de 'tealz': saldo atualizado para 20 pontos (+10 creditados)!",
+          "[12:35:47] [anonimo] 💰 Live de 'classybeef': saldo atualizado para 2810 pontos (+10 creditados)!",
+          "[12:36:20] [anonimo] 💰 Live de 'razo97': saldo atualizado para 410 pontos (+10 creditados)!",
+          "[12:37:01] [anonimo] 💰 Live de 'faturetosl': saldo atualizado para 750 pontos (+10 creditados)!",
+          "[12:37:10] [anonimo] 💰 Live de 'gaules': saldo atualizado para 13660 pontos (+10 creditados)!",
+          "[12:37:24] [anonimo] 💰 Live de 'zurtado18': saldo atualizado para 0 pontos (+10 creditados)!",
+          "[12:37:42] [anonimo] 💰 Live de 'brkk': saldo atualizado para 0 pontos (+10 creditados)!",
+          "[12:38:09] [anonimo] 💰 Live de 'sheviii2k': saldo atualizado para 1950 pontos (+10 creditados)!",
+          "[12:38:19] [anonimo] 💰 Live de 'xqc': saldo atualizado para 1960 pontos (+10 creditados)!",
+          "[12:38:32] [anonimo] 💰 Live de 'anonimo': saldo atualizado para 0 pontos (+10 creditados)!",
+          "[12:38:50] [anonimo] 💰 Live de 'rodil': saldo atualizado para 2010 pontos (+10 creditados)!",
+          "[12:39:18] [anonimo] 💰 Live de 'asteek': saldo atualizado para 0 pontos (+10 creditados)!"
+        ],
+        "ramMb": 1.623779296875,
+        "totalStreams": 12,
+        "uptime": "44h59m21s"
+      }
+    },
+    "leveling": {
+      "dashboardUrl": "https://kbelludoo.github.io/leveling-bot/",
+      "engine": "Go Native Engine (Protobuf 3)",
+      "game": "Leveling Idle 2D",
+      "name": "Leveling Idle 2D Bot",
+      "port": 3003,
+      "status": {
+        "accounts": [
+          {
+            "codexInfo": "Completo (5/5 mobs) | Foco XP",
+            "currentArea": "Castelo dos Demônios (Orc Jovem Nv 25)",
+            "durationSec": 317769,
+            "expPerHour": 220997.2533980945,
+            "extra": {
+              "currentExp": 2712,
+              "expPercent": 0.6,
+              "expToNext": 483833,
+              "farmAvailableMin": 0,
+              "fatiguePercent": 0,
+              "goldReserve": 100000,
+              "investableGold": 7717289,
+              "isResting": false,
+              "onlineKpm": 0,
+              "partyTotalGold": 8117289,
+              "poolRole": "leader_investor",
+              "totalReserved": 400000
+            },
+            "gold": 1628529,
+            "hp": 825,
+            "id": "acc-1",
+            "kills": 1513452,
+            "level": 25,
+            "logs": [
+              "Servidor erro: item.notFound",
+              "Servidor erro: item.notFound",
+              "Servidor erro: item.notFound",
+              "Servidor erro: item.notFound",
+              "Servidor erro: item.notFound",
+              "Servidor erro: item.notFound",
+              "Party sincronizada.",
+              "Party sincronizada.",
+              "Party sincronizada.",
+              "Party sincronizada.",
+              "Party sincronizada.",
+              "Party sincronizada.",
+              "Info servidor: missions.unknown",
+              "Info servidor: shadow.notFound",
+              "Party sincronizada."
+            ],
+            "mana": 475,
+            "maxHp": 825,
+            "maxMana": 475,
+            "name": "Party #1",
+            "status": "Erro: item.notFound",
+            "updatedAt": 1793191202878
+          },
+          {
+            "codexInfo": "Completo (5/5 mobs) | Foco XP",
+            "currentArea": "Castelo dos Demônios (Orc Jovem Nv 25)",
+            "durationSec": 360474,
+            "expPerHour": 224831.17695871912,
+            "extra": {
+              "currentExp": 3485,
+              "expPercent": 0.2,
+              "expToNext": 1737836,
+              "farmAvailableMin": 0,
+              "fatiguePercent": 0,
+              "goldReserve": 100000,
+              "investableGold": 7717964,
+              "isResting": false,
+              "onlineKpm": 0,
+              "partyTotalGold": 8117964,
+              "poolRole": "leader_investor",
+              "totalReserved": 400000
+            },
+            "gold": 2297572,
+            "hp": 1100,
+            "id": "acc-2",
+            "kills": 1540694,
+            "level": 36,
+            "logs": [
+              "Auto-Follow: Sincronizando caçada com o líder -> Castelo dos Demônios (Orc Jovem Nv 25)",
+              "Party sincronizada.",
+              "Auto-Follow: Sincronizando caçada com o líder -> Castelo dos Demônios (Orc Jovem Nv 25)",
+              "Caçada iniciada: Castelo dos Demônios (Orc Jovem Nv 25)",
+              "Caçada iniciada: Castelo dos Demônios (Orc Jovem Nv 25)",
+              "Party sincronizada.",
+              "Party sincronizada.",
+              "Servidor: Automação completa ativada (Arise, Baús, Poções, Auto-Sell)",
+              "Talentos: +19 pontos em 'atk'",
+              "Info servidor: request.invalid",
+              "Info servidor: content.unknown",
+              "Party sincronizada.",
+              "Party sincronizada.",
+              "Party sincronizada.",
+              "Party sincronizada."
+            ],
+            "mana": 640,
+            "maxHp": 1100,
+            "maxMana": 640,
+            "name": "Party #2",
+            "status": "hunting",
+            "updatedAt": 1793191202878
+          },
+          {
+            "codexInfo": "Completo (5/5 mobs) | Foco XP",
+            "currentArea": "Castelo dos Demônios (Orc Jovem Nv 25)",
+            "durationSec": 321975,
+            "expPerHour": 221456.15080018382,
+            "extra": {
+              "currentExp": 2015,
+              "expPercent": 0.2,
+              "expToNext": 1155582,
+              "farmAvailableMin": 0,
+              "fatiguePercent": 0,
+              "goldReserve": 100000,
+              "investableGold": 7716639,
+              "isResting": false,
+              "onlineKpm": 0,
+              "partyTotalGold": 8116639,
+              "poolRole": "leader_investor",
+              "totalReserved": 400000
+            },
+            "gold": 1866565,
+            "hp": 1000,
+            "id": "acc-3",
+            "kills": 1526591,
+            "level": 32,
+            "logs": [
+              "Party sincronizada.",
+              "Party sincronizada.",
+              "Info servidor: missions.unknown",
+              "Party sincronizada.",
+              "Party sincronizada.",
+              "Party sincronizada.",
+              "Party sincronizada.",
+              "Party sincronizada.",
+              "Party sincronizada.",
+              "Party sincronizada.",
+              "Party sincronizada.",
+              "Party sincronizada.",
+              "Party sincronizada.",
+              "Party sincronizada.",
+              "Party sincronizada."
+            ],
+            "mana": 580,
+            "maxHp": 1000,
+            "maxMana": 580,
+            "name": "Party #3",
+            "status": "Erro: item.notFound",
+            "updatedAt": 1793191202878
+          },
+          {
+            "codexInfo": "Completo (5/5 mobs) | Foco XP",
+            "currentArea": "Castelo dos Demônios (Orc Jovem Nv 25)",
+            "durationSec": 377829,
+            "expPerHour": 227166.7175212535,
+            "extra": {
+              "currentExp": 621,
+              "expPercent": 0,
+              "expToNext": 1576882,
+              "farmAvailableMin": 0,
+              "fatiguePercent": 0,
+              "goldReserve": 100000,
+              "investableGold": 7716479,
+              "isResting": false,
+              "onlineKpm": 0,
+              "partyTotalGold": 8116479,
+              "poolRole": "leader_investor",
+              "totalReserved": 400000
+            },
+            "gold": 2324313,
+            "hp": 1075,
+            "id": "acc-4",
+            "kills": 1559747,
+            "level": 35,
+            "logs": [
+              "Personagem derrotado em combate! Reiniciando caçada...",
+              "Desistência confirmada. Retomando caçada...",
+              "Party sincronizada.",
+              "Auto-Follow: Sincronizando caçada com o líder -> Castelo dos Demônios (Orc Jovem Nv 25)",
+              "Caçada iniciada: Castelo dos Demônios (Orc Jovem Nv 25)",
+              "Party sincronizada.",
+              "Party sincronizada.",
+              "Party sincronizada.",
+              "Party sincronizada.",
+              "Party sincronizada.",
+              "Party sincronizada.",
+              "Party sincronizada.",
+              "Party sincronizada.",
+              "Party sincronizada.",
+              "Party sincronizada."
+            ],
+            "mana": 625,
+            "maxHp": 1075,
+            "maxMana": 625,
+            "name": "Party #4",
+            "status": "hunting",
+            "updatedAt": 1793191202878
+          }
+        ],
+        "goroutines": 16,
+        "ramAllocMB": 1.700653076171875,
+        "ramSysMB": 25.34986114501953,
+        "uptime": "46h28m32s"
+      }
+    },
+    "lichess": {
+      "dashboardUrl": "https://lichess.org/@/kbelludoo",
+      "engine": "Go 1.27 + Stockfish 17.1 NNUE",
+      "game": "Lichess.org",
+      "name": "Lichess Bot (Berserk)",
+      "port": 3016,
+      "status": {
+        "active_games": 0,
+        "bot_user": "anonimo",
+        "dashboard": "https://lichess.org/@/kbelludoo",
+        "db_symbols": 29819,
+        "game": "Lichess.org • Go + Stockfish NNUE",
+        "games_played": 142,
+        "idle_learner": {
+          "current_source": "Lichess TV / Top GMs",
+          "enabled": true,
+          "games_learned": 148,
+          "is_idle": true,
+          "last_game_desc": "Onlybrilliantmoves (3042) venceu Aronyak1 (3187) [1-0]",
+          "last_learned_at": "2026-10-28T12:33:04.783348677Z",
+          "moves_learned": 1469,
+          "status": "🧠 Ocioso — Monitorando Lichess TV e Partidas de Grandes Mestres",
+          "total_symbols": 29819
+        },
+        "key": "lichess",
+        "last_eval": "+0.00 (Forçado)",
+        "last_move": "d2d3",
+        "last_opp": "RavenEngine",
+        "losses": 131,
+        "mode": "berserk",
+        "moves_played": 2344,
+        "name": "Lichess Bot (Berserk)",
+        "online": true,
+        "port": 3016,
+        "ram_mb": "264.67 MB",
+        "title": "BOT",
+        "uptime_sec": 168742,
+        "wins": 2
+      }
+    },
+    "luxidle": {
+      "dashboardUrl": "https://kbelludoo.github.io/luxidle-bot/",
+      "engine": "Nim 2.2 ORC Native",
+      "game": "Lux Idle",
+      "name": "Lux Idle Multi-Bot",
+      "port": 3012,
+      "status": {
+        "accounts": [
+          {
+            "currentArea": "",
+            "durationSec": 2351,
+            "expPerHour": 6734.10682972694,
+            "gold": 1870441,
+            "hp": 1469,
+            "id": "acc-1",
+            "kills": 0,
+            "level": 139,
+            "logs": [
+              "[12:30:13] Entrando na caçada da party com 'Personagem #1' em 'Drefia Wyrm Caves'",
+              "[12:31:57] Aviso: a bolsa já está vazia",
+              "[12:33:04] Entrando na caçada da party com 'Personagem #1' em 'Drefia Wyrm Caves'",
+              "[12:33:22] Entrando na caçada da party com 'Personagem #1' em 'Drefia Wyrm Caves'",
+              "[12:34:00] Aviso: a bolsa já está vazia",
+              "[12:34:13] Entrando na caçada da party com 'Personagem #1' em 'Drefia Wyrm Caves'",
+              "[12:34:29] Entrando na caçada da party com 'Personagem #1' em 'Drefia Wyrm Caves'",
+              "[12:34:44] Entrando na caçada da party com 'Personagem #1' em 'Drefia Wyrm Caves'",
+              "[12:35:32] Entrando na caçada da party com 'Personagem #1' em 'Drefia Wyrm Caves'",
+              "[12:35:50] Entrando na caçada da party com 'Personagem #1' em 'Drefia Wyrm Caves'",
+              "[12:36:03] Aviso: a bolsa já está vazia",
+              "[12:37:08] Entrando na caçada da party com 'Personagem #1' em 'Drefia Wyrm Caves'",
+              "[12:37:54] HP Crítico (28%). Recuando para a cidade.",
+              "[12:37:59] Entrando na caçada da party com 'Personagem #1' em 'Drefia Wyrm Caves'",
+              "[12:38:03] Aviso: a bolsa já está vazia",
+              "[12:38:17] Entrando na caçada da party com 'Personagem #1' em 'Drefia Wyrm Caves'",
+              "[12:39:21] Aviso: escolha o prêmio do dia anterior antes",
+              "[12:39:21] Aviso: nada para resgatar agora",
+              "[12:39:45] HP Crítico (15%). Recuando para a cidade."
+            ],
+            "mana": 10,
+            "maxHp": 2220,
+            "maxMana": 725,
+            "name": "Personagem #1",
+            "promoted": true,
+            "stamina": 78,
+            "status": "hunting",
+            "updatedAt": 1793191202783,
+            "vocation": "knight"
+          },
+          {
+            "currentArea": "",
+            "durationSec": 203,
+            "expPerHour": 125181.42398909487,
+            "gold": 875,
+            "hp": 462,
+            "id": "acc-2",
+            "kills": 0,
+            "level": 91,
+            "logs": [
+              "Entrou no jogo como Personagem #2 (Level 91 druid)",
+              "[12:33:04] Entrando na caçada da party com 'Personagem #2' em 'Drefia Wyrm Caves'",
+              "[12:33:22] Entrando na caçada da party com 'Personagem #2' em 'Drefia Wyrm Caves'",
+              "[12:33:30] Aviso: a bolsa já está vazia",
+              "[12:34:13] Entrando na caçada da party com 'Personagem #2' em 'Drefia Wyrm Caves'",
+              "[12:34:29] Entrando na caçada da party com 'Personagem #2' em 'Drefia Wyrm Caves'",
+              "[12:34:44] Entrando na caçada da party com 'Personagem #2' em 'Drefia Wyrm Caves'",
+              "[12:35:18] Enviou 1304 de ouro para Personagem #2",
+              "[12:35:32] Entrando na caçada da party com 'Personagem #2' em 'Drefia Wyrm Caves'",
+              "[12:35:33] Aviso: a bolsa já está vazia",
+              "[12:35:50] Entrando na caçada da party com 'Personagem #2' em 'Drefia Wyrm Caves'",
+              "Entrou no jogo como Personagem #2 (Level 91 druid)",
+              "[12:37:08] Entrando na caçada da party com 'Personagem #2' em 'Drefia Wyrm Caves'",
+              "[12:37:30] Prey Slot 2: presa 'radiant-inquisitor' selecionada (+40%)",
+              "[12:37:34] Aviso: a bolsa já está vazia",
+              "[12:37:59] Entrando na caçada da party com 'Personagem #2' em 'Drefia Wyrm Caves'",
+              "[12:38:17] Entrando na caçada da party com 'Personagem #2' em 'Drefia Wyrm Caves'",
+              "[12:39:33] Aviso: a bolsa já está vazia",
+              "[12:39:45] Aviso: escolha o prêmio do dia anterior antes",
+              "[12:39:45] Aviso: nada para resgatar agora"
+            ],
+            "mana": 2735,
+            "maxHp": 600,
+            "maxMana": 2735,
+            "name": "Personagem #2",
+            "promoted": true,
+            "stamina": 57,
+            "status": "hunting",
+            "updatedAt": 1793191202782,
+            "vocation": "druid"
+          },
+          {
+            "currentArea": "",
+            "durationSec": 219,
+            "expPerHour": 304275.404769869,
+            "gold": 950,
+            "hp": 481,
+            "id": "acc-3",
+            "kills": 0,
+            "level": 80,
+            "logs": [
+              "[12:39:14] Stamina zerada! Saindo da caçada para descansar e treinar.",
+              "[12:39:14] Aviso: você não tem Stamina Extension",
+              "[12:39:17] Iniciando caçada em 'drefia-wyrm-caves'",
+              "[12:39:23] Stamina zerada! Saindo da caçada para descansar e treinar.",
+              "[12:39:23] Aviso: você não tem Stamina Extension",
+              "[12:39:26] Iniciando caçada em 'drefia-wyrm-caves'",
+              "[12:39:29] Aviso: escolha o prêmio do dia anterior antes",
+              "[12:39:29] Aviso: nada para resgatar agora",
+              "[12:39:32] Stamina zerada! Saindo da caçada para descansar e treinar.",
+              "[12:39:32] Aviso: você não tem Stamina Extension",
+              "[12:39:35] Iniciando caçada em 'drefia-wyrm-caves'",
+              "[12:39:44] Stamina zerada! Saindo da caçada para descansar e treinar.",
+              "[12:39:44] Aviso: a bolsa já está vazia",
+              "[12:39:44] Aviso: você não tem Stamina Extension",
+              "[12:39:47] Iniciando caçada em 'drefia-wyrm-caves'",
+              "[12:39:53] Stamina zerada! Saindo da caçada para descansar e treinar.",
+              "[12:39:53] Aviso: você não tem Stamina Extension",
+              "[12:39:56] Iniciando caçada em 'drefia-wyrm-caves'",
+              "[12:40:02] Stamina zerada! Saindo da caçada para descansar e treinar.",
+              "[12:40:02] Aviso: você não tem Stamina Extension"
+            ],
+            "mana": 2405,
+            "maxHp": 545,
+            "maxMana": 2405,
+            "name": "Personagem #3",
+            "promoted": true,
+            "stamina": 0,
+            "status": "idle (cidade)",
+            "updatedAt": 1793191202986,
+            "vocation": "sorcerer"
+          },
+          {
+            "currentArea": "drefia-wyrm-caves",
+            "durationSec": 518,
+            "expPerHour": 220198.78209652466,
+            "gold": 3971,
+            "hp": 1323,
+            "id": "acc-4",
+            "kills": 0,
+            "level": 162,
+            "logs": [
+              "[12:33:05] Entrando na caçada da party com 'Personagem #4' em 'Drefia Wyrm Caves'",
+              "[12:33:22] Entrando na caçada da party com 'Personagem #4' em 'Drefia Wyrm Caves'",
+              "[12:33:45] Aviso: a bolsa já está vazia",
+              "[12:34:13] Entrando na caçada da party com 'Personagem #4' em 'Drefia Wyrm Caves'",
+              "[12:34:29] Entrando na caçada da party com 'Personagem #4' em 'Drefia Wyrm Caves'",
+              "[12:34:44] Entrando na caçada da party com 'Personagem #4' em 'Drefia Wyrm Caves'",
+              "[12:35:12] Enviou 3429 de ouro para Personagem #4",
+              "[12:35:32] Entrando na caçada da party com 'Personagem #4' em 'Drefia Wyrm Caves'",
+              "[12:35:45] Aviso: a bolsa já está vazia",
+              "[12:35:50] Entrando na caçada da party com 'Personagem #4' em 'Drefia Wyrm Caves'",
+              "[12:37:08] Entrando na caçada da party com 'Personagem #4' em 'Drefia Wyrm Caves'",
+              "[12:37:48] Aviso: a bolsa já está vazia",
+              "[12:37:59] Entrando na caçada da party com 'Personagem #4' em 'Drefia Wyrm Caves'",
+              "[12:38:17] Entrando na caçada da party com 'Personagem #4' em 'Drefia Wyrm Caves'",
+              "[12:39:39] Aviso: escolha o prêmio do dia anterior antes",
+              "[12:39:39] Aviso: nada para resgatar agora",
+              "[12:39:48] Aviso: a bolsa já está vazia",
+              "[12:39:54] HP Crítico (33%). Recuando para a cidade."
+            ],
+            "mana": 2442,
+            "maxHp": 1760,
+            "maxMana": 2450,
+            "name": "Personagem #4",
+            "promoted": true,
+            "stamina": 35,
+            "status": "hunting",
+            "updatedAt": 1793191202896,
+            "vocation": "paladin"
+          },
+          {
+            "currentArea": "drefia-wyrm-caves",
+            "durationSec": 207,
+            "expPerHour": 98898.86396075235,
+            "gold": 282,
+            "hp": 1334,
+            "id": "acc-5",
+            "kills": 0,
+            "level": 118,
+            "logs": [
+              "[12:33:59] Aviso: a bolsa já está vazia",
+              "[12:34:13] Entrando na caçada da party com 'Personagem #5' em 'Drefia Wyrm Caves'",
+              "[12:34:29] Entrando na caçada da party com 'Personagem #5' em 'Drefia Wyrm Caves'",
+              "[12:34:44] Entrando na caçada da party com 'Personagem #5' em 'Drefia Wyrm Caves'",
+              "[12:35:32] Entrando na caçada da party com 'Personagem #5' em 'Drefia Wyrm Caves'",
+              "[12:35:50] Entrando na caçada da party com 'Personagem #5' em 'Drefia Wyrm Caves'",
+              "[12:36:02] Aviso: a bolsa já está vazia",
+              "Entrou no jogo como Personagem #5 (Level 118 monk)",
+              "[12:36:38] Prey Slot 2: presa 'witch' selecionada (+15%)",
+              "[12:37:08] Entrando na caçada da party com 'Personagem #5' em 'Drefia Wyrm Caves'",
+              "[12:37:41] HP Crítico (29%). Recuando para a cidade.",
+              "[12:37:59] Entrando na caçada da party com 'Personagem #5' em 'Drefia Wyrm Caves'",
+              "[12:38:02] Aviso: a bolsa já está vazia",
+              "[12:38:17] Entrando na caçada da party com 'Personagem #5' em 'Drefia Wyrm Caves'",
+              "[12:38:41] Prey Slot 1: presa 'kingsguard' selecionada (+22%)",
+              "[12:39:38] HP Crítico (22%). Recuando para a cidade.",
+              "[12:39:45] Aviso: escolha o prêmio do dia anterior antes",
+              "[12:39:45] Aviso: nada para resgatar agora"
+            ],
+            "mana": 859,
+            "maxHp": 1671,
+            "maxMana": 1205,
+            "name": "Personagem #5",
+            "promoted": true,
+            "stamina": 101,
+            "status": "hunting",
+            "updatedAt": 1793191202896,
+            "vocation": "monk"
+          }
+        ],
+        "goroutines": 16,
+        "ramAllocMB": 2.3348159790039062,
+        "ramSysMB": 77.9162826538086,
+        "uptime": "3h0m56s"
+      },
+      "accounts": [
+        {
+          "alias": "Knight 219 (kbelludoo)",
+          "level": 219,
+          "vocation": "Elite Knight",
+          "gold": 12400000,
+          "kills": 48500,
+          "status": "HUNTING"
+        },
+        {
+          "alias": "Druid 35 (lrN)",
+          "level": 35,
+          "vocation": "Elder Druid",
+          "gold": 0,
+          "kills": 0,
+          "status": "HUNTING"
+        },
+        {
+          "alias": "Sorcerer 32 (klord)",
+          "level": 32,
+          "vocation": "Master Sorcerer",
+          "gold": 0,
+          "kills": 0,
+          "status": "HUNTING"
+        },
+        {
+          "alias": "Monk 22 (mojo)",
+          "level": 22,
+          "vocation": "Monk",
+          "gold": 0,
+          "kills": 0,
+          "status": "TRAINING"
+        },
+        {
+          "alias": "Paladin 11 (secondpally)",
+          "level": 11,
+          "vocation": "Paladin",
+          "gold": 0,
+          "kills": 0,
+          "status": "TRAINING"
+        }
+      ]
+    },
+    "pocketweb": {
+      "dashboardUrl": "https://kbelludoo.github.io/ai-go-browser/",
+      "engine": "Go Native Browser Engine (<75 MB RAM)",
+      "game": "AI-Go-Browser",
+      "name": "AI-Go-Browser (Navegador)",
+      "port": 8888,
+      "status": {
+        "accounts": [
+          {
+            "currentArea": "Navegação Semântica & CDP (<75 MB RAM)",
+            "gold": 0,
+            "kills": 0,
+            "name": "AI-Go-Browser Core",
+            "status": "Online",
+            "vocation": "Navegador de IA (Go Puro)"
+          }
+        ],
+        "ramSysMB": 8.5,
+        "uptime": "24/7"
+      }
+    },
+    "pokeidle": {
+      "dashboardUrl": "https://kbelludoo.github.io/pokeidle-go/",
+      "engine": "Nim 2.2 ORC Native",
+      "game": "PokeIdle.io",
+      "name": "PokeIdle.io Bot",
+      "port": 3006,
+      "status": {
+        "accounts": [
+          {
+            "currentArea": "",
+            "durationSec": 0,
+            "expPerHour": 0,
+            "gold": 0,
+            "hp": 0,
+            "id": "acc-1",
+            "kills": 0,
+            "level": 0,
+            "logs": [
+              "Conectado ao PokeIdle. Sessão iniciada.",
+              "Conectado ao PokeIdle. Sessão iniciada.",
+              "Conectado ao PokeIdle. Sessão iniciada.",
+              "Conectado ao PokeIdle. Sessão iniciada.",
+              "Conectado ao PokeIdle. Sessão iniciada.",
+              "Conectado ao PokeIdle. Sessão iniciada.",
+              "Conectado ao PokeIdle. Sessão iniciada.",
+              "Conectado ao PokeIdle. Sessão iniciada.",
+              "Conectado ao PokeIdle. Sessão iniciada.",
+              "Conectado ao PokeIdle. Sessão iniciada."
+            ],
+            "mana": 0,
+            "maxHp": 0,
+            "maxMana": 0,
+            "name": "Treinador #1",
+            "status": "reconnecting",
+            "updatedAt": 1793191201479
+          }
+        ],
+        "goroutines": 179,
+        "ramAllocMB": 5.465446472167969,
+        "ramSysMB": 21.34986114501953,
+        "uptime": "13m25s"
+      },
+      "accounts": [
+        {
+          "alias": "kbelludoo",
+          "level": 75,
+          "gold": 2112915,
+          "kills": 60369,
+          "status": "HUNTING"
+        }
+      ]
+    },
+    "pokeidleworld": {
+      "dashboardUrl": "https://kbelludoo.github.io/pokeidleworld-bot/",
+      "engine": "Go Native Engine (Auto-Catch)",
+      "game": "Poke Idle World",
+      "name": "Poke Idle World Bot",
+      "port": 3007,
+      "status": {
+        "accounts": [
+          {
+            "currentArea": "Gyarados",
+            "durationSec": 22602,
+            "expPerHour": 83594.15980886648,
+            "gold": 9348,
+            "hp": 132,
+            "id": "acc-1",
+            "kills": 84,
+            "level": 106,
+            "logs": [
+              "Conectado ao servidor Poke Idle World.",
+              "ConexÃ£o WebSocket interrompida: websocket: close 4001: unauthorized",
+              "Conectado ao servidor Poke Idle World.",
+              "ConexÃ£o WebSocket interrompida: websocket: close 4001: unauthorized",
+              "Conectado ao servidor Poke Idle World.",
+              "ConexÃ£o WebSocket interrompida: websocket: close 4001: unauthorized",
+              "Conectado ao servidor Poke Idle World.",
+              "ConexÃ£o WebSocket interrompida: websocket: close 4001: unauthorized",
+              "Conectado ao servidor Poke Idle World.",
+              "ConexÃ£o WebSocket interrompida: websocket: close 4001: unauthorized",
+              "Conectado ao servidor Poke Idle World.",
+              "ConexÃ£o WebSocket interrompida: websocket: close 4001: unauthorized"
+            ],
+            "mana": 0,
+            "maxHp": 132,
+            "maxMana": 0,
+            "name": "Treinador #1",
+            "status": "Desconectado",
+            "updatedAt": 1793191199280
+          }
+        ],
+        "goroutines": 10,
+        "ramAllocMB": 1.7198028564453125,
+        "ramSysMB": 17.59986114501953,
+        "uptime": "178h19m50s"
+      }
+    },
+    "pokelegacy": {
+      "dashboardUrl": "https://kbelludoo.github.io/pokelegacy-bot/",
+      "engine": "Nim 2.2 ORC Native",
+      "game": "PokeLegacy Online",
+      "name": "PokeLegacy Online Multi-Bot",
+      "port": 3005,
+      "status": {
+        "accounts": [
+          {
+            "currentArea": "Enseada de Dewford",
+            "durationSec": 165514,
+            "expPerHour": 2063665.0796911437,
+            "gold": 784013,
+            "hp": 143,
+            "id": "acc-1",
+            "kills": 15230,
+            "level": 118,
+            "logs": [
+              "💥 Super Efetivo (2.0x)! Pikachu explorou a fraqueza de Crawdaunt (water).",
+              "💥 Super Efetivo (2.0x)! Pikachu explorou a fraqueza de Corphish (water).",
+              "💥 Super Efetivo (2.0x)! Pikachu explorou a fraqueza de Corphish (water).",
+              "💥 Super Efetivo (2.0x)! Pikachu explorou a fraqueza de Crawdaunt (water).",
+              "💥 Super Efetivo (2.0x)! Pikachu explorou a fraqueza de Corphish (water).",
+              "◓ Loja: 100 Pokébolas compradas automaticamente para manter caçada.",
+              "💥 Super Efetivo (2.0x)! Pikachu explorou a fraqueza de Clamperl (water).",
+              "💥 Super Efetivo (2.0x)! Pikachu explorou a fraqueza de Corphish (water).",
+              "💥 Super Efetivo (2.0x)! Pikachu explorou a fraqueza de Barboach (water).",
+              "💥 Super Efetivo (2.0x)! Pikachu explorou a fraqueza de Crawdaunt (water)."
+            ],
+            "mana": 100,
+            "maxHp": 150,
+            "maxMana": 100,
+            "maxStaminaMs": 43200000,
+            "name": "Treinador #1",
+            "staminaFormatted": "6h 39m",
+            "staminaMs": 23955701,
+            "staminaPct": 55,
+            "status": "hunting",
+            "updatedAt": 1793191202587,
+            "vocation": "Treinador"
+          },
+          {
+            "currentArea": "Enseada de Dewford",
+            "durationSec": 165514,
+            "expPerHour": 1708285.4574235412,
+            "gold": 747462,
+            "hp": 144,
+            "id": "acc-2",
+            "kills": 10107,
+            "level": 116,
+            "logs": [
+              "💥 Super Efetivo (2.0x)! Pikachu explorou a fraqueza de Barboach (water).",
+              "💥 Super Efetivo (2.0x)! Pikachu explorou a fraqueza de Clamperl (water).",
+              "💥 Super Efetivo (2.0x)! Pikachu explorou a fraqueza de Corphish (water).",
+              "💥 Super Efetivo (2.0x)! Pikachu explorou a fraqueza de Clamperl (water).",
+              "💥 Super Efetivo (2.0x)! Pikachu explorou a fraqueza de Crawdaunt (water).",
+              "💥 Super Efetivo (2.0x)! Pikachu explorou a fraqueza de Barboach (water).",
+              "💥 Super Efetivo (2.0x)! Pikachu explorou a fraqueza de Clamperl (water).",
+              "💥 Super Efetivo (2.0x)! Pikachu explorou a fraqueza de Corphish (water).",
+              "💥 Super Efetivo (2.0x)! Pikachu explorou a fraqueza de Corphish (water).",
+              "💥 Super Efetivo (2.0x)! Pikachu explorou a fraqueza de Corphish (water)."
+            ],
+            "mana": 100,
+            "maxHp": 150,
+            "maxMana": 100,
+            "maxStaminaMs": 43200000,
+            "name": "Treinador #2",
+            "staminaFormatted": "8h 43m",
+            "staminaMs": 31438660,
+            "staminaPct": 72,
+            "status": "hunting",
+            "updatedAt": 1793191202588,
+            "vocation": "Treinador"
+          },
+          {
+            "currentArea": "Enseada de Dewford",
+            "durationSec": 165507,
+            "expPerHour": 1096272.8996356651,
+            "gold": 4380614,
+            "hp": 140,
+            "id": "acc-3",
+            "kills": 12181,
+            "level": 115,
+            "logs": [
+              "💥 Super Efetivo (2.0x)! Pikachu explorou a fraqueza de Barboach (water).",
+              "💥 Super Efetivo (2.0x)! Pikachu explorou a fraqueza de Crawdaunt (water).",
+              "💥 Super Efetivo (2.0x)! Pikachu explorou a fraqueza de Clamperl (water).",
+              "💥 Super Efetivo (2.0x)! Pikachu explorou a fraqueza de Crawdaunt (water).",
+              "💥 Super Efetivo (2.0x)! Pikachu explorou a fraqueza de Clamperl (water).",
+              "💥 Super Efetivo (2.0x)! Pikachu explorou a fraqueza de Crawdaunt (water).",
+              "💥 Super Efetivo (2.0x)! Pikachu explorou a fraqueza de Clamperl (water).",
+              "💥 Super Efetivo (2.0x)! Pikachu explorou a fraqueza de Barboach (water).",
+              "💥 Super Efetivo (2.0x)! Pikachu explorou a fraqueza de Crawdaunt (water).",
+              "💥 Super Efetivo (2.0x)! Pikachu explorou a fraqueza de Barboach (water)."
+            ],
+            "mana": 100,
+            "maxHp": 150,
+            "maxMana": 100,
+            "maxStaminaMs": 43200000,
+            "name": "Treinador #3",
+            "staminaFormatted": "9h 43m",
+            "staminaMs": 35019623,
+            "staminaPct": 81,
+            "status": "hunting",
+            "updatedAt": 1793191195279,
+            "vocation": "Treinador"
+          },
+          {
+            "currentArea": "Céu de Johto",
+            "durationSec": 165514,
+            "expPerHour": 1518918.027478038,
+            "gold": 2351618,
+            "hp": 141,
+            "id": "acc-4",
+            "kills": 5212,
+            "level": 106,
+            "logs": [
+              "💥 Super Efetivo (2.0x)! Pidgey explorou a fraqueza de Makuhita (fighting).",
+              "💥 Super Efetivo (2.0x)! Pidgey explorou a fraqueza de Medicham (fighting).",
+              "💥 Super Efetivo (2.0x)! Pidgey explorou a fraqueza de Medicham (fighting).",
+              "💥 Super Efetivo (2.0x)! Pidgey explorou a fraqueza de Makuhita (fighting).",
+              "🌟 SUBIU DE NÍVEL! Nível de Treinador: 106",
+              "💥 Super Efetivo (2.0x)! Pikachu explorou a fraqueza de Mantine (water).",
+              "💥 Super Efetivo (2.0x)! Pikachu explorou a fraqueza de Mantine (water).",
+              "💥 Super Efetivo (2.0x)! Pikachu explorou a fraqueza de Mantine (water).",
+              "💥 Super Efetivo (2.0x)! Pikachu explorou a fraqueza de Mantine (water).",
+              "💥 Super Efetivo (2.0x)! Pikachu explorou a fraqueza de Mantine (water)."
+            ],
+            "mana": 100,
+            "maxHp": 150,
+            "maxMana": 100,
+            "maxStaminaMs": 43200000,
+            "name": "Treinador #4",
+            "staminaFormatted": "11h 33m",
+            "staminaMs": 41603838,
+            "staminaPct": 96,
+            "status": "hunting",
+            "updatedAt": 1793191202381,
+            "vocation": "Treinador"
+          },
+          {
+            "currentArea": "Enseada de Dewford",
+            "durationSec": 165515,
+            "expPerHour": 846638.0883907804,
+            "gold": 389151,
+            "hp": 141,
+            "id": "acc-5",
+            "kills": 8715,
+            "level": 115,
+            "logs": [
+              "💥 Super Efetivo (2.0x)! Pikachu explorou a fraqueza de Corphish (water).",
+              "💥 Super Efetivo (2.0x)! Pikachu explorou a fraqueza de Barboach (water).",
+              "💥 Super Efetivo (2.0x)! Pikachu explorou a fraqueza de Barboach (water).",
+              "💥 Super Efetivo (2.0x)! Pikachu explorou a fraqueza de Barboach (water).",
+              "💥 Super Efetivo (2.0x)! Pikachu explorou a fraqueza de Barboach (water).",
+              "💥 Super Efetivo (2.0x)! Pikachu explorou a fraqueza de Crawdaunt (water).",
+              "💥 Super Efetivo (2.0x)! Pikachu explorou a fraqueza de Clamperl (water).",
+              "💥 Super Efetivo (2.0x)! Pikachu explorou a fraqueza de Barboach (water).",
+              "💥 Super Efetivo (2.0x)! Pikachu explorou a fraqueza de Corphish (water).",
+              "💥 Super Efetivo (2.0x)! Pikachu explorou a fraqueza de Clamperl (water)."
+            ],
+            "mana": 100,
+            "maxHp": 150,
+            "maxMana": 100,
+            "maxStaminaMs": 43200000,
+            "name": "Treinador #5",
+            "staminaFormatted": "8h 45m",
+            "staminaMs": 31525923,
+            "staminaPct": 72,
+            "status": "hunting",
+            "updatedAt": 1793191202787,
+            "vocation": "Treinador"
+          }
+        ],
+        "goroutines": 28,
+        "ramAllocMB": 2.3683929443359375,
+        "ramSysMB": 17.59986114501953,
+        "uptime": "45h58m35s"
+      },
+      "accounts": [
+        {
+          "alias": "Conta 1 - kbelludoo",
+          "level": 110,
+          "gold": 39368280,
+          "kills": 328069,
+          "status": "HUNTING"
+        },
+        {
+          "alias": "Conta 2 - LrN",
+          "level": 110,
+          "gold": 39374160,
+          "kills": 328118,
+          "status": "HUNTING"
+        },
+        {
+          "alias": "Conta 3 - kbelludoo2",
+          "level": 110,
+          "gold": 39364560,
+          "kills": 328038,
+          "status": "HUNTING"
+        },
+        {
+          "alias": "Conta 4 - kbelludool",
+          "level": 110,
+          "gold": 39369120,
+          "kills": 328076,
+          "status": "HUNTING"
+        },
+        {
+          "alias": "Conta 5 - kbelludooom",
+          "level": 110,
+          "gold": 39371760,
+          "kills": 328098,
+          "status": "HUNTING"
+        }
+      ]
+    },
+    "pokepixel": {
+      "dashboardUrl": "https://kbelludoo.github.io/pokepixel-bot/",
+      "engine": "Go Native Engine (Auto-Catch)",
+      "game": "PokePixel Online",
+      "name": "PokePixel Multi-Bot",
+      "port": 3015,
+      "status": {
+        "accounts": [
+          {
+            "currentArea": "Rhyhorn",
+            "durationSec": 166318,
+            "expPerHour": 7718.1231135535545,
+            "gold": 46951,
+            "hp": 417,
+            "id": "acc-1",
+            "kills": 870,
+            "level": 45,
+            "logs": [
+              "[12:28:16] 🎁 Coletando recompensas diárias, missões e stamina...",
+              "[12:28:16] ✓ Farm Offline e Stamina processados.",
+              "[12:28:16] ✓ Missões concluídas resgatadas.",
+              "[12:28:17] ✓ Metas de Espécies resgatadas.",
+              "[12:28:17] ✓ Recompensas do Passe de Batalha resgatadas.",
+              "[12:28:17] ✓ Todas as mensagens e anexos do correio resgatados.",
+              "[12:28:57] Falha ao reconectar WebSocket (websocket dial failed: websocket: bad handshake). Tentando novamente em 48s...",
+              "[12:29:46] Falha ao reconectar WebSocket (websocket dial failed: websocket: bad handshake). Tentando novamente em 48s...",
+              "[12:30:35] Falha ao reconectar WebSocket (websocket dial failed: websocket: bad handshake). Tentando novamente em 48s...",
+              "[12:31:24] Falha ao reconectar WebSocket (websocket dial failed: websocket: bad handshake). Tentando novamente em 48s...",
+              "[12:32:13] Falha ao reconectar WebSocket (websocket dial failed: websocket: bad handshake). Tentando novamente em 48s...",
+              "[12:33:02] Falha ao reconectar WebSocket (websocket dial failed: websocket: bad handshake). Tentando novamente em 48s...",
+              "[12:33:50] Falha ao reconectar WebSocket (websocket dial failed: websocket: bad handshake). Tentando novamente em 48s...",
+              "[12:34:39] Falha ao reconectar WebSocket (websocket dial failed: websocket: bad handshake). Tentando novamente em 48s...",
+              "[12:35:29] Falha ao reconectar WebSocket (websocket dial failed: websocket: bad handshake). Tentando novamente em 48s...",
+              "[12:36:18] Falha ao reconectar WebSocket (websocket dial failed: websocket: bad handshake). Tentando novamente em 48s...",
+              "[12:37:06] Falha ao reconectar WebSocket (websocket dial failed: websocket: bad handshake). Tentando novamente em 48s...",
+              "[12:37:59] Falha ao reconectar WebSocket (websocket dial failed: websocket: bad handshake). Tentando novamente em 48s...",
+              "[12:38:48] Falha ao reconectar WebSocket (websocket dial failed: websocket: bad handshake). Tentando novamente em 48s...",
+              "[12:39:39] Falha ao reconectar WebSocket (websocket dial failed: websocket: bad handshake). Tentando novamente em 48s..."
+            ],
+            "mana": 0,
+            "maxHp": 417,
+            "maxMana": 0,
+            "name": "Treinador #1",
+            "status": "Reconectando...",
+            "updatedAt": 1793191202882,
+            "vocation": "Treinador"
+          }
+        ],
+        "goroutines": 16,
+        "ramAllocMB": 1.3976821899414062,
+        "ramSysMB": 13.349861145019531,
+        "uptime": "46h11m59s"
+      }
+    },
+    "poketrue": {
+      "dashboardUrl": "https://kbelludoo.github.io/bot-template-go/?v=force1",
+      "engine": "Nim 2.2 ORC Native",
+      "game": "PokeTrue",
+      "name": "PokeTrue Multi-Bot",
+      "port": 3014,
+      "status": {
+        "accounts": [
+          {
+            "currentArea": "celeiro",
+            "durationSec": 244414,
+            "expPerHour": 9685.618783072108,
+            "gold": 1371002,
+            "hp": 294,
+            "id": "treinador-1",
+            "kills": 7428,
+            "level": 129,
+            "logs": [
+              "[12:12:08] ✅ Venda concluída com sucesso. Ouro atualizado!",
+              "[12:18:09] 💰 Auto-Sell: Vendendo 36 itens de loot no NPC Mark...",
+              "[12:18:10] ✅ Venda concluída com sucesso. Ouro atualizado!",
+              "[12:20:48] Aviso no ciclo: falha de rede (hunt/sync): Post \"https://poketrue.net/api/hunt/sync\": read tcp 10.0.0.191:37622->104.21.55.243:443: read: connection reset by peer",
+              "[12:21:25] 🗺️ Transicionando para rota ótima: 'Galeria dos Escavadores' (Lv 101-150 | Eficácia Elemental: 2.0x | 📖 Bestiário Pendente (3 metas) | Score: 51667)",
+              "[12:24:09] 💰 Auto-Sell: Vendendo 49 itens de loot no NPC Mark...",
+              "[12:24:10] ✅ Venda concluída com sucesso. Ouro atualizado!",
+              "[12:27:09] 💰 Auto-Sell: Vendendo 5 itens de loot no NPC Mark...",
+              "[12:27:10] ✅ Venda concluída com sucesso. Ouro atualizado!",
+              "[12:29:15] 🏋️ Campo de Treino: Colocando Pokémon #1607494 (Caterpie) para treinar atk.",
+              "[12:30:11] 💰 Auto-Sell: Vendendo 3 itens de loot no NPC Mark...",
+              "[12:30:11] ✅ Venda concluída com sucesso. Ouro atualizado!",
+              "[12:31:26] 🗺️ Transicionando para rota ótima: 'Celeiro' (Lv 101-150 | Eficácia Elemental: 1.0x | Score: 24840)",
+              "[12:39:15] 💰 Auto-Sell: Vendendo 55 itens de loot no NPC Mark...",
+              "[12:39:16] ✅ Venda concluída com sucesso. Ouro atualizado!"
+            ],
+            "mana": 0,
+            "maxHp": 100,
+            "maxMana": 0,
+            "name": "anonimo",
+            "status": "hunting",
+            "updatedAt": 1793191202287,
+            "vocation": "Dugtrio"
+          },
+          {
+            "currentArea": "celeiro",
+            "durationSec": 244413,
+            "expPerHour": 5468.370886207197,
+            "gold": 36402,
+            "hp": 0,
+            "id": "treinador-2",
+            "kills": 3856,
+            "level": 113,
+            "logs": [
+              "[12:05:55] 🔋 Campo de Treino: Recarregadas cargas da vaga 0 com ouro.",
+              "[12:09:54] 🔋 Campo de Treino: Recarregadas cargas da vaga 0 com ouro.",
+              "[12:11:48] 🗺️ Transicionando para rota ótima: 'Celeiro' (Lv 101-150 | Eficácia Elemental: 1.0x | Score: 24840)",
+              "[12:13:56] 🔋 Campo de Treino: Recarregadas cargas da vaga 0 com ouro.",
+              "[12:17:58] 🔋 Campo de Treino: Recarregadas cargas da vaga 0 com ouro.",
+              "[12:21:59] 🔋 Campo de Treino: Recarregadas cargas da vaga 0 com ouro.",
+              "[12:22:11] 🗺️ Transicionando para rota ótima: 'Floresta das Asas' (Lv 101-150 | Eficácia Elemental: 2.0x | 📖 Bestiário Pendente (6 metas) | Score: 79488)",
+              "[12:25:59] 🔋 Campo de Treino: Recarregadas cargas da vaga 0 com ouro.",
+              "[12:29:59] 🏋️ Campo de Treino: Colocando Pokémon #1610510 (Caterpie) para treinar atk.",
+              "[12:29:59] 🔋 Campo de Treino: Recarregadas cargas da vaga 0 com ouro.",
+              "[12:30:54] 💰 Auto-Sell: Vendendo 78 itens de loot no NPC Mark...",
+              "[12:30:54] ✅ Venda concluída com sucesso. Ouro atualizado!",
+              "[12:32:12] 🗺️ Transicionando para rota ótima: 'Celeiro' (Lv 101-150 | Eficácia Elemental: 1.0x | Score: 24840)",
+              "[12:34:00] 🔋 Campo de Treino: Recarregadas cargas da vaga 0 com ouro.",
+              "[12:38:02] 🔋 Campo de Treino: Recarregadas cargas da vaga 0 com ouro."
+            ],
+            "mana": 0,
+            "maxHp": 100,
+            "maxMana": 0,
+            "name": "anonimo",
+            "status": "hunting",
+            "updatedAt": 1793191202281,
+            "vocation": "Paras"
+          },
+          {
+            "currentArea": "celeiro",
+            "durationSec": 244413,
+            "expPerHour": 65.82459718347671,
+            "gold": 50697,
+            "hp": 441,
+            "id": "treinador-3",
+            "kills": 4172,
+            "level": 116,
+            "logs": [
+              "[12:10:42] 🗺️ Transicionando para rota ótima: 'Celeiro' (Lv 101-150 | Eficácia Elemental: 1.0x | Score: 24840)",
+              "[12:13:57] 🏋️ Campo de Treino: Colocando Pokémon #1612089 (Kakuna) para treinar atk.",
+              "[12:13:58] 🔋 Campo de Treino: Recarregadas cargas da vaga 0 com ouro.",
+              "[12:17:58] 🔋 Campo de Treino: Recarregadas cargas da vaga 0 com ouro.",
+              "[12:18:53] 💰 Auto-Sell: Vendendo 56 itens de loot no NPC Mark...",
+              "[12:18:53] ✅ Venda concluída com sucesso. Ouro atualizado!",
+              "[12:21:05] 🗺️ Transicionando para rota ótima: 'Veio de Lava' (Lv 101-150 | Eficácia Elemental: 2.0x | 📖 Bestiário Pendente (6 metas) | Score: 63590)",
+              "[12:21:58] 🔋 Campo de Treino: Recarregadas cargas da vaga 0 com ouro.",
+              "[12:25:59] 🔋 Campo de Treino: Recarregadas cargas da vaga 0 com ouro.",
+              "[12:29:59] 🔋 Campo de Treino: Recarregadas cargas da vaga 0 com ouro.",
+              "[12:31:06] 🗺️ Transicionando para rota ótima: 'Celeiro' (Lv 101-150 | Eficácia Elemental: 1.0x | Score: 24840)",
+              "[12:33:59] 🔋 Campo de Treino: Recarregadas cargas da vaga 0 com ouro.",
+              "[12:38:00] 🔋 Campo de Treino: Recarregadas cargas da vaga 0 com ouro.",
+              "[12:40:00] 💰 Auto-Sell: Vendendo 55 itens de loot no NPC Mark...",
+              "[12:40:00] ✅ Venda concluída com sucesso. Ouro atualizado!"
+            ],
+            "mana": 0,
+            "maxHp": 100,
+            "maxMana": 0,
+            "name": "anonimo",
+            "status": "hunting",
+            "updatedAt": 1793191202190,
+            "vocation": "Pidgeotto"
+          }
+        ],
+        "goroutines": 16,
+        "online": true,
+        "ramAllocMB": 2.8442459106445312,
+        "ramSysMB": 17.34986114501953,
+        "uptime": "67h53m38s"
+      },
+      "accounts": [
+        {
+          "alias": "Treinador 1 - kbelludoo",
+          "level": 125,
+          "gold": 6083950,
+          "kills": 121679,
+          "status": "HUNTING"
+        },
+        {
+          "alias": "Treinador 2 - LrN",
+          "level": 125,
+          "gold": 7633250,
+          "kills": 152665,
+          "status": "HUNTING"
+        },
+        {
+          "alias": "Treinador 3 - klord",
+          "level": 125,
+          "gold": 7635500,
+          "kills": 152710,
+          "status": "HUNTING"
+        }
+      ]
+    },
+    "sigma": {
+      "dashboardUrl": "https://kbelludoo.github.io/sigma-bot/",
+      "engine": "Go Native Engine",
+      "game": "Pokemon Sigma",
+      "name": "Pokemon Sigma Multi-Bot",
+      "port": 3002,
+      "status": {
+        "accounts": [
+          {
+            "alias": "Treinador #1",
+            "autoHuntActive": true,
+            "bestiaryCompletedCount": 124,
+            "bestiaryLevel": 5,
+            "bestiaryNextPoints": 9790,
+            "bestiaryPendingCount": 1,
+            "bestiaryPoints": 4350,
+            "bestiaryTargetKills": 120,
+            "bestiaryTotalKills": 58118,
+            "captures": 0,
+            "connectedAt": 1793191198380,
+            "diamonds": 0,
+            "gold": 5726933,
+            "goldFound": 2506277,
+            "hp": 1520,
+            "hpPercent": 100,
+            "id": "acc1",
+            "inGame": true,
+            "inHunt": true,
+            "kills": 0,
+            "killsPerMin": 14.05857740585774,
+            "lastAction": "Viajando para Electabuzz (Electabuzz (Alvo: Electabuzz) │ Vantagem: 1.0x (Risco: 0.5x) │ XP: 349)...",
+            "lastError": "sua sessão foi encerrada porque você entrou em outro lugar",
+            "leaderHp": 2770,
+            "leaderLevel": 148,
+            "leaderMaxHp": 3048,
+            "leaderName": "Bulbasaur",
+            "leaderShiny": false,
+            "leaderSpeciesId": 1,
+            "level": 150,
+            "mapName": "Electabuzz",
+            "mapSlug": "electabuzz",
+            "maxHp": 1520,
+            "shinies": 0,
+            "strategy": "rush",
+            "teamSize": 0,
+            "trainerName": "Treinador #1",
+            "trainerXpGained": 34674499,
+            "updatedAt": 1793191202984,
+            "vipActive": false,
+            "wildHp": 2531,
+            "wildLevel": 100,
+            "wildMaxHp": 6240,
+            "wildShiny": false,
+            "wildTarget": "Electabuzz",
+            "xp": 55013662,
+            "xpIntoLevel": 971362,
+            "xpPerHour": 1242557.322175732,
+            "xpPercent": 88.0894168858257,
+            "xpToNextLevel": 1102700
+          },
+          {
+            "alias": "Treinador #2",
+            "autoHuntActive": true,
+            "bestiaryCompletedCount": 141,
+            "bestiaryLevel": 5,
+            "bestiaryNextPoints": 9790,
+            "bestiaryPoints": 8165,
+            "bestiaryTargetKills": 120,
+            "bestiaryTotalKills": 240964,
+            "captures": 0,
+            "connectedAt": 1793191184280,
+            "diamonds": 0,
+            "gold": 22415441,
+            "goldFound": 80000,
+            "hp": 2020,
+            "hpPercent": 100,
+            "id": "acc2",
+            "inGame": false,
+            "inHunt": false,
+            "kills": 0,
+            "killsPerMin": 0,
+            "lastAction": "Erro: conexão websocket encerrada (tentando em 30s)",
+            "lastError": "conexão websocket encerrada",
+            "leaderHp": 3960,
+            "leaderLevel": 216,
+            "leaderMaxHp": 3960,
+            "leaderName": "Charmander",
+            "leaderShiny": false,
+            "leaderSpeciesId": 4,
+            "level": 200,
+            "mapName": "Na Cidade / PokéCenter",
+            "mapSlug": "",
+            "maxHp": 2020,
+            "shinies": 0,
+            "strategy": "rush",
+            "teamSize": 0,
+            "trainerName": "Treinador #2",
+            "trainerXpGained": 0,
+            "updatedAt": 1793191199081,
+            "vipActive": false,
+            "wildHp": 0,
+            "wildLevel": 0,
+            "wildMaxHp": 0,
+            "wildShiny": false,
+            "wildTarget": "",
+            "xp": 300085425,
+            "xpIntoLevel": 85325,
+            "xpPerHour": 0,
+            "xpPercent": 0.6304591612089062,
+            "xpToNextLevel": 13533787
+          },
+          {
+            "alias": "Treinador #3",
+            "autoHuntActive": true,
+            "bestiaryCompletedCount": 141,
+            "bestiaryLevel": 5,
+            "bestiaryNextPoints": 9790,
+            "bestiaryPoints": 6285,
+            "bestiaryTargetKills": 120,
+            "bestiaryTotalKills": 614139,
+            "captures": 36,
+            "connectedAt": 1793191179178,
+            "diamonds": 0,
+            "gold": 15669436,
+            "goldFound": 9102399,
+            "hp": 2320,
+            "hpPercent": 100,
+            "id": "acc3",
+            "inGame": false,
+            "inHunt": true,
+            "kills": 433718,
+            "killsPerMin": 32.82969310014647,
+            "lastAction": "Viajando para Magby (Magby (Alvo: Magby) │ Vantagem: 2.0x (Risco: 0.5x) │ XP: 2138)...",
+            "lastError": "conexão websocket encerrada",
+            "leaderHp": 2570,
+            "leaderLevel": 376,
+            "leaderMaxHp": 7680,
+            "leaderName": "Squirtle",
+            "leaderShiny": false,
+            "leaderSpeciesId": 7,
+            "level": 230,
+            "mapName": "Arcanine",
+            "mapSlug": "arcanine",
+            "maxHp": 2320,
+            "shinies": 0,
+            "strategy": "rush",
+            "teamSize": 0,
+            "trainerName": "Treinador #3",
+            "trainerXpGained": 675763931,
+            "updatedAt": 1793191202583,
+            "vipActive": true,
+            "vipUntil": 1795572532044,
+            "wildHp": 0,
+            "wildLevel": 100,
+            "wildMaxHp": 5498,
+            "wildShiny": false,
+            "wildTarget": "Arcanine",
+            "xp": 896027207,
+            "xpIntoLevel": 16027707,
+            "xpPerHour": 3069061.8046120135,
+            "xpPercent": 62.73490842269901,
+            "xpToNextLevel": 25548307
+          }
+        ],
+        "ramMB": 2.3000030517578125,
+        "serverTime": 1793191203088
+      }
+    },
+    "telegram": {
+      "dashboardUrl": "https://kbelludoo.github.io/agent-go/",
+      "engine": "Go Native Agent (Bot Command)",
+      "game": "Telegram",
+      "name": "Telegram Relay Agent",
+      "port": 0,
+      "status": {
+        "accounts": [
+          {
+            "currentArea": "Alertas & Notificações 24/7",
+            "gold": 0,
+            "kills": 0,
+            "name": "Relay Bot",
+            "status": "Online",
+            "vocation": "Telegram Bridge"
+          }
+        ],
+        "ramSysMB": 6.7,
+        "uptime": "24/7"
+      }
+    },
+    "tibidle": {
+      "dashboardUrl": "https://kbelludoo.github.io/tibidle-bot/",
+      "engine": "Nim 2.2 ORC Native",
+      "game": "Tibidle",
+      "name": "Tibidle Multi-Bot",
+      "port": 3001,
+      "status": {
+        "accounts": [
+          {
+            "benchmarks": [
+              {
+                "bestXpPerHour": 16965,
+                "deaths": 0,
+                "huntId": 26,
+                "huntName": "Daramian Minotaur Pyramid",
+                "lastDuration": 43200,
+                "runs": 1
+              },
+              {
+                "bestXpPerHour": 5684,
+                "deaths": 10,
+                "huntId": 46,
+                "huntName": "Dragon Lair",
+                "lastDuration": 1308,
+                "runs": 10
+              },
+              {
+                "bestXpPerHour": 11675,
+                "deaths": 0,
+                "huntId": 140,
+                "huntName": "Scarabs Cave",
+                "lastDuration": 43200,
+                "runs": 4
+              }
+            ],
+            "bestiary": [
+              {
+                "completed": false,
+                "kills": 344,
+                "name": "Dragon Hatchling",
+                "target": 500
+              },
+              {
+                "completed": false,
+                "kills": 0,
+                "name": "Acolyte of the Cult",
+                "target": 500
+              },
+              {
+                "completed": false,
+                "kills": 0,
+                "name": "Adept of the Cult",
+                "target": 500
+              },
+              {
+                "completed": false,
+                "kills": 0,
+                "name": "Angry Demon",
+                "target": 500
+              },
+              {
+                "completed": false,
+                "kills": 0,
+                "name": "Armadile",
+                "target": 500
+              },
+              {
+                "completed": false,
+                "kills": 0,
+                "name": "Baby Drogon",
+                "target": 500
+              },
+              {
+                "completed": false,
+                "kills": 0,
+                "name": "Banshee",
+                "target": 500
+              },
+              {
+                "completed": false,
+                "kills": 0,
+                "name": "Barbarian Brutetamer",
+                "target": 500
+              },
+              {
+                "completed": false,
+                "kills": 0,
+                "name": "Barbarian Headsplitter",
+                "target": 500
+              },
+              {
+                "completed": false,
+                "kills": 0,
+                "name": "Behemoth",
+                "target": 500
+              },
+              {
+                "completed": false,
+                "kills": 0,
+                "name": "Betrayed Wraith",
+                "target": 500
+              },
+              {
+                "completed": false,
+                "kills": 0,
+                "name": "Blightwalker",
+                "target": 500
+              },
+              {
+                "completed": false,
+                "kills": 0,
+                "name": "Blue Djinn",
+                "target": 500
+              },
+              {
+                "completed": false,
+                "kills": 0,
+                "name": "Bog Raider",
+                "target": 500
+              },
+              {
+                "completed": false,
+                "kills": 0,
+                "name": "Bonebeast",
+                "target": 500
+              },
+              {
+                "completed": false,
+                "kills": 0,
+                "name": "Bonelord",
+                "target": 500
+              },
+              {
+                "completed": false,
+                "kills": 0,
+                "name": "Breach Brood",
+                "target": 500
+              },
+              {
+                "completed": false,
+                "kills": 0,
+                "name": "Brimstone Bug",
+                "target": 500
+              },
+              {
+                "completed": false,
+                "kills": 0,
+                "name": "Brittle Skeleton",
+                "target": 500
+              },
+              {
+                "completed": false,
+                "kills": 0,
+                "name": "Broken Shaper",
+                "target": 500
+              },
+              {
+                "completed": false,
+                "kills": 0,
+                "name": "Chakoya Toolshaper",
+                "target": 500
+              },
+              {
+                "completed": false,
+                "kills": 0,
+                "name": "Chakoya Tribewarden",
+                "target": 500
+              },
+              {
+                "completed": false,
+                "kills": 0,
+                "name": "Cliff Strider",
+                "target": 500
+              },
+              {
+                "completed": false,
+                "kills": 0,
+                "name": "Corcodile",
+                "target": 500
+              },
+              {
+                "completed": false,
+                "kills": 0,
+                "name": "Corym Charlatan",
+                "target": 500
+              },
+              {
+                "completed": false,
+                "kills": 0,
+                "name": "Corym Skirmisher",
+                "target": 500
+              },
+              {
+                "completed": false,
+                "kills": 0,
+                "name": "Crawler",
+                "target": 500
+              },
+              {
+                "completed": false,
+                "kills": 0,
+                "name": "Crystal Spider",
+                "target": 500
+              },
+              {
+                "completed": false,
+                "kills": 0,
+                "name": "Crystalcrusher",
+                "target": 500
+              },
+              {
+                "completed": false,
+                "kills": 0,
+                "name": "Cult Believer",
+                "target": 500
+              },
+              {
+                "completed": false,
+                "kills": 0,
+                "name": "Cult Enforcer",
+                "target": 500
+              },
+              {
+                "completed": false,
+                "kills": 0,
+                "name": "Cyclops",
+                "target": 500
+              },
+              {
+                "completed": false,
+                "kills": 0,
+                "name": "Cyclops Drone",
+                "target": 500
+              },
+              {
+                "completed": false,
+                "kills": 0,
+                "name": "Cyclops Smith",
+                "target": 500
+              },
+              {
+                "completed": false,
+                "kills": 0,
+                "name": "Dark Torturer",
+                "target": 500
+              },
+              {
+                "completed": false,
+                "kills": 0,
+                "name": "Deepling Brawler",
+                "target": 500
+              },
+              {
+                "completed": false,
+                "kills": 0,
+                "name": "Deepling Elite",
+                "target": 500
+              },
+              {
+                "completed": false,
+                "kills": 0,
+                "name": "Deepling Guard",
+                "target": 500
+              },
+              {
+                "completed": false,
+                "kills": 0,
+                "name": "Deepling Scout",
+                "target": 500
+              },
+              {
+                "completed": false,
+                "kills": 0,
+                "name": "Deepling Spellsinger",
+                "target": 500
+              },
+              {
+                "completed": false,
+                "kills": 0,
+                "name": "Deepling Tyrant",
+                "target": 500
+              },
+              {
+                "completed": false,
+                "kills": 0,
+                "name": "Deepling Warrior",
+                "target": 500
+              },
+              {
+                "completed": false,
+                "kills": 0,
+                "name": "Defiler",
+                "target": 500
+              },
+              {
+                "completed": false,
+                "kills": 0,
+                "name": "Demon",
+                "target": 500
+              },
+              {
+                "completed": false,
+                "kills": 0,
+                "name": "Demon Skeleton",
+                "target": 500
+              },
+              {
+                "completed": false,
+                "kills": 0,
+                "name": "Destroyer",
+                "target": 500
+              },
+              {
+                "completed": false,
+                "kills": 0,
+                "name": "Diabolic Imp",
+                "target": 500
+              },
+              {
+                "completed": false,
+                "kills": 0,
+                "name": "Diamond Servant Replica",
+                "target": 500
+              },
+              {
+                "completed": false,
+                "kills": 0,
+                "name": "Dragon Lord",
+                "target": 500
+              },
+              {
+                "completed": false,
+                "kills": 0,
+                "name": "Dragon Lord Hatchling",
+                "target": 500
+              },
+              {
+                "completed": false,
+                "kills": 0,
+                "name": "Draken Spellweaver",
+                "target": 500
+              },
+              {
+                "completed": false,
+                "kills": 0,
+                "name": "Draken Warmaster",
+                "target": 500
+              },
+              {
+                "completed": false,
+                "kills": 0,
+                "name": "Dread Intruder",
+                "target": 500
+              },
+              {
+                "completed": false,
+                "kills": 0,
+                "name": "Drillworm",
+                "target": 500
+              },
+              {
+                "completed": false,
+                "kills": 0,
+                "name": "Dworc Fleshhunter",
+                "target": 500
+              },
+              {
+                "completed": false,
+                "kills": 0,
+                "name": "Dworc Venomsniper",
+                "target": 500
+              },
+              {
+                "completed": false,
+                "kills": 0,
+                "name": "Elder Bonelord",
+                "target": 500
+              },
+              {
+                "completed": false,
+                "kills": 0,
+                "name": "Elf",
+                "target": 500
+              },
+              {
+                "completed": false,
+                "kills": 0,
+                "name": "Energy Elemental",
+                "target": 500
+              },
+              {
+                "completed": false,
+                "kills": 0,
+                "name": "Enlightened of the Cult",
+                "target": 500
+              },
+              {
+                "completed": false,
+                "kills": 0,
+                "name": "Enraged Crystal Golem",
+                "target": 500
+              },
+              {
+                "completed": false,
+                "kills": 0,
+                "name": "Fire Elemental",
+                "target": 500
+              },
+              {
+                "completed": false,
+                "kills": 0,
+                "name": "Frost Dragon",
+                "target": 500
+              },
+              {
+                "completed": false,
+                "kills": 0,
+                "name": "Fury",
+                "target": 500
+              },
+              {
+                "completed": false,
+                "kills": 0,
+                "name": "Gargoyle",
+                "target": 500
+              },
+              {
+                "completed": false,
+                "kills": 0,
+                "name": "Giant Spider",
+                "target": 500
+              },
+              {
+                "completed": false,
+                "kills": 0,
+                "name": "Gladiator",
+                "target": 500
+              },
+              {
+                "completed": false,
+                "kills": 0,
+                "name": "Gnome Trooper",
+                "target": 500
+              },
+              {
+                "completed": false,
+                "kills": 0,
+                "name": "Golden Servant Replica",
+                "target": 500
+              },
+              {
+                "completed": false,
+                "kills": 0,
+                "name": "Gozzler",
+                "target": 500
+              },
+              {
+                "completed": false,
+                "kills": 0,
+                "name": "Hand of Cursed Fate",
+                "target": 500
+              },
+              {
+                "completed": false,
+                "kills": 0,
+                "name": "Hellfire Fighter",
+                "target": 500
+              },
+              {
+                "completed": false,
+                "kills": 0,
+                "name": "Hellhound",
+                "target": 500
+              },
+              {
+                "completed": false,
+                "kills": 0,
+                "name": "Hellspawn",
+                "target": 500
+              },
+              {
+                "completed": false,
+                "kills": 0,
+                "name": "Hero",
+                "target": 500
+              },
+              {
+                "completed": false,
+                "kills": 0,
+                "name": "Hideous Fungus",
+                "target": 500
+              },
+              {
+                "completed": false,
+                "kills": 0,
+                "name": "Hive Larva",
+                "target": 500
+              },
+              {
+                "completed": false,
+                "kills": 0,
+                "name": "Humongous Fungus",
+                "target": 500
+              },
+              {
+                "completed": false,
+                "kills": 0,
+                "name": "Ice Golem",
+                "target": 500
+              },
+              {
+                "completed": false,
+                "kills": 0,
+                "name": "Ice Witch",
+                "target": 500
+              },
+              {
+                "completed": false,
+                "kills": 0,
+                "name": "Insectoid Worker",
+                "target": 500
+              },
+              {
+                "completed": false,
+                "kills": 0,
+                "name": "Instable Breach Brood",
+                "target": 500
+              },
+              {
+                "completed": false,
+                "kills": 0,
+                "name": "Instable Sparkion",
+                "target": 500
+              },
+              {
+                "completed": false,
+                "kills": 0,
+                "name": "Iron Servant Replica",
+                "target": 500
+              },
+              {
+                "completed": false,
+                "kills": 0,
+                "name": "Ironblight",
+                "target": 500
+              },
+              {
+                "completed": false,
+                "kills": 0,
+                "name": "Juggernaut",
+                "target": 500
+              },
+              {
+                "completed": false,
+                "kills": 0,
+                "name": "Killer Caiman",
+                "target": 500
+              },
+              {
+                "completed": false,
+                "kills": 0,
+                "name": "Kollos",
+                "target": 500
+              },
+              {
+                "completed": false,
+                "kills": 0,
+                "name": "Lancer Beetle",
+                "target": 500
+              },
+              {
+                "completed": false,
+                "kills": 0,
+                "name": "Lava Golem",
+                "target": 500
+              },
+              {
+                "completed": false,
+                "kills": 0,
+                "name": "Lava Lurker",
+                "target": 500
+              },
+              {
+                "completed": false,
+                "kills": 0,
+                "name": "Lich",
+                "target": 500
+              },
+              {
+                "completed": false,
+                "kills": 0,
+                "name": "Lizard Chosen",
+                "target": 500
+              },
+              {
+                "completed": false,
+                "kills": 0,
+                "name": "Lizard Dragon Priest",
+                "target": 500
+              },
+              {
+                "completed": false,
+                "kills": 0,
+                "name": "Lizard High Guard",
+                "target": 500
+              },
+              {
+                "completed": false,
+                "kills": 0,
+                "name": "Lizard Legionnaire",
+                "target": 500
+              },
+              {
+                "completed": false,
+                "kills": 0,
+                "name": "Lizard Noble",
+                "target": 500
+              },
+              {
+                "completed": false,
+                "kills": 0,
+                "name": "Lizard Sentinel",
+                "target": 500
+              },
+              {
+                "completed": false,
+                "kills": 0,
+                "name": "Lizard Snakecharmer",
+                "target": 500
+              },
+              {
+                "completed": false,
+                "kills": 0,
+                "name": "Lizard Templar",
+                "target": 500
+              },
+              {
+                "completed": false,
+                "kills": 0,
+                "name": "Lost Basher",
+                "target": 500
+              },
+              {
+                "completed": false,
+                "kills": 0,
+                "name": "Lost Berserker",
+                "target": 500
+              },
+              {
+                "completed": false,
+                "kills": 0,
+                "name": "Lost Husher",
+                "target": 500
+              },
+              {
+                "completed": false,
+                "kills": 0,
+                "name": "Lost Soul",
+                "target": 500
+              },
+              {
+                "completed": false,
+                "kills": 0,
+                "name": "Lost Thrower",
+                "target": 500
+              },
+              {
+                "completed": false,
+                "kills": 0,
+                "name": "Magma Crawler",
+                "target": 500
+              },
+              {
+                "completed": false,
+                "kills": 0,
+                "name": "Massive Earth Elemental",
+                "target": 500
+              },
+              {
+                "completed": false,
+                "kills": 0,
+                "name": "Massive Fire Elemental",
+                "target": 500
+              },
+              {
+                "completed": false,
+                "kills": 0,
+                "name": "Minotaur Archer",
+                "target": 500
+              },
+              {
+                "completed": false,
+                "kills": 0,
+                "name": "Minotaur Guard",
+                "target": 500
+              },
+              {
+                "completed": false,
+                "kills": 0,
+                "name": "Minotaur Mage",
+                "target": 500
+              },
+              {
+                "completed": false,
+                "kills": 0,
+                "name": "Mutated Human",
+                "target": 500
+              },
+              {
+                "completed": false,
+                "kills": 0,
+                "name": "Mutated Rat",
+                "target": 500
+              },
+              {
+                "completed": false,
+                "kills": 0,
+                "name": "Mutated Tiger",
+                "target": 500
+              },
+              {
+                "completed": false,
+                "kills": 0,
+                "name": "Necromancer",
+                "target": 500
+              },
+              {
+                "completed": false,
+                "kills": 0,
+                "name": "Nightmare",
+                "target": 500
+              },
+              {
+                "completed": false,
+                "kills": 0,
+                "name": "Nightmare Scion",
+                "target": 500
+              },
+              {
+                "completed": false,
+                "kills": 0,
+                "name": "Nymph",
+                "target": 500
+              },
+              {
+                "completed": false,
+                "kills": 0,
+                "name": "Ogre Brute",
+                "target": 500
+              },
+              {
+                "completed": false,
+                "kills": 0,
+                "name": "Old Beholder",
+                "target": 500
+              },
+              {
+                "completed": false,
+                "kills": 0,
+                "name": "Orc Berserker",
+                "target": 500
+              },
+              {
+                "completed": false,
+                "kills": 0,
+                "name": "Orc Leader",
+                "target": 500
+              },
+              {
+                "completed": false,
+                "kills": 0,
+                "name": "Orc Shaman",
+                "target": 500
+              },
+              {
+                "completed": false,
+                "kills": 0,
+                "name": "Orclops Doomhauler",
+                "target": 500
+              },
+              {
+                "completed": false,
+                "kills": 0,
+                "name": "Orclops Ravager",
+                "target": 500
+              },
+              {
+                "completed": false,
+                "kills": 0,
+                "name": "Orewalker",
+                "target": 500
+              },
+              {
+                "completed": false,
+                "kills": 0,
+                "name": "Phantasm",
+                "target": 500
+              },
+              {
+                "completed": false,
+                "kills": 0,
+                "name": "Pioson Spider",
+                "target": 500
+              },
+              {
+                "completed": false,
+                "kills": 0,
+                "name": "Pirate Buccaneer",
+                "target": 500
+              },
+              {
+                "completed": false,
+                "kills": 0,
+                "name": "Pirate Corsair",
+                "target": 500
+              },
+              {
+                "completed": false,
+                "kills": 0,
+                "name": "Pirate Marauder",
+                "target": 500
+              },
+              {
+                "completed": false,
+                "kills": 0,
+                "name": "Pirate Skeleton",
+                "target": 500
+              },
+              {
+                "completed": false,
+                "kills": 0,
+                "name": "Pixie",
+                "target": 500
+              },
+              {
+                "completed": false,
+                "kills": 0,
+                "name": "Plaguesmith",
+                "target": 500
+              },
+              {
+                "completed": false,
+                "kills": 0,
+                "name": "Poison Spider",
+                "target": 500
+              },
+              {
+                "completed": false,
+                "kills": 0,
+                "name": "Priestess",
+                "target": 500
+              },
+              {
+                "completed": false,
+                "kills": 0,
+                "name": "Quara Constrictor Scout",
+                "target": 500
+              },
+              {
+                "completed": false,
+                "kills": 0,
+                "name": "Quara Hydromancer",
+                "target": 500
+              },
+              {
+                "completed": false,
+                "kills": 0,
+                "name": "Quara Hydromancer Scout",
+                "target": 500
+              },
+              {
+                "completed": false,
+                "kills": 0,
+                "name": "Quara Mantassin",
+                "target": 500
+              },
+              {
+                "completed": false,
+                "kills": 0,
+                "name": "Quara Pincher",
+                "target": 500
+              },
+              {
+                "completed": false,
+                "kills": 0,
+                "name": "Quara Predator",
+                "target": 500
+              },
+              {
+                "completed": false,
+                "kills": 0,
+                "name": "Raging Fire",
+                "target": 500
+              },
+              {
+                "completed": false,
+                "kills": 0,
+                "name": "Reality Reaver",
+                "target": 500
+              },
+              {
+                "completed": false,
+                "kills": 0,
+                "name": "Renegade Knight",
+                "target": 500
+              },
+              {
+                "completed": false,
+                "kills": 0,
+                "name": "Shaper Matriarch",
+                "target": 500
+              },
+              {
+                "completed": false,
+                "kills": 0,
+                "name": "Skelleton",
+                "target": 500
+              },
+              {
+                "completed": false,
+                "kills": 0,
+                "name": "Slime",
+                "target": 500
+              },
+              {
+                "completed": false,
+                "kills": 0,
+                "name": "Son of Verminor",
+                "target": 500
+              },
+              {
+                "completed": false,
+                "kills": 0,
+                "name": "Souleater",
+                "target": 500
+              },
+              {
+                "completed": false,
+                "kills": 0,
+                "name": "Sparkion",
+                "target": 500
+              },
+              {
+                "completed": false,
+                "kills": 0,
+                "name": "Spectre",
+                "target": 500
+              },
+              {
+                "completed": false,
+                "kills": 0,
+                "name": "Spidris",
+                "target": 500
+              },
+              {
+                "completed": false,
+                "kills": 0,
+                "name": "Spitter",
+                "target": 500
+              },
+              {
+                "completed": false,
+                "kills": 0,
+                "name": "Stabilizing Dread Intruder",
+                "target": 500
+              },
+              {
+                "completed": false,
+                "kills": 0,
+                "name": "Stabilizing Reality Reaver",
+                "target": 500
+              },
+              {
+                "completed": false,
+                "kills": 0,
+                "name": "Stone Golem",
+                "target": 500
+              },
+              {
+                "completed": false,
+                "kills": 0,
+                "name": "Stonerefiner",
+                "target": 500
+              },
+              {
+                "completed": false,
+                "kills": 0,
+                "name": "Swan Maiden",
+                "target": 500
+              },
+              {
+                "completed": false,
+                "kills": 0,
+                "name": "Swarmer",
+                "target": 500
+              },
+              {
+                "completed": false,
+                "kills": 0,
+                "name": "Terramite",
+                "target": 500
+              },
+              {
+                "completed": false,
+                "kills": 0,
+                "name": "Thornback Tortoise",
+                "target": 500
+              },
+              {
+                "completed": false,
+                "kills": 0,
+                "name": "Tortoise",
+                "target": 500
+              },
+              {
+                "completed": false,
+                "kills": 0,
+                "name": "Twisted Shaper",
+                "target": 500
+              },
+              {
+                "completed": false,
+                "kills": 0,
+                "name": "Undead Dragon",
+                "target": 500
+              },
+              {
+                "completed": false,
+                "kills": 0,
+                "name": "Undead Gladiator",
+                "target": 500
+              },
+              {
+                "completed": false,
+                "kills": 0,
+                "name": "Vampire",
+                "target": 500
+              },
+              {
+                "completed": false,
+                "kills": 0,
+                "name": "Vicious Squire",
+                "target": 500
+              },
+              {
+                "completed": false,
+                "kills": 0,
+                "name": "Vile Grandmaster",
+                "target": 500
+              },
+              {
+                "completed": false,
+                "kills": 0,
+                "name": "Vulcongra",
+                "target": 500
+              },
+              {
+                "completed": false,
+                "kills": 0,
+                "name": "Wailing Widow",
+                "target": 500
+              },
+              {
+                "completed": false,
+                "kills": 0,
+                "name": "Warlock",
+                "target": 500
+              },
+              {
+                "completed": false,
+                "kills": 0,
+                "name": "Waspoid",
+                "target": 500
+              },
+              {
+                "completed": false,
+                "kills": 0,
+                "name": "Water Elemental",
+                "target": 500
+              },
+              {
+                "completed": false,
+                "kills": 0,
+                "name": "Weeper",
+                "target": 500
+              },
+              {
+                "completed": false,
+                "kills": 0,
+                "name": "Werebadger",
+                "target": 500
+              },
+              {
+                "completed": false,
+                "kills": 0,
+                "name": "Wiggler",
+                "target": 500
+              },
+              {
+                "completed": false,
+                "kills": 0,
+                "name": "Worker Golem",
+                "target": 500
+              },
+              {
+                "completed": false,
+                "kills": 0,
+                "name": "Wyrm",
+                "target": 500
+              },
+              {
+                "completed": false,
+                "kills": 0,
+                "name": "Wyvern",
+                "target": 500
+              },
+              {
+                "completed": false,
+                "kills": 0,
+                "name": "Zombie",
+                "target": 500
+              },
+              {
+                "completed": false,
+                "kills": 0,
+                "name": "beholder",
+                "target": 500
+              },
+              {
+                "completed": false,
+                "kills": 0,
+                "name": "demon skelleton",
+                "target": 500
+              },
+              {
+                "completed": false,
+                "kills": 0,
+                "name": "stone-eater",
+                "target": 500
+              },
+              {
+                "completed": true,
+                "kills": 38808,
+                "name": "Minotaur",
+                "target": 500
+              },
+              {
+                "completed": true,
+                "kills": 29115,
+                "name": "Scarab",
+                "target": 500
+              },
+              {
+                "completed": true,
+                "kills": 15948,
+                "name": "Wolf",
+                "target": 500
+              },
+              {
+                "completed": true,
+                "kills": 15216,
+                "name": "Wasp",
+                "target": 500
+              },
+              {
+                "completed": true,
+                "kills": 15145,
+                "name": "Crocodile",
+                "target": 500
+              },
+              {
+                "completed": true,
+                "kills": 15116,
+                "name": "Dwarf",
+                "target": 500
+              },
+              {
+                "completed": true,
+                "kills": 15068,
+                "name": "Goblin",
+                "target": 500
+              },
+              {
+                "completed": true,
+                "kills": 13984,
+                "name": "Dwarf Soldier",
+                "target": 500
+              },
+              {
+                "completed": true,
+                "kills": 13651,
+                "name": "Elf Scout",
+                "target": 500
+              },
+              {
+                "completed": true,
+                "kills": 11169,
+                "name": "Rotworm",
+                "target": 500
+              },
+              {
+                "completed": true,
+                "kills": 10887,
+                "name": "Wild Warrior",
+                "target": 500
+              },
+              {
+                "completed": true,
+                "kills": 10755,
+                "name": "Larva",
+                "target": 500
+              },
+              {
+                "completed": true,
+                "kills": 8877,
+                "name": "Amazon",
+                "target": 500
+              },
+              {
+                "completed": true,
+                "kills": 7044,
+                "name": "Skeleton",
+                "target": 500
+              },
+              {
+                "completed": true,
+                "kills": 7016,
+                "name": "Orc",
+                "target": 500
+              },
+              {
+                "completed": true,
+                "kills": 6408,
+                "name": "Scorpion",
+                "target": 500
+              },
+              {
+                "completed": true,
+                "kills": 4686,
+                "name": "Salamander",
+                "target": 500
+              },
+              {
+                "completed": true,
+                "kills": 4684,
+                "name": "Dawnfly",
+                "target": 500
+              },
+              {
+                "completed": true,
+                "kills": 4642,
+                "name": "Marsh Stalker",
+                "target": 500
+              },
+              {
+                "completed": true,
+                "kills": 4389,
+                "name": "Valkyrie",
+                "target": 500
+              },
+              {
+                "completed": true,
+                "kills": 3612,
+                "name": "Skeleton Warrior",
+                "target": 500
+              },
+              {
+                "completed": true,
+                "kills": 3436,
+                "name": "Orc Spearman",
+                "target": 500
+              },
+              {
+                "completed": true,
+                "kills": 3424,
+                "name": "Orc Warrior",
+                "target": 500
+              },
+              {
+                "completed": true,
+                "kills": 3228,
+                "name": "Fire Devil",
+                "target": 500
+              },
+              {
+                "completed": true,
+                "kills": 505,
+                "name": "Dragon",
+                "target": 500
+              }
+            ],
+            "bestiaryCompleted": 25,
+            "bestiaryTarget": "Farm VIP -> Dragon Lair",
+            "bestiaryTotal": 209,
+            "coins": 0,
+            "currentHunt": "Scarabs Cave",
+            "durationSec": 6328,
+            "expPerHour": 11759,
+            "gold": 4273,
+            "goldPerHour": 0,
+            "hp": 703,
+            "id": "acc1",
+            "isPremium": false,
+            "kills": 1088,
+            "level": 60,
+            "mana": 97,
+            "maxHp": 1016,
+            "maxMana": 313,
+            "name": "Conta #1",
+            "premiumUntil": 0,
+            "recentLogs": [
+              "🎁 Auto-Boxes: Abrindo 1x Caixa de Treino Knight...",
+              "🎁 Recompensa Diária de Login: Dia 1 resgatado com sucesso!",
+              "🎁 Auto-Boxes: Abrindo 1x Caixa de Treino Knight...",
+              "🎁 Recompensa Diária de Login: Dia 1 resgatado com sucesso!",
+              "🎁 Auto-Boxes: Abrindo 1x Caixa de Treino Knight...",
+              "🎁 Recompensa Diária de Login: Dia 1 resgatado com sucesso!",
+              "🎁 Auto-Boxes: Abrindo 1x Caixa de Treino Knight...",
+              "🎁 Recompensa Diária de Login: Dia 1 resgatado com sucesso!",
+              "🎁 Auto-Boxes: Abrindo 1x Caixa de Treino Knight...",
+              "🎁 Recompensa Diária de Login: Dia 1 resgatado com sucesso!",
+              "🎁 Recompensa Diária de Login: Dia 1 resgatado com sucesso!",
+              "🎁 Recompensa Diária de Login: Dia 1 resgatado com sucesso!",
+              "🎁 Auto-Boxes: Abrindo 1x Caixa de Treino Knight...",
+              "🎁 Recompensa Diária de Login: Dia 1 resgatado com sucesso!",
+              "🎁 Auto-Boxes: Abrindo 1x Caixa de Treino Knight..."
+            ],
+            "status": "hunting",
+            "strategyGoal": "Fase 1: Farmando Ouro/EXP para 1ª VIP 30d (Coins: 0/290)",
+            "strategyPhase": 1,
+            "targetHunt": "Dragon Lair",
+            "updatedAt": 1793191203090,
+            "vocation": "KNIGHT",
+            "xp": "3277280"
+          }
+        ],
+        "goroutines": 11,
+        "ramAllocMB": 1.8950729370117188,
+        "ramSysMB": 17.34986114501953,
+        "uptime": "67h48m5s"
+      },
+      "accounts": [
+        {
+          "alias": "kbelludoo",
+          "vocation": "Knight",
+          "level": 60,
+          "hp": 1016,
+          "maxHp": 1016,
+          "gold": 9608460,
+          "kills": 160141,
+          "status": "HUNTING"
+        }
+      ]
+    },
+    "twitchminer": {
+      "dashboardUrl": "https://kbelludoo.github.io/twitch-miner-go/",
+      "engine": "Go Native (Zero-Video WS)",
+      "game": "Twitch.tv",
+      "name": "Twitch Channel Points Miner",
+      "port": 3010,
+      "status": {
+        "logs": [
+          "[03:32:20] Iniciando Twitch Miner Go para 1 conta(s)...",
+          "[03:32:20] [Minerador #1] ✅ Autenticado com sucesso na Twitch! (ID: 21107325, Login: Minerador #1)",
+          "[03:32:21] [Minerador #1] ⭐ Assistindo live de 'Gaules'! Pontos: 0",
+          "[03:32:21] [Minerador #1] ⭐ Assistindo live de 'Baiano'! Pontos: 1090",
+          "[03:48:21] [Minerador #1] 📴 Live de 'Baiano' finalizou; slot liberado.",
+          "[15:30:21] [Minerador #1] 📴 Live de 'Gaules' finalizou; slot liberado.",
+          "[15:31:21] [Minerador #1] ⭐ Assistindo live de 'Gaules'! Pontos: 0",
+          "[18:39:21] [Minerador #1] ⭐ Assistindo live de 'alanzoka'! Pontos: 0",
+          "[02:06:21] [Minerador #1] 📴 Live de 'alanzoka' finalizou; slot liberado.",
+          "[18:17:21] [Minerador #1] ⭐ Assistindo live de 'alanzoka'! Pontos: 0",
+          "[01:04:21] [Minerador #1] 📴 Live de 'alanzoka' finalizou; slot liberado.",
+          "[14:58:21] [Minerador #1] 📴 Live de 'Gaules' finalizou; slot liberado.",
+          "[15:04:21] [Minerador #1] ⭐ Assistindo live de 'Gaules'! Pontos: 0",
+          "[17:24:21] [Minerador #1] ⭐ Assistindo live de 'Baiano'! Pontos: 1090",
+          "[18:26:21] [Minerador #1] ⭐ Assistindo live de 'alanzoka'! Pontos: 0",
+          "[00:17:21] [Minerador #1] 📴 Live de 'alanzoka' finalizou; slot liberado.",
+          "[04:50:21] [Minerador #1] 📴 Live de 'Baiano' finalizou; slot liberado.",
+          "[17:21:21] [Minerador #1] ⭐ Assistindo live de 'Baiano'! Pontos: 1090",
+          "[18:29:21] [Minerador #1] ⭐ Assistindo live de 'alanzoka'! Pontos: 0",
+          "[01:10:21] [Minerador #1] 📴 Live de 'alanzoka' finalizou; slot liberado.",
+          "[03:34:21] [Minerador #1] 📴 Live de 'Baiano' finalizou; slot liberado.",
+          "[03:35:21] [Minerador #1] ⭐ Assistindo live de 'Baiano'! Pontos: 1090",
+          "[04:49:21] [Minerador #1] 📴 Live de 'Baiano' finalizou; slot liberado.",
+          "[17:13:21] [Minerador #1] ⭐ Assistindo live de 'Baiano'! Pontos: 1090",
+          "[02:35:21] [Minerador #1] 📴 Live de 'Baiano' finalizou; slot liberado.",
+          "[17:25:21] [Minerador #1] ⭐ Assistindo live de 'Baiano'! Pontos: 1090",
+          "[02:31:21] [Minerador #1] 📴 Live de 'Baiano' finalizou; slot liberado.",
+          "[18:38:21] [Minerador #1] ⭐ Assistindo live de 'alanzoka'! Pontos: 0",
+          "[01:21:21] [Minerador #1] 📴 Live de 'alanzoka' finalizou; slot liberado.",
+          "[18:41:21] [Minerador #1] ⭐ Assistindo live de 'alanzoka'! Pontos: 0",
+          "[00:32:21] [Minerador #1] 📴 Live de 'alanzoka' finalizou; slot liberado.",
+          "[15:03:21] [Minerador #1] 📴 Live de 'Gaules' finalizou; slot liberado.",
+          "[15:25:21] [Minerador #1] ⭐ Assistindo live de 'Gaules'! Pontos: 0",
+          "[19:03:21] [Minerador #1] ⭐ Assistindo live de 'alanzoka'! Pontos: 0",
+          "[00:16:21] [Minerador #1] 📴 Live de 'Gaules' finalizou; slot liberado.",
+          "[00:17:21] [Minerador #1] ⭐ Assistindo live de 'Gaules'! Pontos: 0",
+          "[01:44:21] [Minerador #1] 📴 Live de 'alanzoka' finalizou; slot liberado.",
+          "[18:33:21] [Minerador #1] ⭐ Assistindo live de 'alanzoka'! Pontos: 0",
+          "[01:14:21] [Minerador #1] 📴 Live de 'alanzoka' finalizou; slot liberado.",
+          "[15:25:21] [Minerador #1] 📴 Live de 'Gaules' finalizou; slot liberado.",
+          "[16:12:21] [Minerador #1] ⭐ Assistindo live de 'Baiano'! Pontos: 1090",
+          "[17:48:21] [Minerador #1] ⭐ Assistindo live de 'Gaules'! Pontos: 0",
+          "[18:26:21] [Minerador #1] ⭐ Assistindo live de 'alanzoka'! Pontos: 0",
+          "[00:58:21] [Minerador #1] 📴 Live de 'alanzoka' finalizou; slot liberado.",
+          "[04:11:21] [Minerador #1] 📴 Live de 'Baiano' finalizou; slot liberado.",
+          "[16:20:21] [Minerador #1] ⭐ Assistindo live de 'Baiano'! Pontos: 1090",
+          "[04:54:21] [Minerador #1] 📴 Live de 'Baiano' finalizou; slot liberado.",
+          "[16:37:21] [Minerador #1] ⭐ Assistindo live de 'Baiano'! Pontos: 1090",
+          "[02:35:21] [Minerador #1] 📴 Live de 'Baiano' finalizou; slot liberado.",
+          "[16:14:21] [Minerador #1] ⭐ Assistindo live de 'Baiano'! Pontos: 1090",
+          "[18:28:21] [Minerador #1] ⭐ Assistindo live de 'alanzoka'! Pontos: 0",
+          "[01:04:21] [Minerador #1] 📴 Live de 'alanzoka' finalizou; slot liberado.",
+          "[03:35:21] [Minerador #1] 📴 Live de 'Baiano' finalizou; slot liberado.",
+          "[18:46:21] [Minerador #1] ⭐ Assistindo live de 'alanzoka'! Pontos: 0",
+          "[01:30:21] [Minerador #1] 📴 Live de 'alanzoka' finalizou; slot liberado."
+        ],
+        "statuses": {
+          "Minerador #1": {
+            "streamers": {
+              "alanzoka": {
+                "displayName": "alanzoka",
+                "isLive": false,
+                "lastClaimAt": "",
+                "login": "alanzoka",
+                "points": 0,
+                "title": "",
+                "viewers": 0,
+                "watching": false
+              },
+              "baiano": {
+                "displayName": "Baiano",
+                "isLive": false,
+                "lastClaimAt": "",
+                "login": "baiano",
+                "points": 1090,
+                "title": "",
+                "viewers": 0,
+                "watching": false
+              },
+              "brtt": {
+                "displayName": "brtt",
+                "isLive": false,
+                "lastClaimAt": "",
+                "login": "brtt",
+                "points": 0,
+                "title": "",
+                "viewers": 0,
+                "watching": false
+              },
+              "casimito": {
+                "displayName": "casimito",
+                "isLive": false,
+                "lastClaimAt": "",
+                "login": "casimito",
+                "points": 0,
+                "title": "",
+                "viewers": 0,
+                "watching": false
+              },
+              "cellbit": {
+                "displayName": "Cellbit",
+                "isLive": false,
+                "lastClaimAt": "",
+                "login": "cellbit",
+                "points": 0,
+                "title": "",
+                "viewers": 0,
+                "watching": false
+              },
+              "gaules": {
+                "displayName": "Gaules",
+                "isLive": true,
+                "lastClaimAt": "",
+                "login": "gaules",
+                "points": 0,
+                "title": "RERUN: Lobby do Alastro! - !socio - Siga @Gaules nas redes sociais!",
+                "viewers": 307,
+                "watching": true
+              },
+              "loud_coringa": {
+                "displayName": "",
+                "isLive": false,
+                "lastClaimAt": "",
+                "login": "loud_coringa",
+                "points": 0,
+                "title": "",
+                "viewers": 0,
+                "watching": false
+              },
+              "nobru": {
+                "displayName": "NOBRU",
+                "isLive": false,
+                "lastClaimAt": "",
+                "login": "nobru",
+                "points": 0,
+                "title": "",
+                "viewers": 0,
+                "watching": false
+              }
+            },
+            "userId": "anonimo",
+            "username": "Minerador #1"
+          }
+        }
+      }
+    }
+  },
+  "summary": {
+    "activeBots": 17,
+    "totalBots": 18,
+    "engine": "Native Nim 2.2 ARC/ORC Zero-GC",
+    "runningBots": 14
+  },
+  "timestamp": 1794474510,
+  "vps": {
+    "load": "3.93 2.32 2.44",
+    "ramAvailableMb": 246,
+    "ramPercent": 74,
+    "ramTotalMb": 951,
+    "ramUsedMb": 705,
+    "swapTotalMb": 1023,
+    "swapUsedMb": 1023,
+    "uptime": "up 13 days, 18 hours"
+  }
+}
