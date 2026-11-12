@@ -3418,6 +3418,24 @@
           }
         }
       }
+    },
+    "lolidle": {
+      "key": "lolidle",
+      "name": "LoL Idle Battle",
+      "port": 3004,
+      "status": "BANNED",
+      "badge": "🚫 BANIDO",
+      "engine": "Nim 2.2 Native Engine (Circuit Breaker & ORC)",
+      "accounts": [
+        {
+          "alias": "kbelludoo",
+          "level": 39,
+          "gold": 40000,
+          "kills": 1600,
+          "status": "BANNED",
+          "error": "Erro: account.banned / suspensa"
+        }
+      ]
     }
   },
   "summary": {
@@ -3425,9 +3443,9 @@
     "totalBots": 18,
     "engine": "Native Nim 2.2 ARC/ORC Zero-GC",
     "runningBots": 14,
-    "bannedBots": 2,
+    "bannedBots": 3,
     "disconnectedBots": 2,
-    "activeHuntingBots": 12
+    "activeHuntingBots": 11
   },
   "timestamp": 1794474510,
   "vps": {

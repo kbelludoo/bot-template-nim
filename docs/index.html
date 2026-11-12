@@ -331,10 +331,28 @@
       <div class="vps-card">
         <div class="vps-label">Estado da Frota (18 Bots)</div>
         <div class="vps-val" id="botsCountVal" style="color: var(--accent); font-size: 1.25rem;">
-          <span style="color: #10b981;">12 Ativos</span> • <span style="color: #ef4444;">2 Banidos</span> • <span style="color: #94a3b8;">4 Off</span>
+          <span style="color: #10b981;">11 Ativos</span> • <span style="color: #ef4444;">3 Banidos</span> • <span style="color: #94a3b8;">4 Off</span>
         </div>
-        <div class="vps-sub">14 processos rodando no Linux • 4 idle</div>
+        <div class="vps-sub">Banidos: Sigma, Leveling e LoL Idle</div>
       </div>
+      <div class="vps-card">
+        <div class="vps-label">Memória RAM VPS (Host)</div>
+        <div class="vps-val" id="ramVal" style="color: var(--green);">705 / 951 MB</div>
+        <div class="progress-bar"><div class="progress-fill fill-ram" id="ramProgress" style="width: 74.1%;"></div></div>
+        <div class="vps-sub" id="ramSub">Livre: 246 MB (74.1% em uso) • Swap: 1024 MB</div>
+      </div>
+      <div class="vps-card">
+        <div class="vps-label">Consumo Nim (ARC/ORC)</div>
+        <div class="vps-val" style="color: #38bdf8;">~4.35 MB / bot</div>
+        <div class="progress-bar"><div class="progress-fill" style="width: 18%; background: linear-gradient(90deg, #38bdf8, #818cf8);"></div></div>
+        <div class="vps-sub">Footprint ultra-baixo • Zero Garbage Collector</div>
+      </div>
+      <div class="vps-card">
+        <div class="vps-label">Uptime & Conexão</div>
+        <div class="vps-val" style="color: var(--gold); font-size: 1.15rem;">13d 18h (OCI SP)</div>
+        <div class="vps-sub" id="lastUpdatedSub">IP: 129.153.157.17 • 24/7 Online</div>
+      </div>
+    </div>
       <div class="vps-card">
         <div class="vps-label">Memória RAM VPS (Host)</div>
         <div class="vps-val" id="ramVal" style="color: var(--green);">705 / 951 MB</div>
@@ -2827,88 +2845,72 @@
       </div>
       
       
-      <div class="bot-card" id="card-telegram" style="--theme: #0284c7; --theme-bg: rgba(2, 132, 199, 0.12); --theme-border: rgba(2, 132, 199, 0.45); --theme-glow: rgba(2, 132, 199, 0.25);">
+      <div class="bot-card" id="card-lolidle" style="--theme: #ef4444; --theme-bg: rgba(239, 68, 68, 0.15); --theme-border: rgba(239, 68, 68, 0.6); --theme-glow: rgba(239, 68, 68, 0.35);">
         <div>
           <div class="bot-header">
             <div class="bot-name-group">
-              <h3>💬 Telegram Relay Agent</h3>
+              <h3>⚔️ LoL Idle Battle</h3>
               <span class="bot-port">
-                
-                BACKGROUND AGENT
+                PORTA 3004 • 
+                NIM 2.2 ORC
               </span>
             </div>
             <div class="face-header-controls">
-              <button class="face-toggle-btn" onclick="toggleCardFace('telegram')" title="Clique para alternar visão Gameplay / Rendimento">
-                🔄 <span id="facetext-telegram">VISÃO</span>
+              <button class="face-toggle-btn" onclick="toggleCardFace('lolidle')" title="Clique para alternar visão Gameplay / Rendimento">
+                🔄 <span id="facetext-lolidle">VISÃO</span>
               </button>
-              <span class="badge-status" id="badge-telegram">
-                
-                ONLINE
+              <span class="badge-status" id="badge-lolidle" style="background: rgba(239, 68, 68, 0.2); color: #ef4444; border: 1px solid rgba(239, 68, 68, 0.5);">
+                🚫 BANIDO
               </span>
             </div>
           </div>
 
-          <div class="acc-list" id="acclist-telegram">
-            
-              
-              <div class="card-face face-gameplay">
-                
-                <div class="acc-item">
-                  
-                  <div class="acc-item-header">
-                    <span>💬 Relay Bot</span>
-                    <span style="color: #0284c7; font-size: 0.72rem; font-weight: 700;">Telegram Bridge</span>
-                  </div>
-                  
-                  <div class="stat-row" style="background: rgba(2, 132, 199, 0.12); padding: 4px 8px; border-radius: 6px; margin-bottom: 4px;">
-                    <span style="font-weight: 700; font-size: 0.72rem;">⚙️ Alertas &amp; Notificações 24/7</span>
-                  </div>
-                  
-                  <div class="stat-row">
-                    <span style="color: #4ade80; font-weight: 700;">🟢 Online</span>
-                    <span style="color: #38bdf8; font-weight: 600;">⚡ Operação Contínua</span>
-                  </div>
-                  
+          <div class="acc-list" id="acclist-lolidle">
+            <div class="card-face face-gameplay">
+              <div class="acc-item" style="border-left: 3px solid #ef4444; background: rgba(239, 68, 68, 0.08);">
+                <div class="acc-item-header">
+                  <span>⚔️ Invocador kbelludoo (Nv. 39)</span>
+                  <span style="color: #ef4444; font-weight: bold; font-size: 0.75rem;">🚫 CONTA BANIDA</span>
                 </div>
-                
+                <div class="stat-row">
+                  <span style="color: #ef4444; font-size: 0.8rem;">Status: Erro: account.banned / suspensa</span>
+                </div>
+                <div class="stat-row">
+                  <span style="color: #facc15; font-weight: 800;">💰 40.000 gold</span>
+                  <span style="color: #38bdf8; font-weight: 700;">⚔️ 1.600 kills</span>
+                </div>
+                <div class="stat-row">
+                  <span style="color: var(--text-muted); font-size: 0.75rem;">Ação: Bloqueado pelo anticheat do servidor</span>
+                </div>
               </div>
+            </div>
 
-              
-              <div class="card-face face-performance">
-                
-                <div class="acc-item">
-                  
-                  <div class="acc-item-header">
-                    <span>⚡ Telemetria de Sistema</span>
-                    <span class="perf-tag">ONLINE 24/7</span>
-                  </div>
-                  <div class="stat-row">
-                    <span>🔄 Healthcheck</span>
-                    <span style="color: #4ade80; font-weight: 700;">🟢 Heartbeat OK</span>
-                  </div>
-                  <div class="stat-row">
-                    <span>🧠 Memória Isolada</span>
-                    <span style="color: #38bdf8; font-weight: 600;">6.7 MB</span>
-                  </div>
-                  <div class="stat-row">
-                    <span>🛡️ Supervisor Resiliente</span>
-                    <span style="color: #a855f7; font-weight: 700;">Goroutines com Recover</span>
-                  </div>
-                  <div class="stat-row">
-                    <span>⏱️ Uptime</span>
-                    <span style="color: #facc15;">24/7</span>
-                  </div>
-                  
+            <div class="card-face face-performance">
+              <div class="acc-item">
+                <div class="acc-item-header">
+                  <span>⚡ Telemetria de Sistema</span>
+                  <span class="perf-tag" style="background: rgba(239, 68, 68, 0.2); color: #ef4444;">CIRCUIT OPEN</span>
                 </div>
-                
+                <div class="stat-row">
+                  <span>🛑 Estado</span>
+                  <span style="color: #ef4444; font-weight: 700;">🚫 Ban Permanente</span>
+                </div>
+                <div class="stat-row">
+                  <span>🧠 Memória Bot (Nim ORC)</span>
+                  <span style="color: #38bdf8; font-weight: 600;">~4.2 MB</span>
+                </div>
+                <div class="stat-row">
+                  <span>🛡️ Supervisor</span>
+                  <span style="color: #a855f7; font-weight: 700;">Auto-Recovery em Standby</span>
+                </div>
               </div>
-            
+            </div>
           </div>
         </div>
 
         <div class="bot-footer">
-          <span style="font-size: 0.72rem; color: var(--text-dim);" id="summary-telegram">⚙️ RAM: 6.7 MB • 24/7</span>
-          <a href="https://github.com/kbelludoo/vps-agent-nim" target="_blank" class="btn-link">Abrir Dashboard ↗</a>
+          <span style="font-size: 0.72rem; color: #ef4444;" id="summary-lolidle">🚫 Status: Conta Bloqueada</span>
+          <a href="https://github.com/kbelludoo/bot-lolidle-nim" target="_blank" class="btn-link">Abrir Repositório ↗</a>
         </div>
       </div>
       
