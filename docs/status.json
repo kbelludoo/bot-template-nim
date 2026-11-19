@@ -162,40 +162,67 @@
       },
       "accounts": [
         {
-          "alias": "CHEREMOZOVU",
+          "alias": "Conta 4 - CHEREMOZOVU",
+          "leaderChar": "CHEREMOZOVU",
           "level": 520,
           "vocation": "Druid",
           "magicLevel": 120,
           "kills": 327681,
           "gold": 648805232,
           "exp": 2322637495,
+          "bindIp": "10.0.0.79",
+          "hunt": "vexclaw-lair",
           "status": "HUNTING"
         },
         {
-          "alias": "mister k",
+          "alias": "Conta 3 - tanknodeath",
+          "leaderChar": "tanknodeath",
+          "level": 507,
+          "vocation": "Knight",
+          "partyChars": [
+            "sdfasfasdfd (Druid 497)",
+            "magosuper (Sorcerer 476)",
+            "Mister Kl (Paladin 207)"
+          ],
+          "gold": 10381946,
+          "bindIp": "10.0.0.217",
+          "hunt": "vexclaw-lair",
+          "status": "HUNTING"
+        },
+        {
+          "alias": "Conta 1 - sencodtank",
+          "leaderChar": "sencodtank",
+          "level": 374,
+          "vocation": "Knight",
+          "partyChars": [
+            "Sofisico (Monk 377)",
+            "Secondpally (Paladin 412)",
+            "Sirsorenor (Sorcerer 8)"
+          ],
+          "gold": 539651485,
+          "bindIp": "10.0.0.191",
+          "hunt": "vexclaw-lair",
+          "status": "HUNTING"
+        },
+        {
+          "alias": "Conta 2 - mister k",
+          "leaderChar": "mister k",
           "level": 285,
           "vocation": "Monk",
+          "partyChars": [
+            "kikdd (Knight 268)",
+            "apocadd (Druid 264)",
+            "kbelludoo (Paladin 157)",
+            "lestadds (Sorcerer 10)"
+          ],
           "kills": 327620,
           "gold": 491430000,
-          "status": "HUNTING"
-        },
-        {
-          "alias": "kikdd",
-          "level": 268,
-          "vocation": "Knight",
-          "kills": 327655,
-          "gold": 491482500,
-          "status": "HUNTING"
-        },
-        {
-          "alias": "apocadd",
-          "level": 264,
-          "vocation": "Druid",
-          "kills": 327637,
-          "gold": 491455500,
+          "bindIp": "10.0.0.49",
+          "hunt": "refiner-cave / vexclaw-lair",
           "status": "HUNTING"
         }
-      ]
+      ],
+      "totalAccounts": 4
     },
     "farmricochet": {
       "dashboardUrl": "https://kbelludoo.github.io/farmricochet-bot/",
