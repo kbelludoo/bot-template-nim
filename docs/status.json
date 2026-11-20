@@ -3483,6 +3483,31 @@
           "ad": "AD-1, AD-2, AD-3"
         }
       ]
+    },
+    "manafoot": {
+      "dashboardUrl": "https://kbelludoo.github.io/manafoot-bot/",
+      "engine": "Nim 2.2 ORC Native",
+      "game": "ManaFoot Online",
+      "name": "ManaFoot Online Multi-Bot",
+      "port": 3013,
+      "totalAccounts": 1,
+      "accounts": [
+        {
+          "alias": "Clube Manafoot",
+          "leaderChar": "Técnico kbelludoo",
+          "level": 1,
+          "vocation": "Manager / Técnico",
+          "partyChars": [
+            "18 Atletas (Draft Inicial)",
+            "Tática 4-3-3",
+            "Série C"
+          ],
+          "gold": 150000,
+          "bindIp": "10.0.0.191",
+          "hunt": "Liga Nacional (20h) & Amistosos",
+          "status": "PRONTO P/ RODADA"
+        }
+      ]
     }
   },
   "summary": {
