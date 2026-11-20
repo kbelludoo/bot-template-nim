@@ -229,7 +229,7 @@
       "engine": "Nim 2.2 Native Engine (Circuit Breaker)",
       "game": "Farm Ricochet",
       "name": "Farm Ricochet Bot",
-      "port": 3013,
+      "port": 3017,
       "status": {
         "accounts": [
           {
@@ -3489,7 +3489,7 @@
       "engine": "Nim 2.2 ORC Native",
       "game": "ManaFoot Online",
       "name": "ManaFoot Online Multi-Bot",
-      "port": 3013,
+      "port": 3017,
       "totalAccounts": 1,
       "accounts": [
         {
