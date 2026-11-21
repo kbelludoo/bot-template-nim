@@ -8,3 +8,7 @@ nimcache/
 # Config secrets
 accounts.json
 config.json
+
+tmp/
+*.tmp
+

@@ -3493,19 +3493,19 @@
       "totalAccounts": 1,
       "accounts": [
         {
-          "alias": "Clube Manafoot",
+          "alias": "kbelludoo (KLL)",
           "leaderChar": "Técnico kbelludoo",
-          "level": 1,
+          "level": 25,
           "vocation": "Manager / Técnico",
           "partyChars": [
-            "18 Atletas (Draft Inicial)",
-            "Tática 4-3-3",
-            "Série C"
+            "Série AJ (Rodada 25)",
+            "Próximo: vs Associação Tag Esportiva",
+            "Escalação 4-4-2 (11 Titulares + 7 Reservas)"
           ],
-          "gold": 150000,
+          "gold": 3040,
           "bindIp": "10.0.0.191",
-          "hunt": "Liga Nacional (20h) & Amistosos",
-          "status": "PRONTO P/ RODADA"
+          "hunt": "Série AJ vs ATE (20h)",
+          "status": "TÁTICA CAMPEÃ GRAVADA"
         }
       ]
     }
